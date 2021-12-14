@@ -29,7 +29,7 @@
 			<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" target="__blank">click here</a>
 			<br><br><br>
 			<div class="border">
-				<img src="2.png" height="50%" width="50%">
+				<img src="2.png" >
 				<h2>ALL MODULE-2 CALCULATOR</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/" target="__blank">click here</a>
 			</div>
 			<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" target="__blank">click here</a>
