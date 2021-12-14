@@ -17,7 +17,8 @@
 	}
 	else
 	{
-		$sql5 = mysqli_query($db, "UPDATE `people_cheatnow` SET `count` = '$count + 1' WHERE `ip` = '$ip2';");
+		$c1 = $count + 1;
+		$sql5 = mysqli_query($db, "UPDATE `people_cheatnow` SET `count` = $c1 WHERE `ip` = '$ip2';");
 	}
 
 ?>
