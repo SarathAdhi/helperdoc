@@ -119,7 +119,7 @@
 
 
 <form action="" method="post">
-	<input type="text" name="Enter your name" required>
+	<input type="text" name="user" placeholder="Enter your name" required>
 	<h1>Like this page: <button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
 	
 </form>
@@ -130,11 +130,12 @@
 	if(isset($_POST['submit']))
 	{
 		$ip = $_SERVER['REMOTE_ADDR'];
-		echo '<h1>'; echo $ip; echo '</h1>';
+		
+		$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[name]', '$ip');");
 
-		$sql = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
+		$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 
-		$res = mysqli_fetch_assoc($sql);
+		$res = mysqli_fetch_assoc($sql1);
 		$c = $res['like'] + 1;
 
 		$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
