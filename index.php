@@ -132,7 +132,10 @@
 	{
 		$sql = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 		$res = mysqli_fetch_assoc($sql);
-		echo '<h1>'; echo $res['like']; echo '</h1>';
+		$res = $res + 1;
+		$sql2 = mysqli_query($db, "UPDATE `genre` SET `like` = '$res';");
+		$res2 = mysqli_fetch_assoc($sql2);
+		echo '<h1>'; echo $res2['like']; echo '</h1>';
 	}
 ?>
 
