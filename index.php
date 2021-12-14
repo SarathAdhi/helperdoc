@@ -20,7 +20,7 @@
 <section>
 	<div class="content">
 		<center>
-			<img src="cao_.png">
+			<img src="cao_.png" height="60%" width="60%">
 			<h2>NON RESTORING DIVISION</h2><a href="nondivi.php">click here</a>
 			<h2></h2>
 		</center>
