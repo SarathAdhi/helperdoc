@@ -16,6 +16,8 @@
 		.content .border
 		{
 			border: 5px solid red;
+			height: 60%;
+			width: 60%;
 		}
 	</style>
 </head>
@@ -25,7 +27,7 @@
 	<div class="content">
 		<center>
 			<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" target="__blank">click here</a>
-			<br>
+			<br><br><br>
 			<div class="border">
 				<img src="2.png" height="50%" width="50%">
 				<h2>ALL MODULE-2 CALCULATOR</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/" target="__blank">click here</a>
