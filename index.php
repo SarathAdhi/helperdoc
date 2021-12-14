@@ -119,7 +119,7 @@
 
 
 <form action="" method="post">
-	<input type="text" name="user" placeholder="Enter your name" required>
+	<input type="text" name="name" placeholder="Enter your name" required>
 	<h1>Like this page: <button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
 	
 </form>
@@ -137,7 +137,7 @@
 		{
 			if($row['name'] != $_POST['user'] && $row['ip'] != $ip)
 			{
-				$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[user]', '$ip');");
+				$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[name]', '$ip');");
 
 				$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 
