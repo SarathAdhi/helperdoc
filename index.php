@@ -131,7 +131,7 @@
 	{
 		$ip = $_SERVER['REMOTE_ADDR'];
 		
-		$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[name]', '$ip');");
+		$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[user]', '$ip');");
 
 		$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 
