@@ -106,8 +106,8 @@
 
 			<div class="border">
 			
-				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" >click here</a>
-				<a href="4.png" target="_blank">View Flowchart</a>
+				<h2>RESTORING DIVISION</h2>
+				<a href="5.png" target="_blank">View Flowchart</a>
 				<br><br>
 
 			</div>
