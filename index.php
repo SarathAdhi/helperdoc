@@ -11,13 +11,15 @@
 	<style type="text/css">
 		.content
 		{
-			margin-top: 100px;
+
 		}
 		.content .border
 		{
 			border: 5px solid red;
-			height: 60%;
-			width: 60%;
+		}
+		.content .border2
+		{
+			border: 5px solid blue;
 		}
 	</style>
 </head>
@@ -26,17 +28,69 @@
 <section>
 	<div class="content">
 		<center>
-			<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" target="__blank">click here</a>
-			<br><br><br>
+
 			<div class="border">
-				<img src="2.png" >
-				<h2>ALL MODULE-2 CALCULATOR</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/" target="__blank">click here</a>
+
+				<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" target="__blank">click here</a>
+				<br><br>
 			</div>
-			<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" target="__blank">click here</a>
-			<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/" target="__blank">click here</a>
-			<h2>MODIFIED BOOTHS MULTIPLICATION</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/ModBooth/" target="__blank">click here</a>
-			<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php" target="__blank">click here</a>
-			<h2>PAGE REPLACEMENT SUM</h2><a href="https://solver.assistedcoding.eu/page_replacement" target="__blank">click here</a>
+			<br><br>
+
+			<div class="border2">
+
+				<h3>Addition</h3>
+				<p>Ripple-Carry Addition , Manchester Adder , Carry-Look-Ahead Adder , Ling's Adder , Conditional-Sum Adder , Carry-Select Adder , Carry-Skip Adder , Hybrid Adder (Lynch and Swartzlander)</p>
+
+				<h3>Multiplication</h3>
+				<p>Sequential , Booth's Algorithm , Modified Booth's Algorithm , Two's Complement Array Multiplier , Fused Multiplier-Adder , Multiplication by a Constant</p>
+
+				<h3>Division</h3>
+				<p>Restoring , Non-Restoring , SRT Radix-2 , SRT Radix-4 , SRT Radix-8 , SRT with overalpping stages , By Convergence , By Convergence With Table Lookup , By Reciprocation</p>
+
+
+				<h3>Square Root</h3>
+				<p>Restoring , Non-Restoring , SRT Radix-2 , SRT Radix-4 , By convergence</p>
+
+				<h2>ALL IN ONE CALCULATOR</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/" target="__blank">click here</a>
+				<br><br>
+
+			</div>
+
+			<br><br>
+			<div class="border">
+			
+				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" target="__blank">click here</a>
+				<br><br>
+
+			</div>
+			<br><br>
+			<div class="border2">
+
+				<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/" target="__blank">click here</a>
+				<br><br>
+
+			</div>
+			<br><br>
+			<div class="border">
+
+				<h2>MODIFIED BOOTHS MULTIPLICATION</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/ModBooth/" target="__blank">click here</a>
+				<br><br>
+
+			</div>
+			<br><br>
+			<div class="border2">
+
+				<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php" target="__blank">click here</a>
+				<br><br>
+
+			</div>
+			<br><br>
+			<div class="border">
+
+				<h2>PAGE REPLACEMENT SUM</h2><a href="https://solver.assistedcoding.eu/page_replacement" target="__blank">click here</a>
+				<br><br>
+
+			</div>
 
 		</center>
 	</div>
