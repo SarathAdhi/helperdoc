@@ -107,7 +107,7 @@
 			<div class="border">
 			
 				<h2>RESTORING DIVISION</h2>
-				<a href="5.png" target="_blank">view Flowchart</a>
+				<a href="5.png" target="_blank">view flowchart</a>
 				<br><br>
 
 			</div>
@@ -118,7 +118,7 @@
 			
 				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" >click here</a>
 				<br>
-				<a href="4.png" target="_blank">view Flowchart</a>
+				<a href="4.png" target="_blank">view flowchart</a>
 				<br><br>
 
 			</div>
@@ -182,7 +182,7 @@
 
 			<div class="border2">
 
-				<h2>FLOWCHART FOR ADDITION & SUBTRACTION</h2><a href="3.jpg" target="_blank">view image</a>
+				<h2>ADDITION & SUBTRACTION</h2><a href="3.jpg" target="_blank">view flowchart</a>
 				<br><br>
 
 			</div>
