@@ -11,7 +11,7 @@
 		{
 			position: relative;
 			width: 70%;
-			height: auto;
+			height: 60px;
 			background-color: #A3A2A3;
 			top: 0;
 			left: 50%;
@@ -48,7 +48,7 @@
 	<header class="header">
 		<div class="navbar">
 			<a href="index.php">HOME</a>
-			<a href="https://www.rapidtables.com/convert/number/decimal-to-binary.html" target="__blank">CONVERSION-CALCULATOR</a>
+			<a href="https://www.rapidtables.com/convert/number/decimal-to-binary.html" target="__blank">CALCULATOR</a>
 		</div>
 	</header>
 </body>
