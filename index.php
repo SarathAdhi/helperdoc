@@ -112,6 +112,8 @@
 
 			</div>
 
+			<br><br>
+			
 			<div class="border2">
 			
 				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" >click here</a>
