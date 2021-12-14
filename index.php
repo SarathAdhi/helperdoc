@@ -16,8 +16,6 @@
 	if($count == 0)
 	{
 		$sql4 = mysqli_query($db, "INSERT INTO `people_cheatnow` VALUES ('$ip1', 1);");
-		echo $count;
-
 	}
 	else
 	{
