@@ -120,6 +120,9 @@
 
 <form action="" method="post">
 	<input type="submit" name="submit"><span>&#128077;</span>
+	<?php
+
+	?>
 </form>
 </body>
 
@@ -127,7 +130,7 @@
 	
 	if(isset($_POST['submit']))
 	{
-		$c = mysqli_query($db, "SELECT * FROM `like_cheatnow`;");
+		$c = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 		echo '<h1>'; echo $c; echo '</h1>';
 	}
 ?>
