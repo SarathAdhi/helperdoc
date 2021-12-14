@@ -134,7 +134,7 @@
 
 		$res = mysqli_fetch_assoc($sql);
 
-		$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $res2['like'] + 1;");
+		$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $res['like'] + 1;");
 
 		$res2 = mysqli_fetch_assoc($sql2);
 
