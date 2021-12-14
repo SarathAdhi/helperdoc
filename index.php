@@ -1,5 +1,6 @@
 <?php
 	include "navbar.php";
+	include "connection.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -123,7 +124,7 @@
 </body>
 
 <?php
-	include "connection.php";
+	
 	if(isset($_POST['submit']))
 	{
 		$c = ($db, "SELECT `like` FROM `like_cheatnow`;");
