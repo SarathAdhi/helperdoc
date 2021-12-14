@@ -114,11 +114,12 @@
 		</center>
 	</div>
 </section>
-<h1>Thanks laa Aparom sollugaa namba...<span style="color: red;">&#9829;
-</span></h1>
+<p style="font-size: 15px;">Thanks laa Aparom sollugaa namba...<span style="color: red;">&#9829;
+</span></p>
 
 
 <form action="" method="post">
+	<p style="font-size: 20px;">NOTE: Your information are stored securely with hash system. Dont worry :)</p>
 	<input type="text" name="name" placeholder="Enter your name" required>
 	<h1>Like this page: <button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
 	
