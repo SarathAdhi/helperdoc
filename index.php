@@ -133,9 +133,16 @@
 		
 		$count = 0;
 
-		$count = mysqli_num_rows($db, "SELECT * FROM `user_cheatnow` WHERE `name` = '$_POST[name]' AND `ip` = '$ip';");
+		$count = mysqli_query($db, "SELECT * FROM `user_cheatnow` WHERE `name` = '$_POST[name]' AND `ip` = '$ip';");
 
-		
+		while($r = mysqli_fetch_assoc($res)) /*checking if the name already exist */
+        {
+            if($r['name'] == $_POST['name'])
+            {
+                $count=$count+1;
+            }
+            
+        }
 		if($count != 0)
 		{
 			?>
