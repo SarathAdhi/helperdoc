@@ -121,6 +121,18 @@
 </span></button>
 </form>
 </body>
+
+<?php
+	include "connection.php";
+	if(isset($_POST['submit']))
+	{
+		$c = ($db, "SELECT `like` FROM `like_cheatnow`;");
+		echo $c;
+	}
+?>
+
+
+
 <!-- 
 mod 1 perfomance of processors
 mod 2 fully numericals thaan....
