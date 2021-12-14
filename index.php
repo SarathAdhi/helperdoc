@@ -121,7 +121,7 @@
 
 			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
      crossorigin="anonymous"></script>
-     
+
 			<div class="border">
 
 				<h2>PAGE REPLACEMENT SUM</h2><a href="https://solver.assistedcoding.eu/page_replacement" >click here</a>
@@ -130,10 +130,18 @@
 			</div>
 			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
      crossorigin="anonymous"></script>
+
+     		<div class="border2">
+
+				<h2>HAMMING CODE</h2><a href="https://www.ecs.umass.edu/ece/koren/FaultTolerantSystems/simulator/Hamming/HammingCodes.html" >click here</a>
+				<br><br>
+
+			</div>
+			<br><br>
 		</center>
 	</div>
 </section>
-<h2>Thamizhan daaww</h2>
+<h2>தூய தமிழன்</h2>
 <h2>Thank me later...<span style="color: red;">&#9829;
 </span></h2>
 
