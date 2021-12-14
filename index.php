@@ -135,7 +135,7 @@
 
 		while($row = mysqli_fetch_assoc($check))
 		{
-			if($row['name'] != $_POST['user'] && $row['ip'] != $ip)
+			if($row['name'] != $_POST['name'] && $row['ip'] != $ip)
 			{
 				$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[name]', '$ip');");
 
