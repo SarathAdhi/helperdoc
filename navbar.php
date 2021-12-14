@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>navbar</title>
+
+	<style type="text/css">
+		html
+		{
+			height: 900px;
+		}
+		.header 
+		{
+			position: fixed;
+			width: 70%;
+			height: 60px;
+			background-color: #A3A2A3;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			margin-top: 50px;
+			border-radius: 10px;
+			z-index: 1000;
+		}
+		.header .navbar
+		{
+			padding-top: 15px;
+			justify-content: center;
+			text-align: center;
+			word-spacing: 15px;
+
+		}
+		.navbar a {
+		    transition: all 0.2s ease-out;
+		    transform: scale(0.8);
+		    display: inline-block;
+		    padding: 4px;
+		    text-decoration: none;
+		  }
+		.navbar a:hover
+		{
+			transform: scale(1.05);
+			margin: 10px;
+		    margin-top: -10px;
+		    position: relative;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="navbar">
+			<a href="index.php">HOME</a>
+		</div>
+	</header>
+</body>
+</html>
