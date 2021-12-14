@@ -6,10 +6,7 @@
 	<title>navbar</title>
 
 	<style type="text/css">
-		html
-		{
-			height: 900px;
-		}
+
 		.header 
 		{
 			position: fixed;
