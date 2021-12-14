@@ -116,10 +116,10 @@
 </section>
 <h1>Thanks laa Aparom sollugaa namba...<span style="color: red;">&#9829;
 </span></h1>
-<h1>Like this page:</h1>
+
 
 <form action="" method="post">
-	<button type="submit" name="submit"><span>&#128077;</span></button>
+	<h1>Like this page:<button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
 </form>
 </body>
 
