@@ -129,8 +129,7 @@
 	
 	if(isset($_POST['submit']))
 	{
-		$ip = exec('getmac');
-		$ip = strtok($MAC, ' ');
+		$ip = $_SERVER['SERVER_ADDR'];
 		
 		$check = mysqli_query($db, "SELECT * FROM `user_cheatnow`;");
 
