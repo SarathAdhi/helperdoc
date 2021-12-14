@@ -22,7 +22,7 @@
 		<center>
 			<h2>NON RESTORING DIVISION</h2><a href="nondivi.php">click here</a>
 			<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/">click here</a>
-			<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php">click here</a>
+			<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point">click here</a>
 		</center>
 	</div>
 </section>
