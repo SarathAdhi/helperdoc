@@ -7,9 +7,10 @@
 	$sql3 = mysqli_query($db, "SELECT `count` FROM `people_cheatnow` WHERE `ip` = '$ip1';");
 	$check1 = mysqli_fetch_assoc($sql3);
 
-	if($check1 != 0)
+	if($check1['count'] != 0)
 	{
 		$sql4 = mysqli_query($db, "INSERT INTO `people_cheatnow` VALUES ('$ip1', 1);");
+
 	}
 	else
 	{
