@@ -113,7 +113,8 @@
 		</center>
 	</div>
 </section>
-
+<h1>Thanks laa Aparom sollugaa namba...<span style="color: red;">&#9829;
+</span></h1>
 </body>
 <!-- 
 mod 1 perfomance of processors
