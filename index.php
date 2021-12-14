@@ -167,6 +167,15 @@
 			</div>
 
 			<br><br>
+
+			<div class="border1">
+
+				<h2>FLOWCHART FOR ADDITION & SUBTRACTION</h2><a href="3.jpg" target="_blank">View image</a>
+				<br><br>
+
+			</div>
+
+			<br><br>
 			
 		</center>
 	</div>
