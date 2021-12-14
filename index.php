@@ -132,7 +132,7 @@
 	{
 		$sql = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 		$res = mysqli_fetch_assoc($sql);
-		echo '<h1>'; echo $res; echo '</h1>';
+		echo '<h1>'; echo $res['like']; echo '</h1>';
 	}
 ?>
 
