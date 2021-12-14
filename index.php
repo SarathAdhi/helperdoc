@@ -136,8 +136,17 @@
 
 		while($row = mysqli_fetch_assoc($check))
 		{
-			if($row['name'] != $_POST['name'] && $row['ip'] != $ip)
+			if($row['name'] == $_POST['name'] && $row['ip'] == $ip)
 			{
+				?>
+				<script type="text/javascript">
+					alert("you have already liked our website. THANK YOU");
+				</script>
+				<?php
+			}
+			else
+			{
+				
 				$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[name]', '$ip');");
 
 				$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
@@ -146,14 +155,6 @@
 				$c = $res['like'] + 1;
 
 				$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
-			}
-			else
-			{
-				?>
-				<script type="text/javascript">
-					alert("you have already liked our website. THANK YOU");
-				</script>
-				<?php
 			}
 		}
 
