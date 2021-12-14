@@ -113,10 +113,11 @@
 			</div>
 
 			<br><br>
-			
+
 			<div class="border2">
 			
 				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" >click here</a>
+				<br>
 				<a href="4.png" target="_blank">View Flowchart</a>
 				<br><br>
 
