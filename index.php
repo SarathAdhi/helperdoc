@@ -131,10 +131,12 @@
 	{
 		$ip = $_SERVER['SERVER_ADDR'];
 		
-		$check = mysqli_query($db, "SELECT * FROM `user_cheatnow` WHERE `name` = '$_POST[name]' AND `ip` = '$ip';");
+		$count = 0;
+
+		$count = mysqli_query($db, "SELECT * FROM `user_cheatnow` WHERE `name` = '$_POST[name]' AND `ip` = '$ip';");
 
 		
-		if($count == 0)
+		if($count != 0)
 		{
 			?>
 				<script type="text/javascript">
