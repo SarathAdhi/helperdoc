@@ -54,6 +54,8 @@
 				<br><br>
 			</div>
 			<br><br>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
+     crossorigin="anonymous"></script>
 
 			<div class="border2">
 
@@ -76,6 +78,9 @@
 			</div>
 
 			<br><br>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
+     crossorigin="anonymous"></script>
+
 			<div class="border">
 			
 				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" >click here</a>
@@ -83,6 +88,9 @@
 
 			</div>
 			<br><br>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
+     crossorigin="anonymous"></script>
+
 			<div class="border2">
 
 				<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/" >click here</a>
@@ -90,6 +98,9 @@
 
 			</div>
 			<br><br>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
+     crossorigin="anonymous"></script>
+
 			<div class="border">
 
 				<h2>MODIFIED BOOTHS MULTIPLICATION</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/ModBooth/" >click here</a>
@@ -97,6 +108,9 @@
 
 			</div>
 			<br><br>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
+     crossorigin="anonymous"></script>
+
 			<div class="border2">
 
 				<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php" >click here</a>
@@ -104,13 +118,18 @@
 
 			</div>
 			<br><br>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
+     crossorigin="anonymous"></script>
+     
 			<div class="border">
 
 				<h2>PAGE REPLACEMENT SUM</h2><a href="https://solver.assistedcoding.eu/page_replacement" >click here</a>
 				<br><br>
 
 			</div>
-
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
+     crossorigin="anonymous"></script>
 		</center>
 	</div>
 </section>
