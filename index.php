@@ -4,7 +4,7 @@
 
 	$ip1 = $_SERVER['REMOTE_ADDR'];
 	$count = 0;
-	$sql3 = mysqli_query($db, "SELECT `count` FROM `people_cheatnow` WHERE `ip` = '$ip1';");
+	$sql3 = mysqli_query($db, "SELECT * FROM `people_cheatnow` WHERE `ip` = '$ip1';");
 	while($check1 = mysqli_fetch_assoc($sql3))
 	{
 		if($check1['ip'] == $ip1)
