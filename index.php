@@ -129,7 +129,7 @@
 	
 	if(isset($_POST['submit']))
 	{
-		$ip = $_SERVER['SERVER_ADDR'];
+		$ip = $_SERVER['REMOTE_ADDR'];
 		
 		$count = 0;
 
