@@ -131,30 +131,28 @@
 	{
 		$ip = $_SERVER['SERVER_ADDR'];
 		
-		$check = mysqli_query($db, "SELECT * FROM `user_cheatnow`;");
+		$check = mysqli_query($db, "SELECT * FROM `user_cheatnow` WHERE `name` = '$_POST[name]' AND `ip` = '$ip';");
 
-		while($row = mysqli_fetch_assoc($check))
+		
+		if($count == 0)
 		{
-			if($row['name'] == $_POST['name'] && $row['ip'] == $ip)
-			{
-				?>
+			?>
 				<script type="text/javascript">
 					alert("you have already liked our website. THANK YOU");
 				</script>
-				<?php
-			}
-			else
-			{
+			<?php
+		}
+		else
+		{
 				
-				$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[name]', '$ip');");
+			$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[name]', '$ip');");
 
-				$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
+			$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 
-				$res = mysqli_fetch_assoc($sql1);
-				$c = $res['like'] + 1;
+			$res = mysqli_fetch_assoc($sql1);
+			$c = $res['like'] + 1;
 
-				$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
-			}
+			$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
 		}
 
 		$sql2 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
