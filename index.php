@@ -134,11 +134,13 @@
 
 		$res = mysqli_fetch_assoc($sql);
 		$c = $res['like'] + 1;
+
 		$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
 
-		$res2 = mysqli_fetch_assoc($sql2);
+		$res2 = mysqli_fetch_assoc($sql);
 
-		echo '<h1>'; echo $res2['like']; echo '</h1>';
+		echo '<h1>Number of peoples who likes this page including you: '; echo '<span style="color: red;">&#9829;
+</span>'; echo $res2['like']; echo '</h1>';
 	}
 ?>
 
