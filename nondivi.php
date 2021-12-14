@@ -34,7 +34,7 @@
 
 			<h2>IF NUMBERS ARE GIVEN IN BINARY CONVERT TO DECIMAL. to convert <a href="https://www.rapidtables.com/convert/number/binary-to-decimal.html" target="__blank">click here</a></h2>
 
-
+			<h2>Ques: Sketch the pseudo code for non-restoring division and check the working with the given number 45 ÷ 8 and verify the result using pen and paper method.</h2>
 			<img src="1.png">
 			<br><br>
 			<iframe src="https://www.jdoodle.com/embed/v0/4dB9?outputonly=1" height="1500px" width="100%" ></iframe>
