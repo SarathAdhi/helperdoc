@@ -119,7 +119,7 @@
 
 
 <form action="" method="post">
-	<p style="font-size: 20px;">NOTE: Your information are stored securely with hash system. Dont worry :)</p>
+	<h2>NOTE: Your information are stored securely with hash system. Dont worry :)</h2>
 	<input type="text" name="name" placeholder="Enter your name" required>
 	<h1>Like this page: <button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
 	
