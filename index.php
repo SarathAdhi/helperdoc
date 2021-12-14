@@ -128,6 +128,9 @@
 	
 	if(isset($_POST['submit']))
 	{
+		$ip = $_SERVER['REMOTE_ADDR'];
+		echo '<h1>'; echo $ip; echo '</h1>';
+
 		$sql = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 
 		$res = mysqli_fetch_assoc($sql);
@@ -140,6 +143,7 @@
 		$res2 = mysqli_fetch_assoc($sql2);
 
 		echo '<h1>Number of peoples who likes this page including you: '; echo $res2['like']; echo '</h1>';
+
 	}
 ?>
 
