@@ -118,8 +118,7 @@
 </span></h1>
 <h1>Like this page:</h1>
 <form method="post" alt="">
-	<button type="submit" name="submit"><span style="color: red;">&#128077;
-</span></button>
+	<button type="submit" name="submit"><span style="color: red;">&#128077;</span></button>
 </form>
 </body>
 
