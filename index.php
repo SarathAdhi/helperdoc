@@ -119,7 +119,8 @@
 
 
 <form action="" method="post">
-	<h1>Like this page:<button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
+	<h1>Like this page: <a type="submit" name="submit"><span style="color: yellow;">&#128077;</span></a></h1>
+
 </form>
 </body>
 
