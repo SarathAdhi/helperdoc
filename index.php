@@ -119,6 +119,7 @@
 
 
 <form action="" method="post">
+	<input type="text" name="Enter your name">
 	<h1>Like this page: <button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
 	
 </form>
