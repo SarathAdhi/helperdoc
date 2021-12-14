@@ -53,9 +53,10 @@
 				<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" >click here</a>
 				<br><br>
 			</div>
+
 			<br><br>
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
-     crossorigin="anonymous"></script>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143" crossorigin="anonymous"></script>
 
 			<div class="border2">
 
@@ -78,8 +79,8 @@
 			</div>
 
 			<br><br>
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
-     crossorigin="anonymous"></script>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143" crossorigin="anonymous"></script>
 
 			<div class="border">
 			
@@ -87,9 +88,10 @@
 				<br><br>
 
 			</div>
+
 			<br><br>
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
-     crossorigin="anonymous"></script>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143" crossorigin="anonymous"></script>
 
 			<div class="border2">
 
@@ -97,9 +99,10 @@
 				<br><br>
 
 			</div>
+
 			<br><br>
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
-     crossorigin="anonymous"></script>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143" crossorigin="anonymous"></script>
 
 			<div class="border">
 
@@ -107,9 +110,10 @@
 				<br><br>
 
 			</div>
+
 			<br><br>
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
-     crossorigin="anonymous"></script>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143" crossorigin="anonymous"></script>
 
 			<div class="border2">
 
@@ -117,10 +121,10 @@
 				<br><br>
 
 			</div>
+
 			<br><br>
 
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
-     crossorigin="anonymous"></script>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143" crossorigin="anonymous"></script>
 
 			<div class="border">
 
@@ -128,8 +132,10 @@
 				<br><br>
 
 			</div>
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143"
-     crossorigin="anonymous"></script>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7928001530877143" crossorigin="anonymous"></script>
+
+     		<br><br>
 
      		<div class="border2">
 
@@ -137,10 +143,13 @@
 				<br><br>
 
 			</div>
+
 			<br><br>
+			
 		</center>
 	</div>
 </section>
+
 <h2>தூய தமிழன்</h2>
 <h2>Thank me later...<span style="color: red;">&#9829;
 </span></h2>
