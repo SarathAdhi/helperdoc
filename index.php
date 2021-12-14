@@ -128,7 +128,7 @@
 	if(isset($_POST['submit']))
 	{
 		$c = mysqli_query($db, "SELECT * FROM `like_cheatnow`;");
-		echo '<h1>'$c'</h1>';
+		echo '<h1>'; echo $c; echo '</h1>';
 	}
 ?>
 
