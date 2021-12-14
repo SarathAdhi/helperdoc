@@ -23,6 +23,7 @@
 			<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/">click here</a>
 			<h2>NON RESTORING DIVISION</h2><a href="nondivi.php">click here</a>
 			<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/">click here</a>
+			<h2>MODIFIED BOOTHS MULTIPLICATION</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/ModBooth/">click here</a>
 			<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php">click here</a>
 			<h2>PAGE REPLACEMENT SUM</h2><a href="https://solver.assistedcoding.eu/page_replacement">click here</a>
 		</center>
