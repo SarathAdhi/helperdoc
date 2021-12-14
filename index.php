@@ -50,7 +50,7 @@
 
 			<div class="border">
 
-				<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" target="__blank">click here</a>
+				<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" >click here</a>
 				<br><br>
 			</div>
 			<br><br>
@@ -70,7 +70,7 @@
 				<h3>Square Root</h3>
 				<p>Restoring , Non-Restoring , SRT Radix-2 , SRT Radix-4 , By convergence</p>
 
-				<h2>ALL IN ONE CALCULATOR</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/" target="__blank">click here</a>
+				<h2>ALL IN ONE CALCULATOR</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/" >click here</a>
 				<br><br>
 
 			</div>
@@ -78,35 +78,35 @@
 			<br><br>
 			<div class="border">
 			
-				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" target="__blank">click here</a>
+				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" >click here</a>
 				<br><br>
 
 			</div>
 			<br><br>
 			<div class="border2">
 
-				<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/" target="__blank">click here</a>
+				<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/" >click here</a>
 				<br><br>
 
 			</div>
 			<br><br>
 			<div class="border">
 
-				<h2>MODIFIED BOOTHS MULTIPLICATION</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/ModBooth/" target="__blank">click here</a>
+				<h2>MODIFIED BOOTHS MULTIPLICATION</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/ModBooth/" >click here</a>
 				<br><br>
 
 			</div>
 			<br><br>
 			<div class="border2">
 
-				<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php" target="__blank">click here</a>
+				<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php" >click here</a>
 				<br><br>
 
 			</div>
 			<br><br>
 			<div class="border">
 
-				<h2>PAGE REPLACEMENT SUM</h2><a href="https://solver.assistedcoding.eu/page_replacement" target="__blank">click here</a>
+				<h2>PAGE REPLACEMENT SUM</h2><a href="https://solver.assistedcoding.eu/page_replacement" >click here</a>
 				<br><br>
 
 			</div>
