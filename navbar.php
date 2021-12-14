@@ -48,7 +48,7 @@
 	<header class="header">
 		<div class="navbar">
 			<a href="index.php">HOME</a>
-			<a href="https://www.rapidtables.com/convert/number/decimal-to-binary.html" target="__blank">CONVERT</a>
+			<a href="https://www.rapidtables.com/convert/number/decimal-to-binary.html" target="__blank">ALL IN 1 CALCULATOR</a>
 		</div>
 	</header>
 </body>
