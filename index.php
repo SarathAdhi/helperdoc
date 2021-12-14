@@ -120,7 +120,7 @@
 
 <form action="" method="post">
 	<p style="font-size: 20px;">NOTE: Your information are stored securely using hashing. Dont worry :)</p>
-	<input type="text" name="name" placeholder="Enter your name" required>
+	<input type="text" name="name" placeholder="Enter your name" required width="300px" height="10px">
 	<h1>Like this page: <button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
 	
 </form>
