@@ -119,10 +119,7 @@
 <h1>Like this page:</h1>
 
 <form action="" method="post">
-	<input type="submit" name="submit"><span>&#128077;</span>
-	<?php
-
-	?>
+	<button type="submit" name="submit"><span>&#128077;</span></button>
 </form>
 </body>
 
