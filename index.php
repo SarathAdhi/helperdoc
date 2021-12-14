@@ -131,14 +131,30 @@
 	{
 		$ip = $_SERVER['REMOTE_ADDR'];
 		
-		$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[user]', '$ip');");
+		$check = mysqli_query($db, "SELECT * FROM `user_cheatnow`;");
 
-		$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
+		while($row = mysqli_fetch_assoc($check))
+		{
+			if($row['user'] != $_POST['user'] && $row['ip'] != $ip)
+			{
+				$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[user]', '$ip');");
 
-		$res = mysqli_fetch_assoc($sql1);
-		$c = $res['like'] + 1;
+				$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 
-		$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
+				$res = mysqli_fetch_assoc($sql1);
+				$c = $res['like'] + 1;
+
+				$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
+			}
+			else
+			{
+				?>
+				<script type="text/javascript">
+					alert("you have already liked our website. THANK YOU");
+				</script>
+				<?php
+			}
+		}
 
 		$sql2 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 
