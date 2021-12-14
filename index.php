@@ -148,7 +148,7 @@
 		{
 			?>
 				<script type="text/javascript">
-					alert("you have already liked our website. THANK YOU");
+					alert("Username already exist or You have already liked our website. THANK YOU");
 				</script>
 			<?php
 		}
