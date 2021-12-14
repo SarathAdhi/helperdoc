@@ -137,10 +137,11 @@
 
 		$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
 
-		$res2 = mysqli_fetch_assoc($sql);
+		$sql2 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
 
-		echo '<h1>Number of peoples who likes this page including you: '; echo '<span style="color: red;">&#9829;
-</span>'; echo $res2['like']; echo '</h1>';
+		$res2 = mysqli_fetch_assoc($sql2);
+
+		echo '<h1>Number of peoples who likes this page including you: '; echo $res2['like']; echo '</h1>';
 	}
 ?>
 
