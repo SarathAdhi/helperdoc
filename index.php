@@ -22,7 +22,7 @@
 		<center>
 			<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" target="__blank">click here</a>
 			<br>
-			<img src="2.png">
+			<img src="2.png" height="50%" width="50%">
 			<h2>ALL MODULE-2 CALCULATOR</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/" target="__blank">click here</a>
 			<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" target="__blank">click here</a>
 			<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/" target="__blank">click here</a>
