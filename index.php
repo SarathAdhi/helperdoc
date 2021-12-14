@@ -117,8 +117,9 @@
 <h1>Thanks laa Aparom sollugaa namba...<span style="color: red;">&#9829;
 </span></h1>
 <h1>Like this page:</h1>
+
 <form action="" method="post">
-	<button type="submit" name="submit"><span style="color: red;">&#128077;</span></button>
+	<input type="submit" name="submit"><span>&#128077;</span>
 </form>
 </body>
 
