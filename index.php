@@ -131,7 +131,7 @@
 	if(isset($_POST['submit']))
 	{
 		$sql = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
-		$res = mtsqli_fetch_assoc($c)
+		$res = mtsqli_fetch_assoc($sql)
 		echo '<h1>'; echo $res; echo '</h1>';
 	}
 ?>
