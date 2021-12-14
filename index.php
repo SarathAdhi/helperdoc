@@ -1,6 +1,21 @@
 <?php
 	include "navbar.php";
 	include "connection.php";
+
+	$ip1 = $_SERVER['REMOTE_ADDR'];
+	$count = 0;
+	$sql3 = mysqli_query($db, "SELECT `count` FROM `people_cheatnow` WHERE `ip` = '$ip1';");
+	$check1 = mysqli_fetch_assoc($sql3);
+
+	if($check1 != 0)
+	{
+		$sql4 = mysqli_query($db, "INSERT INTO `people_cheatnow` VALUES ('$ip1', 1);");
+	}
+	else
+	{
+		$sql5 = mysqli_query($db, "UPDATE `people_cheatnow` SET `count` = $;");
+	}
+
 ?>
 <!DOCTYPE html>
 <html>
