@@ -114,7 +114,8 @@
 		</center>
 	</div>
 </section>
-<h2>Thanks laa Aparom sollugaa namba...<span style="color: red;">&#9829;
+<h2>Thamizhan daaww</h2>
+<h2>Thank me later...<span style="color: red;">&#9829;
 </span></h2>
 
 
