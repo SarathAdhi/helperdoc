@@ -5,7 +5,10 @@
 	$ip1 = $_SERVER['REMOTE_ADDR'];
 	$count = 0;
 	$sql3 = mysqli_query($db, "SELECT `count` FROM `people_cheatnow` WHERE `ip` = '$ip1';");
-	$check1 = mysqli_fetch_assoc($sql3);
+	while($check1 = mysqli_fetch_assoc($sql3))
+	{
+		$count = $check1['count'];
+	}
 
 	if($count == 0)
 	{
@@ -14,7 +17,7 @@
 	}
 	else
 	{
-		$sql5 = mysqli_query($db, "UPDATE `people_cheatnow` SET `count` = $;");
+		$sql5 = mysqli_query($db, "UPDATE `people_cheatnow` SET `count` = $count+1;");
 	}
 
 ?>
