@@ -167,6 +167,12 @@
             document.getElementById(x).style.display = "none";
             document.getElementById(y).style.display = "none";
             document.getElementById(x).style.display = "block";
+            $(document).ready(function() 
+            {
+              $("html, body").animate({
+                scrollTop: $('html, body').get(0).scrollHeight
+              }, 0.8);
+            });
 
         }
 
