@@ -183,7 +183,9 @@ include "navbar.php";
     elseif(isset($_POST['register']))
     {
         $password = $_POST['password'];
-        echo $password;
+        $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
+
+        echo $hash;
     }
 ?>
 
