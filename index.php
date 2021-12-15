@@ -179,7 +179,24 @@
 <?php
     if(isset($_POST['login']))
     {
-
+        $sql = mysqli_query($db, "SELECT `password` FROM `user_hd` WHERE `username` = '$_POST[username]');");
+        $row = mysqli_fetch_assoc($sql);
+        if(password_verify($password, $row['password']))
+        {
+            ?>
+            <script type="text/javascript">
+                alert("Password correct");
+            </script>
+            <?php
+        }
+        else
+        {
+            ?>
+            <script type="text/javascript">
+                alert("Password wrong");
+            </script>
+            <?php
+        }
     }
     elseif(isset($_POST['register']))
     {
