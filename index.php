@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<section class="container">
+<section class="home">
 
 	<h1>Your information are stored securely using hashing. Dont worry :)</h1>
 	<br>
