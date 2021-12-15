@@ -8,21 +8,24 @@ include "navbar.php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style type="text/css">
-        body {
+        body
+        {
             background-color: #EAEAFC;
             font-family: Consolas !important;
         }
 
-        h2,
-        p {
+        h2,p
+        {
             font-family: Consolas !important;
         }
 
-        * {
+        *
+        {
             box-sizing: border-box;
         }
 
-        .open-button {
+        .open-button
+        {
             background-color: #555;
             color: white;
             padding: 16px 20px;
@@ -33,7 +36,8 @@ include "navbar.php";
         }
 
 
-        .form-popup {
+        .form-popup
+        {
             display: none;
             position: relative;
             border: 3px solid #0A0162;
@@ -42,8 +46,8 @@ include "navbar.php";
             border-radius: 10px;
         }
 
-        /* Add styles to the form container */
-        .form-container {
+        .form-container
+        {
             width: 99%;
             padding: 30px;
             background-color: white;
@@ -51,15 +55,16 @@ include "navbar.php";
 
         }
 
-        .form-popup span {
+        .form-popup span
+        {
             position: absolute;
             margin-top: -25px;
             font-size: 30px;
             color: #0A0162;
         }
 
-        /* Full-width input fields */
-        .form-container input {
+        .form-container input
+        {
             width: 100%;
             padding: 15px;
             border: none;
@@ -68,8 +73,9 @@ include "navbar.php";
         }
 
 
-        /* Set a style for the submit/login button */
-        .form-container .btn {
+
+        .form-container .btn
+        {
             background-color: #04AA6D;
             color: white;
             padding: 16px 20px;
@@ -81,14 +87,16 @@ include "navbar.php";
             border-radius: 10px;
         }
 
-        /* Add a red background color to the cancel button */
-        .form-container .cancel {
+
+        .form-container .cancel
+        {
             background-color: red;
         }
 
-        /* Add some hover effects to buttons */
+
         .form-container .btn:hover,
-        .open-button:hover {
+        .open-button:hover
+        {
             opacity: 1;
         }
     </style>
