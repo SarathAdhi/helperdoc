@@ -67,10 +67,10 @@
 		              		<input type="password" name="password" class="form-control" placeholder="Password" />
 		              		<br>
 		              		<input type="password" name="password2" class="form-control" placeholder="Re-Enter your Password" />
+		              		<br>
+		              		<button class="btn btn-primary btn-block" type="submit" name="signupbutton">Create an account</button>
 		            	</div>
-		            	<div class="modal-footer">
-				          	<button class="btn btn-primary btn-block" type="submit" name="signupbutton">Create an account</button>
-				        </div>
+				          	
 		          	</form>
 		        </div>
       		</div>
