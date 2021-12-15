@@ -1,6 +1,5 @@
 <?php
 	include "navbar.php";
-	include "connection.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,7 +7,7 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>HOME</title>
+	<title>ADMIN PAGE</title>
 	<style type="text/css">
 		.content
 		{
