@@ -22,7 +22,7 @@
 		}
 		.header .navbar
 		{
-			padding-top: 15px;
+			padding-top: 10px;
 			justify-content: center;
 			text-align: center;
 			word-spacing: 15px;
@@ -36,7 +36,7 @@
 		    text-decoration: none;
 		    color: white;
 		    font-weight: bold;
-		    font-size: 30px;
+		    font-size: 25px;
 		  }
 		.navbar a:hover
 		{
