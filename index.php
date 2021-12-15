@@ -177,6 +177,15 @@
 			</div>
 
 			<br><br>
+
+			<div class="border2">
+
+				<h2>FLOATING POINT MULTIPLICATION</h2><a href="image/6.jpg" target="_blank">view flowchart</a>
+				<br><br>
+
+			</div>
+
+			<br><br>
 			
 		</center>
 	</div>
