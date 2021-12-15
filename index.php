@@ -167,10 +167,7 @@
             document.getElementById(x).style.display = "none";
             document.getElementById(y).style.display = "none";
             document.getElementById(x).style.display = "block";
-
-            $("html, body").animate({
-                scrollTop: $('html, body').get(0).scrollHeight
-              }, 2);
+            window.scrollTo(0,document.body.scrollHeight);
         }
 
         function closeForm(x, y) {
