@@ -1,138 +1,53 @@
-<?php
-	include "navbar.php";
-	include "connection.php";
-
-	$count = 0;
-	$sql3 = mysqli_query($db, "SELECT * FROM `people_cheatnow`;");
-	$check1 = mysqli_fetch_assoc($sql3);
-
-	$count = $check1['count'] + 1;
-
-	$sql5 = mysqli_query($db, "UPDATE `people_cheatnow` SET `count` = $count;");
-
-
-?>
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
+  	<meta charset="UTF-8">
+  	<title>HOME</title>
+  	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>HOME</title>
-	<style type="text/css">
-		.content
-		{
-
+  	<style type="text/css">
+  		#popUpWindow
+  		{
+		  	//background: lightblue; 
 		}
-		.content .border
-		{
-			border: 5px solid red;
-		}
-		.content .border2
-		{
-			border: 5px solid blue;
-		}
-		.scroll 
-		{
-			position: fixed;
-			top: 90%;
-			right: 0;
-			text-decoration: none;
-			background-color: lightgrey;
-			width: 30px;
-		}
-		.scroll span
-		{
-			font-size: 30px;
-			color: black;
-		}
-
-	</style>
+  	</style>
 </head>
 <body>
 
-<section>
+<div class="container">
 
-	<a class="scroll" href="#content"><span>&#11165;</span></a>
+	<h1>Your information are stored securely using hashing. Dont worry :)</h1>
+	<br>
+	<h3>Log In or Signup</h3>
+  	<button type='button' class="btn btn-success" data-toggle="modal" data-target="#popUpWindow">Login</button>
+  
+  	<div class="modal fade" id="popUpWindow">
+    	<div class="modal-dialog">
+      		<div class="modal-content">
+        		<div class="modal-header">
+		          	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		          	<h3 class="modal-title">Login Form</h3>
+		        </div>
+		        <div class="modal-header">
+		          	<form action="" method="post">">
+		            	<div class="form-group">
+		              		<input type="email" name="email" class="form-control" placeholder="Enter your VIT-email"/>
+		              		<input type="password" name="password" class="form-control" placeholder="Password" />
+		            	</div>
+		          	</form>
+		        </div>
+		        <div class="modal-footer">
+		          	<button class="btn btn-primary btn-block">Log In</button>
+		        </div>
+        
+      		</div>
+    	</div>
+  	</div>
+  
+</div>
 
-	<div class="content" id="content">
-		<a href="cao.php">CAO</a>
-	</div>
-</section>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 
-<h2>தூய தமிழன்</h2>
-<h2>Thank me later...<span style="color: red;">&#9829;
-</span></h2>
-
-
-<form action="" method="post">
-	<p style="font-size: 20px;">NOTE: Your information are stored securely using hashing. Dont worry :)</p>
-	<input type="text" name="name" placeholder="Enter your name" required width="300px" height="10px">
-	<h1>Like this page: <button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
-	
-</form>
 </body>
-
-<?php
-	
-	if(isset($_POST['submit']))
-	{
-		$ip = $_SERVER['REMOTE_ADDR'];
-		
-		$count = 0;
-
-		$check = mysqli_query($db, "SELECT * FROM `user_cheatnow` WHERE `name` = '$_POST[name]' AND `ip` = '$ip';");
-
-		while($r = mysqli_fetch_assoc($check)) /*checking if the name already exist */
-        {
-            if($r['name'] == $_POST['name'])
-            {
-                $count=$count+1;
-            }
-            
-        }
-		if($count != 0)
-		{
-			?>
-				<script type="text/javascript">
-					alert("Username already exist or You have already liked our website. THANK YOU");
-				</script>
-			<?php
-		}
-		else
-		{
-				
-			$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[name]', '$ip');");
-
-			$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
-
-			$res = mysqli_fetch_assoc($sql1);
-			$c = $res['like'] + 1;
-
-			$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
-
-			?>
-				<script type="text/javascript">
-					alert("THANK YOU FOR LOVE :D");
-				</script>
-			<?php
-		}
-
-		$sql2 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
-
-		$res2 = mysqli_fetch_assoc($sql2);
-
-		echo '<h1>Number of peoples who likes this page including you: '; echo $res2['like']; echo '</h1>';
-
-	}
-?>
-
-
-
-<!-- 
-mod 1 perfomance of processors
-mod 2 fully numericals thaan....
-mod 4 memory allocation(fifo,optimal page replacement ,etc....)
-mod 6 raid
--->
 </html>
