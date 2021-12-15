@@ -51,7 +51,7 @@
 
   	<div class="modal fade" id="signup">
 
-      		<div class="modal-content">
+
 
 
 
@@ -73,7 +73,6 @@
 		          	</form>
 
 
-      		</div>
 
   	</div>
 </div>
