@@ -6,10 +6,8 @@
 	
 
 	<style type="text/css">
-		html
-		{
-			scroll-padding-top: 5rem;
-            scroll-behavior: smooth;
+		::-webkit-scrollbar {
+		  width: 10px;
 		}
 		.header 
 		{
