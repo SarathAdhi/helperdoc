@@ -250,6 +250,5 @@ mod 1 perfomance of processors
 mod 2 fully numericals thaan....
 mod 4 memory allocation(fifo,optimal page replacement ,etc....)
 mod 6 raid
-thats all ig..... 
 -->
 </html>
