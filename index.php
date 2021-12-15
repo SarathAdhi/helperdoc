@@ -119,6 +119,8 @@
 			<div class="border">
 
 				<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/" target="_blank">click here</a>
+				<br>
+				<a href="image/7.png" target="_blank">view flowchart</a>
 				<br><br>
 
 			</div>
@@ -180,7 +182,7 @@
 
 			<div class="border2">
 
-				<h2>FLOATING POINT MULTIPLICATION</h2><a href="image/6.jpg" target="_blank">view flowchart</a>
+				<h2>FLOATING POINT MULTIPLICATION</h2><a href="image/6.png" target="_blank">view flowchart</a>
 				<br><br>
 
 			</div>
