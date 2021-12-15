@@ -4,7 +4,7 @@
 
 	$count = 0;
 	$sql3 = mysqli_query($db, "SELECT * FROM `people_cheatnow`;");
-	$check1 = mysqli_fetch_assoc($sql3)
+	$check1 = mysqli_fetch_assoc($sql3);
 
 	$count = $check1['count'] + 1;
 
