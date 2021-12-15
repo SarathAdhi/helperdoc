@@ -14,7 +14,7 @@
 			
 			<p style="font-size: 20px;">password:</p>
 			<input type="password" name="password" placeholder="Enter password" required width="300px" height="10px">
-			<button type="submit" name="submit" style="width: 50px; height: 30px;"></button>
+			<button type="submit" name="submit" style="width: 50px; height: 30px;">Submit</button>
 
 		</form>
 
