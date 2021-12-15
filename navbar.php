@@ -72,7 +72,7 @@
 				if(isset($_SESSION['username']))
 				{
 				?>
-					<a href="logout.php" class="logout">Logout<i class="fa fa-sign-out"></i></a>
+					<a href="logout.php" class="logout" style="text-decoration: none;">Logout<i class="fa fa-sign-out"></i></a>
 				<?php
 				}
 			?>
