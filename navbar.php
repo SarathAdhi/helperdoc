@@ -32,7 +32,7 @@
 			border-radius: 10px;
 			z-index: 1000;
 		}
-		.header .navbar
+		.navbar
 		{
 			padding-top: 10px;
 			justify-content: center;
