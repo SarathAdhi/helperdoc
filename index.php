@@ -128,7 +128,7 @@
                     <label for="password"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="password" required>
                     <br><br>
-                    <button type="submit" class="btn" name="login">Login</button>
+                    <button type="submit" class="btn" name="loginsubmit">Login</button>
                     <br>
                     <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
                 </form>
@@ -177,13 +177,13 @@
 </body>
 
 <?php
-    if(isset($_POST['login']))
+    if(isset($_POST['loginsubmit']))
     {
         $password = $_POST['password'];
 
         $sql = mysqli_query($db, "SELECT `password` FROM `user_hd` WHERE `username` = '$_POST[username]');");
         $row = mysqli_fetch_assoc($sql);
-        
+
         if(password_verify($password, $row['password']))
         {
             ?>
