@@ -62,8 +62,8 @@
 	<header class="header">
 		<div class="navbar">
 			<a href="index.php">HOME</a>
+			<a href="index.php">COURSES</a>
 			<a href="https://www.rapidtables.com/convert/number/decimal-to-binary.html" target="__blank">CALCULATOR</a>
-			<a href="admin.php" target="_blank">ADMIN</a>
 		</div>
 	</header>
 </body>
