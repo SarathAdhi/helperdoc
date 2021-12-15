@@ -189,6 +189,7 @@ include "navbar.php";
         <script type="text/javascript">
             alert(<?php echo $hash; ?>);
         </script>
+        <?php
     }
 ?>
 
