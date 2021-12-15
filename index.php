@@ -1,17 +1,8 @@
 <?php
 	include "navbar.php";
 	include "connection.php";
-
-	$ip1 = $_SERVER['REMOTE_ADDR'];
+ 
 	$count = 0;
-	$sql3 = mysqli_query($db, "SELECT * FROM `people_cheatnow` WHERE `ip` = '$ip1';");
-	while($check1 = mysqli_fetch_assoc($sql3))
-	{
-		if($check1['ip'] == $ip1)
-		{
-			$count = $check1['count'] + 1;
-		}
-	}
 
 	if($count == 0)
 	{
@@ -74,6 +65,7 @@
 
 				<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" target="_blank">click here</a>
 				<br><br>
+
 			</div>
 
 			<br><br>
