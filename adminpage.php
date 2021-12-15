@@ -66,6 +66,15 @@
 
 			<br><br>
 
+			<div class="border2">
+
+				<h2>Pipelining</h2><a href="https://drive.google.com/file/d/1BOavnDB5KOcp4NesPPq1m7APPIR-8AjI/view?usp=sharing" target="_blank">click here</a>
+				<br><br>
+				
+			</div>
+
+			<br><br>
+
 		</center>
 	</div>
 </section>
