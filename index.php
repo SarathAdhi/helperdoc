@@ -185,7 +185,10 @@ include "navbar.php";
         $password = $_POST['username'];
         $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
 
-        echo $password;
+        ?>
+        <script type="text/javascript">
+            alert(<?php echo $hash; ?>);
+        </script>
     }
 ?>
 
