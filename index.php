@@ -44,9 +44,7 @@
 
 		        </div>
 		        <div class="modal-footer">
-
 		          	<button class="btn btn-primary btn-block">Login</button>
-
 		        </div>
 
       		</div>
@@ -76,9 +74,7 @@
 
 		        </div>
 		        <div class="modal-footer">
-
 		          	<button class="btn btn-primary btn-block">Create an account</button>
-
 		        </div>
 
       		</div>
