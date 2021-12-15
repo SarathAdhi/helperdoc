@@ -32,6 +32,7 @@
 		          	<form action="" method="post">
 		            	<div class="form-group">
 		              		<input type="email" name="email" class="form-control" placeholder="Enter your VIT-email"/>
+		              		<br>
 		              		<input type="password" name="password" class="form-control" placeholder="Password" />
 		            	</div>
 		          	</form>
