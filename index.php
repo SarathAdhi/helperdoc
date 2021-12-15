@@ -167,7 +167,8 @@ include "navbar.php";
             document.getElementById(y).style.display = "none";
         }
     </script>
-
 </body>
+
+<?php
 
 </html>
