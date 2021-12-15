@@ -49,6 +49,24 @@
 
 			<div class="border">
 
+				<h2>RAID</h2><a href="https://drive.google.com/file/d/1emvWTQ2lvXYsMD-5UD4dYtmiR2bnzJLy/view?usp=sharing" target="_blank">click here</a>
+				<br><br>
+				
+			</div>
+
+			<br><br>
+			
+			<div class="border2">
+
+				<h2>Pipelining</h2><a href="https://drive.google.com/file/d/1BOavnDB5KOcp4NesPPq1m7APPIR-8AjI/view?usp=sharing" target="_blank">click here</a>
+				<br><br>
+				
+			</div>
+
+			<br><br>
+
+			<div class="border">
+
 				<h2>Flynn’s Taxonomy & Classification</h2>
 				Defination: <a href="image/ft1.png" target="_blank">Flynn’s Taxonomy</a><br><br>
 				Classification: <a href="image/ft2.png" target="_blank">Flynn’s Classification</a><br><br>
@@ -62,15 +80,6 @@
 
 				<br>
 	
-			</div>
-
-			<br><br>
-
-			<div class="border2">
-
-				<h2>Pipelining</h2><a href="https://drive.google.com/file/d/1BOavnDB5KOcp4NesPPq1m7APPIR-8AjI/view?usp=sharing" target="_blank">click here</a>
-				<br><br>
-				
 			</div>
 
 			<br><br>
