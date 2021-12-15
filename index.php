@@ -24,7 +24,9 @@
   	<button type='button' class="btn btn-success" data-toggle="modal" data-target="#signup">Signup</button>
   
   	<div class="modal fade" id="login">
+
     	<div class="modal-dialog">
+
       		<div class="modal-content">
 
 		        <div class="modal-header">
@@ -34,6 +36,7 @@
 		          	<br>
 
 		          	<form action="" method="post">
+
 		            	<div class="form-group">
 		              		<input type="text" name="text" class="form-control" placeholder="Enter your Username"/>
 		              		<br>
@@ -41,15 +44,21 @@
 		            		<br>
 				          	<button class="btn btn-primary btn-block" type="submit" name="loginbutton">Create an account</button>
 				        </div>
+
 		          	</form>
 
 		        </div>
+
       		</div>
+
     	</div>
+
   	</div>
 
   	<div class="modal fade" id="signup">
+
     	<div class="modal-dialog">
+
       		<div class="modal-content">
 
 		        <div class="modal-header">
@@ -73,9 +82,13 @@
 		          	</form>
 
 		        </div>
+
       		</div>
+
     	</div>
+
   	</div>
+  	
 </div>
 
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
