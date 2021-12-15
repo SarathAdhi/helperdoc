@@ -118,7 +118,7 @@ include "navbar.php";
 
                 <span class="glyphicon glyphicon-triangle-top" style="margin-left: -90px;"></span>
 
-                <form action="/action_page.php" class="form-container">
+                <form action="" class="form-container">
                     <h1>Login</h1>
 
                     <label for="email"><b>Email</b></label>
@@ -137,7 +137,7 @@ include "navbar.php";
 
             <div class="form-popup" id="myForm2">
                 <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
-                <form action="/action_page.php" class="form-container">
+                <form action="" class="form-container">
                     <h1>Signup</h1>
 
                     <label for="email"><b>Email</b></label>
