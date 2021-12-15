@@ -181,7 +181,7 @@
     {
         $password = $_POST['password'];
 
-        $sql = mysqli_query($db, "SELECT `password` FROM `user_hd` WHERE `username` = '$_POST[username]');");
+        $sql = mysqli_query($db, "SELECT `password` FROM `user_hd` WHERE `username` = '$_POST[username]';");
         $row = mysqli_fetch_assoc($sql);
 
         if(password_verify($password, $row['password']))
