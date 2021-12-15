@@ -26,13 +26,12 @@
   	<div class="modal fade" id="login">
     	<div class="modal-dialog">
       		<div class="modal-content">
-        		<div class="modal-header">
 
-		          	<button type="button" class="close" data-dismiss="modal">&times;</button>
-		          	<h3 class="modal-title">Login Form</h3>
-
-		        </div>
 		        <div class="modal-header">
+
+		        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		          	<h3 class="modal-title">Login Form</h3>
+		          	<br>
 
 		          	<form action="" method="post">
 		            	<div class="form-group">
@@ -57,6 +56,7 @@
 
 		        	<button type="button" class="close" data-dismiss="modal">&times;</button>
 		          	<h3 class="modal-title">Signup Form</h3>
+		          	<br>
 
 		          	<form action="" method="post">
 
@@ -71,7 +71,7 @@
 		            	</div>
 
 		          	</form>
-		          	
+
 		        </div>
       		</div>
     	</div>
