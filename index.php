@@ -173,7 +173,7 @@
         ?>
 
             <h1><?php echo $_SESSION['username']; ?></h1>
-            
+
         <?php
             }
         ?>
@@ -210,7 +210,7 @@
                 ?>
                 <script type="text/javascript">
                     alert("Password is correct");
-                    window.location.replace('home.php');
+                    window.location.replace('index.php');
                 </script>
                 <?php
                 $_SESSION['username'] = $_POST['username'];
