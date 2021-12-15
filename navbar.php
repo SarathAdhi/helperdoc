@@ -64,19 +64,7 @@
 </head>
 <body>
 	<header class="header">
-		<div class="navbar">
-			<a href="index.php">HOME</a>
-			<a href="index.php">COURSES</a>
-			<a href="https://www.rapidtables.com/convert/number/decimal-to-binary.html" target="__blank">CALCULATOR</a>
-			<?php
-				if(isset($_SESSION['username']))
-				{
-				?>
-					<a href="logout.php" class="logout" style="text-decoration: none;">Logout<i class="fa fa-sign-out"></i></a>
-				<?php
-				}
-			?>
-		</div>
+		
 
 		<div class="navbar">
 			<div class="navbar navbar-default navbar-fixed-top" role="navigation">
