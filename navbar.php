@@ -25,7 +25,7 @@
 			padding-top: 10px;
 			justify-content: center;
 			text-align: center;
-			word-spacing: 15px;
+			word-spacing: 10px;
 
 		}
 		.navbar a {
