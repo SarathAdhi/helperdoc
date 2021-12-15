@@ -50,15 +50,15 @@
 			<div class="border">
 
 				<h2>Flynn’s Taxonomy & Classification</h2>
-				<a href="image/ft1.png" >Flynn’s Taxonomy</a><br>
-				<a href="image/ft2.png" >Flynn’s Classification</a><br>
-				<a href="image/ft3.png" >types-> SISD</a><br>
-				<a href="image/ft4.png" >types-> SIMD</a><br>
-				<a href="image/ft5.png" >SIMD diagram</a><br>
-				<a href="image/ft6.png" >types-> MISD</a><br>
-				<a href="image/ft7.png" >MISD diagram</a><br>
-				<a href="image/ft8.png" >types-> MIMD</a><br>
-				<a href="image/ft9.png" >MIMD diagram</a><br>
+				<a href="image/ft1.png" target="_blank">Flynn’s Taxonomy</a><br>
+				<a href="image/ft2.png" target="_blank">Flynn’s Classification</a><br>
+				<a href="image/ft3.png" target="_blank">types-> SISD</a><br>
+				<a href="image/ft4.png" target="_blank">types-> SIMD</a><br>
+				<a href="image/ft5.png" target="_blank">SIMD diagram</a><br>
+				<a href="image/ft6.png" target="_blank">types-> MISD</a><br>
+				<a href="image/ft7.png" target="_blank">MISD diagram</a><br>
+				<a href="image/ft8.png" target="_blank">types-> MIMD</a><br>
+				<a href="image/ft9.png" target="_blank">MIMD diagram</a><br>
 
 				<br>
 	
