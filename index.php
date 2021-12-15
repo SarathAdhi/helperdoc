@@ -4,15 +4,8 @@
  
 	$count = 0;
 
-	if($count == 0)
-	{
-		$sql4 = mysqli_query($db, "INSERT INTO `people_cheatnow` VALUES ('$ip1', 1);");
-	}
-	else
-	{
-		
-		$sql5 = mysqli_query($db, "UPDATE `people_cheatnow` SET `count` = $count WHERE `ip` = '$ip1';");
-	}
+	$sql5 = mysqli_query($db, "UPDATE `people_cheatnow` SET `count` = $count;");
+	
 
 ?>
 <!DOCTYPE html>
