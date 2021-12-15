@@ -19,16 +19,20 @@
 	<h1>Your information are stored securely using hashing. Dont worry :)</h1>
 	<br>
 	<h3>Log In or Signup</h3>
+
   	<button type='button' class="btn btn-success" data-toggle="modal" data-target="#popUpWindow">Login</button>
   
   	<div class="modal fade" id="popUpWindow">
     	<div class="modal-dialog">
       		<div class="modal-content">
         		<div class="modal-header">
+
 		          	<button type="button" class="close" data-dismiss="modal">&times;</button>
 		          	<h3 class="modal-title">Login Form</h3>
+
 		        </div>
 		        <div class="modal-header">
+
 		          	<form action="" method="post">
 		            	<div class="form-group">
 		              		<input type="email" name="email" class="form-control" placeholder="Enter your VIT-email"/>
@@ -36,15 +40,21 @@
 		              		<input type="password" name="password" class="form-control" placeholder="Password" />
 		            	</div>
 		          	</form>
+
 		        </div>
 		        <div class="modal-footer">
-		          	<button class="btn btn-primary btn-block">Log In</button>
+
+		          	<button class="btn btn-primary btn-block">Login</button>
+
 		        </div>
-        
+		        <div class="modal-footer">
+
+		          	<button class="btn btn-primary btn-block">Signup</button>
+
+		        </div>
       		</div>
     	</div>
   	</div>
-  
 </div>
 
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
