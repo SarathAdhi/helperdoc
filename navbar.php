@@ -6,7 +6,11 @@
 	
 
 	<style type="text/css">
-
+		body
+		{
+			scroll-padding-top: 5rem;
+            scroll-behavior: smooth;
+		}
 		.header 
 		{
 			position: relative;
