@@ -171,7 +171,12 @@
             else
             {
         ?>
+
             <h1><?php echo $_SESSION['username']; ?></h1>
+            
+        <?php
+            }
+        ?>
 
     </section>
     <script>
