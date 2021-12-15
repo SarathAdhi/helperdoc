@@ -232,6 +232,12 @@
 			$c = $res['like'] + 1;
 
 			$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
+
+			?>
+				<script type="text/javascript">
+					alert("THANK YOU FOR LOVE :D");
+				</script>
+			<?php
 		}
 
 		$sql2 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
