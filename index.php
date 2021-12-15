@@ -66,7 +66,7 @@
 
         .form-container input
         {
-            width: 100%;
+            width: 50%;
             padding: 15px;
             border: none;
             background: #f1f1f1;
@@ -121,6 +121,7 @@
 
                 <form action="" method="post" class="form-container">
                     <h1>Login</h1>
+                    <br><br>
 
                     <label for="username"><b>Username</b></label>
                     <input type="text" placeholder="Enter Your Username" name="username" required>
