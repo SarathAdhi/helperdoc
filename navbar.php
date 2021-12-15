@@ -34,6 +34,7 @@
 		    display: inline-block;
 		    padding: 4px;
 		    text-decoration: none;
+		    color: #B0AEFE;
 		  }
 		.navbar a:hover
 		{
@@ -41,6 +42,7 @@
 			margin: 10px;
 		    margin-top: -10px;
 		    position: relative;
+		    text-decoration: none;
 		}
 	</style>
 </head>
