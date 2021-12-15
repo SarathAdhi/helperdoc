@@ -105,7 +105,7 @@ include "navbar.php";
 <body>
     <section>
         <center>
-            <h1>Login/Signup to Continue</h1>
+            <h1>Login to Continue</h1>
             <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
 
