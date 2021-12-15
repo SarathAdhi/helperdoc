@@ -72,7 +72,7 @@
 
 			<div class="border">
 
-				<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" >click here</a>
+				<h2>PERFORMANCE OF A PROCESSOR</h2><a href="https://www.geeksforgeeks.org/computer-organization-performance-of-computer/" target="_blank">click here</a>
 				<br><br>
 			</div>
 
@@ -95,7 +95,7 @@
 				<h3>Square Root</h3>
 				<p>Restoring , Non-Restoring , SRT Radix-2 , SRT Radix-4 , By convergence</p>
 
-				<h2>ALL IN ONE CALCULATOR</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/" >click here</a>
+				<h2>ALL IN ONE CALCULATOR</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/" target="_blank">click here</a>
 				<br><br>
 
 			</div>
@@ -116,7 +116,7 @@
 
 			<div class="border2">
 			
-				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" >click here</a>
+				<h2>NON RESTORING DIVISION</h2><a href="nondivi.php" target="_blank">click here</a>
 				<br>
 				<a href="image/4.png" target="_blank">view flowchart</a>
 				<br><br>
@@ -129,7 +129,7 @@
 
 			<div class="border">
 
-				<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/" >click here</a>
+				<h2>BOOTHS MULTIPLICATION</h2><a href="http://www.grahn.us/projects/booths-algorithm/" target="_blank">click here</a>
 				<br><br>
 
 			</div>
@@ -140,7 +140,7 @@
 
 			<div class="border2">
 
-				<h2>MODIFIED BOOTHS MULTIPLICATION</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/ModBooth/" >click here</a>
+				<h2>MODIFIED BOOTHS MULTIPLICATION</h2><a href="https://www.ecs.umass.edu/ece/koren/arith/simulator/ModBooth/" target="_blank">click here</a>
 				<br><br>
 
 			</div>
@@ -151,7 +151,7 @@
 
 			<div class="border">
 
-				<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php" >click here</a>
+				<h2>IEEE CONVERSION</h2><a href="https://binary-system.base-conversion.ro/convert-real-numbers-from-decimal-system-to-32bit-single-precision-IEEE754-binary-floating-point.php" target="_blank">click here</a>
 				<br><br>
 
 			</div>
@@ -162,7 +162,7 @@
 
 			<div class="border2">
 
-				<h2>PAGE REPLACEMENT SUM</h2><a href="https://solver.assistedcoding.eu/page_replacement" >click here</a>
+				<h2>PAGE REPLACEMENT SUM</h2><a href="https://solver.assistedcoding.eu/page_replacement" target="_blank">click here</a>
 				<br><br>
 
 			</div>
@@ -173,7 +173,7 @@
 
      		<div class="border">
 
-				<h2>HAMMING CODE</h2><a href="https://www.ecs.umass.edu/ece/koren/FaultTolerantSystems/simulator/Hamming/HammingCodes.html" >click here</a>
+				<h2>HAMMING CODE</h2><a href="https://www.ecs.umass.edu/ece/koren/FaultTolerantSystems/simulator/Hamming/HammingCodes.html" target="_blank">click here</a>
 				<br><br>
 
 			</div>
