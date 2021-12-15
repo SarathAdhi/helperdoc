@@ -65,6 +65,9 @@
 			<a href="index.php">COURSES</a>
 			<a href="https://www.rapidtables.com/convert/number/decimal-to-binary.html" target="__blank">CALCULATOR</a>
 		</div>
+		<div class="user">
+			<a href="logout.php">Logout<i class="fa fa-sign-out"></i></a>
+		</div>
 	</header>
 </body>
 </html>
