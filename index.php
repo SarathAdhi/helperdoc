@@ -66,7 +66,7 @@
 
         .form-container input
         {
-            width: 50%;
+            width: 100%;
             padding: 15px;
             border: none;
             background: #f1f1f1;
@@ -82,7 +82,7 @@
             padding: 16px 20px;
             border: none;
             cursor: pointer;
-            width: 100%;
+            width: 50%;
             margin-bottom: 10px;
             opacity: 0.8;
             border-radius: 10px;
