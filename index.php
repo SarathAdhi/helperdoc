@@ -88,11 +88,19 @@
 <?php
 	if(isset($_POST['signupbutton']))
 	{
-		echo 'signup';
+		?>
+		<script type="text/javascript">
+			alert('sign');
+		</script>
+		<?php
 	}
 	else if (isset($_POST['loginbutton']))
 	{
-		echo 'login';
+		?>
+		<script type="text/javascript">
+			alert('log');
+		</script>
+		<?php
 	} 
 	else 
 	{
