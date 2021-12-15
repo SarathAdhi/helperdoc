@@ -74,7 +74,7 @@
 
 		        </div>
 		        <div class="modal-footer">
-		          	<button class="btn btn-primary btn-block" name="signupbutton">Create an account</button>
+		          	<button class="btn btn-primary btn-block" type="submit" name="signupbutton">Create an account</button>
 		        </div>
 
       		</div>
