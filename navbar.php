@@ -65,7 +65,14 @@
 			<a href="index.php">HOME</a>
 			<a href="index.php">COURSES</a>
 			<a href="https://www.rapidtables.com/convert/number/decimal-to-binary.html" target="__blank">CALCULATOR</a>
-			<a href="logout.php" class="logout">Logout<i class="fa fa-sign-out"></i></a>
+			<?php
+				if(isset($_SESSION['username']))
+				{
+				?>
+					<a href="logout.php" class="logout">Logout<i class="fa fa-sign-out"></i></a>
+				<?php
+				}
+			?>
 		</div>
 	</header>
 </body>
