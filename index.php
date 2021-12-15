@@ -125,8 +125,8 @@
                     <label for="username"><b>Username</b></label>
                     <input type="text" placeholder="Enter Your Username" name="username" required>
                     <br><br>
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
                     <br><br>
                     <button type="submit" class="btn" name="login">Login</button>
                     <br>
@@ -179,8 +179,11 @@
 <?php
     if(isset($_POST['login']))
     {
+        $password = $_POST['password'];
+
         $sql = mysqli_query($db, "SELECT `password` FROM `user_hd` WHERE `username` = '$_POST[username]');");
         $row = mysqli_fetch_assoc($sql);
+        
         if(password_verify($password, $row['password']))
         {
             ?>
