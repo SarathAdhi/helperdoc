@@ -56,7 +56,7 @@
 	<a class="scroll" href="#content"><span>&#11165;</span></a>
 
 	<div class="content" id="content">
-		
+		<a href="cao.php">CAO</a>
 	</div>
 </section>
 
