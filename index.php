@@ -122,8 +122,8 @@
                 <form action="" method="post" class="form-container">
                     <h1>Login</h1>
 
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Your Username" name="username" required>
                     <br><br>
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
@@ -141,10 +141,10 @@
                 <form action="" method="post" class="form-container">
                     <h1>Signup</h1>
 
-                    <label for="email"><b>Email</b></label>
+                    <label for="username"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="username" required>
                     <br><br>
-                    <label for="psw"><b>Password</b></label>
+                    <label for="password"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="password" required>
                     <br><br>
                     <label for="degree"><b>Degree</b></label>
