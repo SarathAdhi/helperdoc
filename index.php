@@ -1,5 +1,6 @@
 <?php
-include "navbar.php";
+    include "navbar.php";
+    include "connection.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -185,7 +186,7 @@ include "navbar.php";
         $password = $_POST['password'];
         $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
 
-        echo $hash;
+        $sql = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]');");
     }
 ?>
 
