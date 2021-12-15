@@ -36,7 +36,7 @@
 		    text-decoration: none;
 		    color: white;
 		    font-weight: bold;
-		    font-size: 15px;
+		    font-size: 30px;
 		  }
 		.navbar a:hover
 		{
