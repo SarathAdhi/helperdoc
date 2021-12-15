@@ -36,6 +36,7 @@
 		    text-decoration: none;
 		    color: white;
 		    font-weight: bold;
+		    font-size: 15px;
 		  }
 		.navbar a:hover
 		{
