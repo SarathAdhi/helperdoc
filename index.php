@@ -6,7 +6,7 @@
   	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
   	<style type="text/css">
-  		#popUpWindow
+  		#login
   		{
 		  	//background: lightblue; 
 		}
@@ -20,9 +20,10 @@
 	<br>
 	<h3>Log In or Signup</h3>
 
-  	<button type='button' class="btn btn-success" data-toggle="modal" data-target="#popUpWindow">Login</button>
+  	<button type='button' class="btn btn-success" data-toggle="modal" data-target="#login">Login</button>
+  	<button type='button' class="btn btn-success" data-toggle="modal" data-target="#signup">Signup</button>
   
-  	<div class="modal fade" id="popUpWindow">
+  	<div class="modal fade" id="login">
     	<div class="modal-dialog">
       		<div class="modal-content">
         		<div class="modal-header">
@@ -47,11 +48,7 @@
 		          	<button class="btn btn-primary btn-block">Login</button>
 
 		        </div>
-		        <div class="modal-footer">
 
-		          	<button class="btn btn-primary btn-block">Signup</button>
-
-		        </div>
       		</div>
     	</div>
   	</div>
