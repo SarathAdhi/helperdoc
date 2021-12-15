@@ -59,12 +59,11 @@
 				<a href="image/ft7.png" >MISD diagram</a>
 				<a href="image/ft8.png" >types-> MIMD</a>
 				<a href="image/ft9.png" >MIMD diagram</a>
-				<br><br>
+	
 			</div>
 
 			<br><br>
 
-			
 		</center>
 	</div>
 </section>
