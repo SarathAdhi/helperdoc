@@ -1,119 +1,160 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  	<meta charset="UTF-8">
-  	<title>HOME</title>
-  	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
-  	<style type="text/css">
-  		#login
-  		{
-		  	//background: lightblue; 
-		}
-  	</style>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style type="text/css">
+body
+{
+  background-color: #EAEAFC;
+  font-family: Consolas !important;
+}
+h2,p
+{
+  font-family: Consolas !important;
+}
+* 
+{
+  box-sizing: border-box;
+}
+
+.open-button
+{
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+}
+
+
+.form-popup {
+  display: none;
+  position: relative;
+  border: 3px solid #0A0162;
+  z-index: 9;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 99%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+
+}
+.form-popup span{
+  position: absolute;
+  margin-top: -25px;
+  font-size: 30px;
+  color: #0A0162;
+}
+
+/* Full-width input fields */
+.form-container input{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
 </head>
 <body>
+  <section>
+<center>
+<h1>Login/Signup to Continue</h1>
+<h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
-<section class="home">
 
-	<h1>Your information are stored securely using hashing. Dont worry :)</h1>
-	<br>
-	<h3>Log In or Signup</h3>
+<button class="open-button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
 
-  	<button type='button' class="btn btn-success" data-toggle="modal" data-target="#login">Login</button>
-  	<button type='button' class="btn btn-success" data-toggle="modal" data-target="#signup">Signup</button>
-  
-  	<div class="modal fade" id="login">
+<button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
 
-    	<div class="modal-dialog">
+<br><br>
+<div class="form-popup" id="myForm1" >
 
-      		<div class="modal-content">
+  <span class="glyphicon glyphicon-triangle-top" style="margin-left: -90px;"></span>
 
-		        <div class="modal-header">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
 
-		        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-		          	<h3 class="modal-title">Login Form</h3>
-		          	<br>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <br><br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br><br>
+    <button type="submit" class="btn">Login</button>
+    <br>
+    <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
+  </form>
+</div>
 
-		          	<form action="" method="post">
 
-		            	<div class="form-group">
-		              		<input type="text" name="text" class="form-control" placeholder="Enter your Username"/>
-		              		<br>
-		              		<input type="password" name="password" class="form-control" placeholder="Password" />
-		            		<br>
-				          	<button class="btn btn-primary btn-block" type="submit" name="loginbutton">Create an account</button>
-				        </div>
 
-		          	</form>
+<div class="form-popup" id="myForm2">
+  <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
+  <form action="/action_page.php" class="form-container">
+    <h1>Signup</h1>
 
-		        </div>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <br><br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br><br>
+    <button type="submit" class="btn">Register</button>
+    <br>
+    <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
+  </form>
+</div>
 
-      		</div>
-
-    	</div>
-
-  	</div>
-
-  	<div class="modal fade" id="signup">
-
-    	<div class="modal-dialog">
-
-      		<div class="modal-content">
-
-		        <div class="modal-header">
-
-		        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-		          	<h3 class="modal-title">Signup Form</h3>
-		          	<br>
-
-		          	<form action="" method="post">
-
-		            	<div class="form-group">
-		              		<input type="text" name="username" class="form-control" placeholder="Enter your Username"/>
-		              		<br>
-		              		<input type="password" name="password" class="form-control" placeholder="Password" />
-		              		<br>
-		              		<input type="password" name="password2" class="form-control" placeholder="Re-Enter your Password" />
-		              		<br>
-		              		<button class="btn btn-primary btn-block" type="submit" name="signupbutton">Create an account</button>
-		            	</div>
-
-		          	</form>
-
-		        </div>
-
-      		</div>
-
-    	</div>
-
-  	</div>
-
+</center>
 </section>
+<script>
+function openForm(x,y) {
+  document.getElementById(x).style.display = "none";
+  document.getElementById(y).style.display = "none";
+  document.getElementById(x).style.display = "block";
+  
+}
 
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+function closeForm(x,y) {
+  document.getElementById(x).style.display = "none";
+  document.getElementById(y).style.display = "none";
+}
 
-<?php
-	if(isset($_POST['signupbutton']))
-	{
-		?>
-		<script type="text/javascript">
-			alert('sign');
-		</script>
-		<?php
-	}
-	else if (isset($_POST['loginbutton']))
-	{
-		?>
-		<script type="text/javascript">
-			alert('log');
-		</script>
-		<?php
-	} 
-
-	
-?>
+</script>
 
 </body>
 </html>
