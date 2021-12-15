@@ -39,11 +39,11 @@
 		              		<input type="text" name="text" class="form-control" placeholder="Enter your Username"/>
 		              		<br>
 		              		<input type="password" name="password" class="form-control" placeholder="Password" />
-		            	</div>
-		            	<div class="modal-footer">
+		            		<br>
 				          	<button class="btn btn-primary btn-block" type="submit" name="loginbutton">Create an account</button>
 				        </div>
 		          	</form>
+
 		        </div>
       		</div>
     	</div>
@@ -52,13 +52,11 @@
   	<div class="modal fade" id="signup">
     	<div class="modal-dialog">
       		<div class="modal-content">
-        		<div class="modal-header">
 
-		          	<button type="button" class="close" data-dismiss="modal">&times;</button>
-		          	<h3 class="modal-title">Signup Form</h3>
-
-		        </div>
 		        <div class="modal-header">
+
+		        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		          	<h3 class="modal-title">Signup Form</h3>
 
 		          	<form action="" method="post">
 		            	<div class="form-group">
@@ -70,8 +68,8 @@
 		              		<br>
 		              		<button class="btn btn-primary btn-block" type="submit" name="signupbutton">Create an account</button>
 		            	</div>
-				          	
 		          	</form>
+
 		        </div>
       		</div>
     	</div>
