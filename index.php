@@ -29,7 +29,7 @@
 		          	<h3 class="modal-title">Login Form</h3>
 		        </div>
 		        <div class="modal-header">
-		          	<form action="" method="post">">
+		          	<form action="" method="post">
 		            	<div class="form-group">
 		              		<input type="email" name="email" class="form-control" placeholder="Enter your VIT-email"/>
 		              		<input type="password" name="password" class="form-control" placeholder="Password" />
