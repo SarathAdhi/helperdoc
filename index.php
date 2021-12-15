@@ -183,20 +183,33 @@
 
         $sql = mysqli_query($db, "SELECT `password` FROM `user_hd` WHERE `username` = '$_POST[username]';");
         $row = mysqli_fetch_assoc($sql);
+        $count = mysqli_num_rows($sql);
 
-        if(password_verify($password, $row['password']))
+        if($count != 0)
         {
-            ?>
-            <script type="text/javascript">
-                alert("Password correct");
-            </script>
-            <?php
+            if(password_verify($password, $row['password']))
+            {
+                ?>
+                <script type="text/javascript">
+                    alert("Password is correct");
+                    location.replace('home.php');
+                </script>
+                <?php
+            }
+            else
+            {
+                ?>
+                <script type="text/javascript">
+                    alert("Password is incorrect");
+                </script>
+                <?php
+            }
         }
         else
         {
             ?>
             <script type="text/javascript">
-                alert("Password wrong");
+                alert("Username does not exist.");
             </script>
             <?php
         }
