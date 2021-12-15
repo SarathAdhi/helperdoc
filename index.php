@@ -10,7 +10,7 @@ include "navbar.php";
     <style type="text/css">
         body
         {
-            background-color: #EAEAFC;
+            background-color: #B0AEFE;
             font-family: Consolas !important;
         }
 
