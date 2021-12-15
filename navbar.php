@@ -11,7 +11,7 @@
 		{
 			position: relative;
 			width: 70%;
-			height: auto;
+			height: 30px;
 			background-color: #523BF3;
 			top: 0;
 			left: 50%;
