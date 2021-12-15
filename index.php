@@ -192,7 +192,7 @@
                 ?>
                 <script type="text/javascript">
                     alert("Password is correct");
-                    location.replace('home.php');
+                    window.location.replace('home.php');
                 </script>
                 <?php
             }
