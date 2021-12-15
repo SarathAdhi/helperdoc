@@ -10,6 +10,10 @@
   		{
 		  	//background: lightblue; 
 		}
+		.modal-content
+		{
+			width: 60%;
+		}
   	</style>
 </head>
 <body>
