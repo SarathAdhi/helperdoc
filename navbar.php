@@ -12,7 +12,7 @@
 			position: relative;
 			width: 70%;
 			height: 60px;
-			background-color: #A3A2A3;
+			background-color: #B0AEFE;
 			top: 0;
 			left: 50%;
 			transform: translate(-50%, -50%);
