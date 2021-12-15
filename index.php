@@ -166,7 +166,9 @@
 
 				<h2>HAMMING CODE</h2><a href="https://www.ecs.umass.edu/ece/koren/FaultTolerantSystems/simulator/Hamming/HammingCodes.html" target="_blank">click here</a>
 				<br>
-				<a href="image/h1.png" target="_blank">hamming code example</a>
+				<a href="image/h1.png" target="_blank">hamming code example 1</a>
+				<br>
+				<a href="image/h2.png" target="_blank">hamming code example 2</a>
 				<br><br>
 
 			</div>
