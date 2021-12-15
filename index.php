@@ -1,6 +1,7 @@
 <?php
     include "navbar.php";
     include "connection.php";
+    session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -105,62 +106,69 @@
 
 <body>
     <section>
-        <center>
-            <h1>Login to Continue</h1>
-            <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
+    <?php
+        if(isset($_SESSION['username']))
+        {
+    ?>
+            <center>
+                <h1>Login to Continue</h1>
+                <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
 
-            <button class="open-button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
+                <button class="open-button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
 
-            <button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
+                <button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
 
-            <br><br>
-            <div class="form-popup" id="myForm1">
+                <br><br>
+                <div class="form-popup" id="myForm1">
 
-                <span class="glyphicon glyphicon-triangle-top" style="margin-left: -90px;"></span>
+                    <span class="glyphicon glyphicon-triangle-top" style="margin-left: -90px;"></span>
 
-                <form action="" method="post" class="form-container">
-                    <h1>Login</h1>
-                    <br><br>
+                    <form action="" method="post" class="form-container">
+                        <h1>Login</h1>
+                        <br><br>
 
-                    <label for="username"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Your Username" name="username" required>
-                    <br><br>
-                    <label for="password"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="password" required>
-                    <br><br>
-                    <button type="submit" class="btn" name="loginsubmit">Login</button>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
-                </form>
-            </div>
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Your Username" name="username" required>
+                        <br><br>
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                        <br><br>
+                        <button type="submit" class="btn" name="loginsubmit">Login</button>
+                        <br>
+                        <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
+                    </form>
+                </div>
 
 
 
-            <div class="form-popup" id="myForm2">
-                <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
-                <form action="" method="post" class="form-container">
-                    <h1>Signup</h1>
+                <div class="form-popup" id="myForm2">
+                    <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
+                    <form action="" method="post" class="form-container">
+                        <h1>Signup</h1>
 
-                    <label for="username"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="username" required>
-                    <br><br>
-                    <label for="password"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="password" required>
-                    <br><br>
-                    <label for="degree"><b>Degree</b></label>
-                    <input type="text" placeholder="B.tech, M.tech, ..." name="degree" required>
-                    <br><br>
-                    <label for="year"><b>Graduate Year</b></label>
-                    <input type="text" placeholder="2021, 2022, ..." name="year" required>
-                    <br><br>
-                    <button type="submit" class="btn" name="register">Register</button>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
-                </form>
-            </div>
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                        <br><br>
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                        <br><br>
+                        <label for="degree"><b>Degree</b></label>
+                        <input type="text" placeholder="B.tech, M.tech, ..." name="degree" required>
+                        <br><br>
+                        <label for="year"><b>Graduate Year</b></label>
+                        <input type="text" placeholder="2021, 2022, ..." name="year" required>
+                        <br><br>
+                        <button type="submit" class="btn" name="register">Register</button>
+                        <br>
+                        <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
+                    </form>
+                </div>
 
-        </center>
+            </center>
+            <?php
+                }
+            ?>
     </section>
     <script>
         function openForm(x, y) {
@@ -196,6 +204,7 @@
                     window.location.replace('home.php');
                 </script>
                 <?php
+                $_SESSION['username'] = $_POST['username'];
             }
             else
             {
@@ -221,6 +230,8 @@
         $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
 
         $sql = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]');");
+
+        $_SESSION['username'] = $_POST['username'];
     }
 ?>
 
