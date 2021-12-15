@@ -87,8 +87,8 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 		      	</button>
-		      	<a class="navbar-brand" href="#">Or Sharabi</a>
 		    </div>
+		    
 		    <div class="navbar-collapse collapse">
 		      	<ul class="nav navbar-nav navbar-right">
 			        <li class="active"><a href="#">Home</a></li>
