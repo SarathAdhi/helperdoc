@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div class="container">
+<section class="container">
 
 	<h1>Your information are stored securely using hashing. Dont worry :)</h1>
 	<br>
@@ -89,7 +89,7 @@
 
   	</div>
 
-</div>
+</section>
 
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
