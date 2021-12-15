@@ -24,7 +24,7 @@
 <?php
 	if(isset($_POST['submit']))
 	{
-		$pass = 123123123;
+		$pass = 'onlyforadmin';
 		if($_POST['password'] == $pass)
 		{
 		?>
