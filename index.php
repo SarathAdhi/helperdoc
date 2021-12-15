@@ -141,10 +141,10 @@ include "navbar.php";
                     <h1>Signup</h1>
 
                     <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="text" placeholder="Enter Username" name="username" required>
                     <br><br>
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Enter Password" name="password" required>
                     <br><br>
                     <label for="degree"><b>Degree</b></label>
                     <input type="text" placeholder="B.tech, M.tech, ..." name="degree" required>
@@ -182,14 +182,10 @@ include "navbar.php";
     }
     elseif(isset($_POST['register']))
     {
-        $password = $_POST['username'];
+        $password = $_POST['password'];
         $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
 
-        ?>
-        <script type="text/javascript">
-            alert(<?php echo $hash; ?>);
-        </script>
-        <?php
+        $sql = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]');");
     }
 ?>
 
