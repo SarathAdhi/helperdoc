@@ -183,9 +183,7 @@ include "navbar.php";
     elseif(isset($_POST['register']))
     {
         $password = $_POST['password'];
-        $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
-
-        $sql = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]');");
+        echo $password;
     }
 ?>
 
