@@ -50,16 +50,12 @@
   	</div>
 
   	<div class="modal fade" id="signup">
-
-
-
-
+      		<div class="modal-content">
 
 		        	<button type="button" class="close" data-dismiss="modal">&times;</button>
 		          	<h3 class="modal-title">Signup Form</h3>
 
 		          	<form action="" method="post">
-
 		            	<div class="form-group">
 		              		<input type="text" name="username" class="form-control" placeholder="Enter your Username"/>
 		              		<br>
@@ -69,11 +65,8 @@
 		              		<br>
 		              		<button class="btn btn-primary btn-block" type="submit" name="signupbutton">Create an account</button>
 		            	</div>
-
 		          	</form>
-
-
-
+      		</div>
   	</div>
 </div>
 
