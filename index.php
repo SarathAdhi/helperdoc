@@ -40,13 +40,11 @@
 		              		<br>
 		              		<input type="password" name="password" class="form-control" placeholder="Password" />
 		            	</div>
+		            	<div class="modal-footer">
+				          	<button class="btn btn-primary btn-block" type="submit" name="loginbutton">Create an account</button>
+				        </div>
 		          	</form>
-
 		        </div>
-		        <div class="modal-footer">
-		          	<button class="btn btn-primary btn-block" name="loginbutton">Login</button>
-		        </div>
-
       		</div>
     	</div>
   	</div>
