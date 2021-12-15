@@ -182,7 +182,10 @@ include "navbar.php";
     }
     elseif(isset($_POST['signupbutton']))
     {
-        $sql = mysqli_query($db, "INSERT INTO `user_pd`")
+        $password = $_POST['username'];
+        $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
+
+        echo $password;
     }
 ?>
 
