@@ -1,7 +1,6 @@
 <?php
     include "navbar.php";
     include "connection.php";
-    session_start();
 ?>
 <!DOCTYPE html>
 <html>
