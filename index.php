@@ -1,162 +1,165 @@
 <?php
-  include "navbar.php";
+include "navbar.php";
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<style type="text/css">
-body
-{
-  background-color: #EAEAFC;
-  font-family: Consolas !important;
-}
-h2,p
-{
-  font-family: Consolas !important;
-}
-* 
-{
-  box-sizing: border-box;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background-color: #EAEAFC;
+            font-family: Consolas !important;
+        }
 
-.open-button
-{
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  width: 150px;
-}
+        h2,
+        p {
+            font-family: Consolas !important;
+        }
 
+        * {
+            box-sizing: border-box;
+        }
 
-.form-popup {
-  display: none;
-  position: relative;
-  border: 3px solid #0A0162;
-  z-index: 9;
-  max-width: 600px;
-  border-radius: 10px;
-}
-
-/* Add styles to the form container */
-.form-container {
-  width: 99%;
-  padding: 30px;
-  background-color: white;
-  border-radius: 10px;
-
-}
-.form-popup span{
-  position: absolute;
-  margin-top: -25px;
-  font-size: 30px;
-  color: #0A0162;
-}
-
-/* Full-width input fields */
-.form-container input{
-  width: 100%;
-  padding: 15px;
-  border: none;
-  background: #f1f1f1;
-  border-radius: 10px;
-}
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            width: 150px;
+        }
 
 
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-  border-radius: 10px;
-}
+        .form-popup {
+            display: none;
+            position: relative;
+            border: 3px solid #0A0162;
+            z-index: 9;
+            max-width: 600px;
+            border-radius: 10px;
+        }
 
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
+        /* Add styles to the form container */
+        .form-container {
+            width: 99%;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-</style>
+        }
+
+        .form-popup span {
+            position: absolute;
+            margin-top: -25px;
+            font-size: 30px;
+            color: #0A0162;
+        }
+
+        /* Full-width input fields */
+        .form-container input {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+
+        /* Set a style for the submit/login button */
+        .form-container .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+            border-radius: 10px;
+        }
+
+        /* Add a red background color to the cancel button */
+        .form-container .cancel {
+            background-color: red;
+        }
+
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover,
+        .open-button:hover {
+            opacity: 1;
+        }
+    </style>
 </head>
+
 <body>
-  <section>
-<center>
-<h1>Login/Signup to Continue</h1>
-<h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
+    <section>
+        <center>
+            <h1>Login/Signup to Continue</h1>
+            <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
 
-<button class="open-button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
+            <button class="open-button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
 
-<button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
+            <button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
 
-<br><br>
-<div class="form-popup" id="myForm1" >
+            <br><br>
+            <div class="form-popup" id="myForm1">
 
-  <span class="glyphicon glyphicon-triangle-top" style="margin-left: -90px;"></span>
+                <span class="glyphicon glyphicon-triangle-top" style="margin-left: -90px;"></span>
 
-  <form action="/action_page.php" class="form-container">
-    <h1>Login</h1>
+                <form action="/action_page.php" class="form-container">
+                    <h1>Login</h1>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <br><br>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <br><br>
-    <button type="submit" class="btn">Login</button>
-    <br>
-    <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
-  </form>
-</div>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <br><br>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br><br>
+                    <button type="submit" class="btn">Login</button>
+                    <br>
+                    <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
+                </form>
+            </div>
 
 
 
-<div class="form-popup" id="myForm2">
-  <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
-  <form action="/action_page.php" class="form-container">
-    <h1>Signup</h1>
+            <div class="form-popup" id="myForm2">
+                <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
+                <form action="/action_page.php" class="form-container">
+                    <h1>Signup</h1>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <br><br>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <br><br>
-    <button type="submit" class="btn">Register</button>
-    <br>
-    <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
-  </form>
-</div>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <br><br>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br><br>
+                    <button type="submit" class="btn">Register</button>
+                    <br>
+                    <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
+                </form>
+            </div>
 
-</center>
-</section>
-<script>
-function openForm(x,y) {
-  document.getElementById(x).style.display = "none";
-  document.getElementById(y).style.display = "none";
-  document.getElementById(x).style.display = "block";
-  
-}
+        </center>
+    </section>
+    <script>
+        function openForm(x, y) {
+            document.getElementById(x).style.display = "none";
+            document.getElementById(y).style.display = "none";
+            document.getElementById(x).style.display = "block";
 
-function closeForm(x,y) {
-  document.getElementById(x).style.display = "none";
-  document.getElementById(y).style.display = "none";
-}
+        }
 
-</script>
+        function closeForm(x, y) {
+            document.getElementById(x).style.display = "none";
+            document.getElementById(y).style.display = "none";
+        }
+    </script>
 
 </body>
+
 </html>
