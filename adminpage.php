@@ -50,15 +50,15 @@
 			<div class="border">
 
 				<h2>Flynn’s Taxonomy & Classification</h2>
-				Defination: <a href="image/ft1.png" target="_blank">Flynn’s Taxonomy</a><br>
-				Classification: <a href="image/ft2.png" target="_blank">Flynn’s Classification</a><br>
-				SISD: <a href="image/ft3.png" target="_blank">types-> SISD</a><br>
-				SIMD: <a href="image/ft4.png" target="_blank">types-> SIMD</a><br>
-				&emsp;&emsp;<a href="image/ft5.png" target="_blank">SIMD diagram</a><br>
-				MISD: <a href="image/ft6.png" target="_blank">types-> MISD</a><br>
-				&emsp;&emsp;<a href="image/ft7.png" target="_blank">MISD diagram</a><br>
-				MIMD: <a href="image/ft8.png" target="_blank">types-> MIMD</a><br>
-				&emsp;&emsp;<a href="image/ft9.png" target="_blank">MIMD diagram</a><br>
+				Defination: <a href="image/ft1.png" target="_blank">Flynn’s Taxonomy</a><br><br>
+				Classification: <a href="image/ft2.png" target="_blank">Flynn’s Classification</a><br><br>
+				SISD: <a href="image/ft3.png" target="_blank">types-> SISD</a><br><br>
+				SIMD: <a href="image/ft4.png" target="_blank">types-> SIMD</a><br><br>
+				&emsp;&emsp;&emsp;<a href="image/ft5.png" target="_blank">SIMD diagram</a><br>
+				MISD: <a href="image/ft6.png" target="_blank">types-> MISD</a><br><br>
+				&emsp;&emsp;&emsp;<a href="image/ft7.png" target="_blank">MISD diagram</a><br>
+				MIMD: <a href="image/ft8.png" target="_blank">types-> MIMD</a><br><br>
+				&emsp;&emsp;&emsp;<a href="image/ft9.png" target="_blank">MIMD diagram</a><br>
 
 				<br>
 	
