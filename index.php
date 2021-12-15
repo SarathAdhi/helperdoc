@@ -146,6 +146,12 @@ include "navbar.php";
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
                     <br><br>
+                    <label for="degree"><b>Degree</b></label>
+                    <input type="text" placeholder="B.tech, M.tech, ..." name="degree" required>
+                    <br><br>
+                    <label for="year"><b>Graduate Year</b></label>
+                    <input type="text" placeholder="2021, 2022, ..." name="year" required>
+                    <br><br>
                     <button type="submit" class="btn">Register</button>
                     <br>
                     <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
@@ -170,5 +176,14 @@ include "navbar.php";
 </body>
 
 <?php
+    if(isset($_POST['loginbutton']))
+    {
+
+    }
+    elseif(isset($_POST['signupbutton']))
+    {
+        $sql = mysqli_query($db, "INSERT INTO `user_pd`")
+    }
+?>
 
 </html>
