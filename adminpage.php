@@ -54,11 +54,11 @@
 				Classification: <a href="image/ft2.png" target="_blank">Flynn’s Classification</a><br>
 				SISD: <a href="image/ft3.png" target="_blank">types-> SISD</a><br>
 				SIMD: <a href="image/ft4.png" target="_blank">types-> SIMD</a><br>
-				<a href="image/ft5.png" target="_blank">&emsp;SIMD diagram</a><br>
+				&emsp;<a href="image/ft5.png" target="_blank">SIMD diagram</a><br>
 				MISD: <a href="image/ft6.png" target="_blank">types-> MISD</a><br>
-				<a href="image/ft7.png" target="_blank">&emsp;MISD diagram</a><br>
+				&emsp;<a href="image/ft7.png" target="_blank">MISD diagram</a><br>
 				MIMD: <a href="image/ft8.png" target="_blank">types-> MIMD</a><br>
-				<a href="image/ft9.png" target="_blank">&emsp;MIMD diagram</a><br>
+				&emsp;<a href="image/ft9.png" target="_blank">MIMD diagram</a><br>
 
 				<br>
 	
