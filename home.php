@@ -45,15 +45,18 @@
 
 	<a class="scroll" href="#content"><span>&#11165;</span></a>
 
-	<div class="content" id="content">
-		<a href="cao.php">CAO</a>
-	</div>
+	<center>
+
+		<div class="content" id="content">
+			<h3>COMPUTER ARCHITECTURE AND ORGANISATION CSE2001  <a href="cao.php">click here..</a></h3>
+		</div>
+
+		<h2>தூய தமிழன்</h2>
+		<h2>Thank me later...<span style="color: red;">&#9829;
+		</span></h2>
+		
+	</center>
 </section>
-
-<h2>தூய தமிழன்</h2>
-<h2>Thank me later...<span style="color: red;">&#9829;
-</span></h2>
-
 
 <form action="" method="post">
 	<p style="font-size: 20px;">NOTE: Your information are stored securely using hashing. Dont worry :)</p>
