@@ -36,7 +36,7 @@
 
 		          	<form action="" method="post">
 		            	<div class="form-group">
-		              		<input type="email" name="email" class="form-control" placeholder="Enter your VIT-email"/>
+		              		<input type="text" name="text" class="form-control" placeholder="Enter your Username"/>
 		              		<br>
 		              		<input type="password" name="password" class="form-control" placeholder="Password" />
 		            	</div>
@@ -66,9 +66,11 @@
 
 		          	<form action="" method="post">
 		            	<div class="form-group">
-		              		<input type="email" name="email" class="form-control" placeholder="Enter your VIT-email"/>
+		              		<input type="text" name="username" class="form-control" placeholder="Enter your Username"/>
 		              		<br>
 		              		<input type="password" name="password" class="form-control" placeholder="Password" />
+		              		<br>
+		              		<input type="password" name="password2" class="form-control" placeholder="Re-Enter your Password" />
 		            	</div>
 		          	</form>
 
