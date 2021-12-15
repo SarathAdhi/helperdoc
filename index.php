@@ -170,7 +170,7 @@
 
             $("html, body").animate({
                 scrollTop: $('html, body').get(0).scrollHeight
-              }, 0.8);
+              }, 2);
         }
 
         function closeForm(x, y) {
