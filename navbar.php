@@ -6,7 +6,7 @@
 	
 
 	<style type="text/css">
-		body
+		html
 		{
 			scroll-padding-top: 5rem;
             scroll-behavior: smooth;
