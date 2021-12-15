@@ -67,7 +67,6 @@
 		<div class="navbar">
 			<a href="index.php">HOME</a>
 			<a href="home.php">COURSES</a>
-			<a href="https://www.rapidtables.com/convert/number/decimal-to-binary.html" target="__blank">CALCULATOR</a>
 			<?php
 				if(isset($_SESSION['username']))
 				{
