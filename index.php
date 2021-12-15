@@ -107,7 +107,7 @@
 <body>
     <section>
     <?php
-        if(isset($_SESSION['username']))
+        if(!isset($_SESSION['username']))
         {
     ?>
             <center>
@@ -166,9 +166,13 @@
                 </div>
 
             </center>
-            <?php
-                }
-            ?>
+        <?php
+            }
+            else
+            {
+        ?>
+            <h1><?php echo $_SESSION['username']; ?></h1>
+
     </section>
     <script>
         function openForm(x, y) {
