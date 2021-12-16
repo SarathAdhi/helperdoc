@@ -207,8 +207,16 @@
             document.getElementById(x).style.display = "none";
             document.getElementById(y).style.display = "none";
             document.getElementById(x).style.display = "block";
-            var elem = document.getElementById("button");
-            elem.scrollIntoView();
+            if (x === "myForm3")
+            {
+                var elem = document.getElementById("myForm3");
+                elem.scrollIntoView();
+            }
+            else
+            {
+                var elem = document.getElementById("button");
+                elem.scrollIntoView();
+            }
         }
 
         function closeForm(x, y) {
