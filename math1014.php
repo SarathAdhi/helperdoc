@@ -133,22 +133,19 @@
 			<div class="border">
 
 				<h2>Karnaugh Map Solver</h2>
-				<button class="open-button" onclick="openForm('kmap')" style="border-radius: 10px;">Click here</button>
-				<br><br>
+				<button class="open-button" onclick="openForm('kmap')" style="border-radius: 10px;">Click here</button><br><br>
+
+				<div class="form-popup" id="kmap">
+					<iframe src="https://www.charlie-coleman.com/experiments/kmap/" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
+					<br>
+					<button type="button" class="btn cancel" onclick="closeForm('kmap')">Close</button>
+				</div>
 
 			</div>
 
 			<br><br>
 			
 		</center>
-	</div>
-
-<!-- POPUP -->
-
-	<div class="form-popup" id="kmap">
-		<iframe src="https://www.charlie-coleman.com/experiments/kmap/" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
-		<br>
-		<button type="button" class="btn cancel" onclick="closeForm('kmap')">Close</button>
 	</div>
 </section>
 
