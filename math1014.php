@@ -113,6 +113,15 @@
 			</div>
 
 			<br><br>
+
+			<div class="border">
+
+				<h2>Quine-McCluskey Solver</h2><a href="http://quinemccluskey.com/" target="_blank">click here</a>
+				<br><br>
+
+			</div>
+
+			<br><br>
 			
 		</center>
 	</div>
