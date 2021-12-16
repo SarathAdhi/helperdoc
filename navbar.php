@@ -66,11 +66,11 @@
 	<header class="header">
 		<div class="navbar">
 			<a href="index.php">HOME</a>
-			<a href="courses.php">COURSES</a>
 			<?php
 				if(isset($_SESSION['username']))
 				{
 				?>
+					<a href="courses.php">COURSES</a>
 					<a href="logout.php" class="logout" style="text-decoration: none;">Logout<i class="fa fa-sign-out"></i></a>
 				<?php
 				}
