@@ -21,12 +21,13 @@
 
 <body>
     <section>
+        <center>
         <?php
             if(isset($_SESSION['username']))
             {
                 ?>
                 <div class="welcome">
-                    <h1>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h1>
+                    <h2>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h2>
                 </div>
                 <?php
             }
@@ -40,7 +41,7 @@
                 <?php
             }
         ?>
-
+        </center>
     </section>
 
 </body>
