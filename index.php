@@ -34,7 +34,7 @@
         .hash input
         {
             background: #f1f1f1;
-            border-radius: 10px;
+            width: 60%;
         }
         .open-button
         {
