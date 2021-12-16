@@ -294,7 +294,7 @@
             ?>
             <script type="text/javascript">
                 alert("Account successfully created.");
-                document.getElementById('myForm1').style.display = "block";
+                openForm('myForm1', 'myForm2');
             </script>
             <?php
         }
@@ -303,7 +303,7 @@
             ?>
             <script type="text/javascript">
                 alert("Username already exist.");
-                document.getElementById('myForm2').style.display = "block";
+                openForm('myForm2', 'myForm1');
             </script>
             <?php
         }
