@@ -125,11 +125,21 @@
 
                 <h3>See how hashing works</h3>
                 <form action="" method="post" >
-                    <label for="pass"><b>Random text</b></label>
-                    <input type="text" placeholder="Enter a Random text" name="pass" required>
+                    <label for="pass"><b>Random text</b></label><br>
+                    <input type="text" placeholder="Enter a Random text" name="pass" required><br>
                     <button type="submit" class="btn" name="samppass">Submit</button>
+
+                    <?php
+                        if(isset($_POST['samppass']))
+                        {
+                            $pass1 = $_POST['pass'];
+                            $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
+                            echo "pass1:  ".$hash1.".\n";
+                        }
+                    ?>
                 </form>
 
+                <br><br><br>
                 <button class="open-button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
 
                 <button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
@@ -248,12 +258,7 @@
         $_SESSION['username'] = $_POST['username'];
     }
 
-    if(isset($_POST['samppass']))
-    {
-        $pass1 = $_POST['pass'];
-        $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
-        echo "pass1:  ".$hash1.".\n";
-    }
+
 ?>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
