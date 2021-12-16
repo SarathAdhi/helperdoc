@@ -205,9 +205,11 @@
                         $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
                         echo "Entered Text:  ".$pass1."\n";
                         echo '<br>';
-                        echo "Hashed Code:";
-                        echo '<br>';
-                        echo '<p>'.$hash1.'</p>';
+                        echo "Hashed Code: ";
+                        for ($x = 0; $x <= 20; $x++)
+                        {
+                            echo $hash1[$x];
+                        }
                     }
                 ?>
             </div>
