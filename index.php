@@ -28,7 +28,7 @@
 
         .section1
         {
-            background-color: #B0AEFE;
+            background-color: #EBEAFD;
             height: auto;
         }
 
@@ -129,89 +129,87 @@
 <body>
     <section class="section1">
 
-            <center>
+        <center>
 
-                <h1>Login to Continue</h1><br>
-                <button class="open-button" id="button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
+            <h1>Login to Continue</h1><br>
+            <button class="open-button" id="button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
 
-                <button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
+            <button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
 
-                <br><br>
-                <div class="form-popup" id="myForm1">
+            <br><br>
+            <div class="form-popup" id="myForm1">
 
-                    <span class="glyphicon glyphicon-triangle-top" style="margin-left: -90px;"></span>
+                <span class="glyphicon glyphicon-triangle-top" style="margin-left: -90px;"></span>
 
-                    <form action="" method="post" class="form-container">
-                        <h1>Login</h1>
-                        <br><br>
+                <form action="" method="post" class="form-container">
+                    <h1>Login</h1>
+                    <br><br>
 
-                        <label for="username"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Your Username" name="username" required>
-                        <br><br>
-                        <label for="password"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="password" required>
-                        <br><br>
-                        <button type="submit" class="btn" name="loginsubmit">Login</button>
-                        <br>
-                        <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
-                    </form>
-                </div>
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Your Username" name="username" required>
+                    <br><br>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <br><br>
+                    <button type="submit" class="btn" name="loginsubmit">Login</button>
+                    <br>
+                    <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
+                </form>
+            </div>
 
+            <div class="form-popup" id="myForm2">
+                <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
+                <form action="" method="post" class="form-container">
+                    <h1>Signup</h1>
 
-
-                <div class="form-popup" id="myForm2">
-                    <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
-                    <form action="" method="post" class="form-container">
-                        <h1>Signup</h1>
-
-                        <label for="username"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="username" required>
-                        <br><br>
-                        <label for="password"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="password" required>
-                        <br><br>
-                        <label for="degree"><b>Degree</b></label>
-                        <input type="text" placeholder="B.tech, M.tech, ..." name="degree" required>
-                        <br><br>
-                        <label for="year"><b>Graduate Year</b></label>
-                        <input type="text" placeholder="2021, 2022, ..." name="year" required>
-                        <br><br>
-                        <button type="submit" class="btn" name="register">Register</button>
-                        <br>
-                        <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
-                    </form>
-                </div>
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                    <br><br>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                    <br><br>
+                    <label for="degree"><b>Degree</b></label>
+                    <input type="text" placeholder="B.tech, M.tech, ..." name="degree" required>
+                    <br><br>
+                    <label for="year"><b>Graduate Year</b></label>
+                    <input type="text" placeholder="2021, 2022, ..." name="year" required>
+                    <br><br>
+                    <button type="submit" class="btn" name="register">Register</button>
+                    <br>
+                    <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
+                </form>
+            </div>
+        </center>
     </section>
 
     <section class="section2">
-                <br>
-                <div>
-                    <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
+        <center>
+            <br>
+            <div>
+                <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
-                    <h3>See and text how hashing works</h3><button class="open-button" onclick="openForm('myForm3', 'myForm2')" style="border-radius: 10px;">test here</button><br><br>
+                <h3>See and text how hashing works</h3><button class="open-button" onclick="openForm('myForm3', 'myForm2')" style="border-radius: 10px;">test here</button><br><br>
 
-                    <div class="form-popup" id="myForm3">
-                        <form action="" method="post">
-                            <h3><b>Random text</b></h3><br>
-                            <input type="text" placeholder="Enter a Random text" name="pass" required><br><br>
-                            <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')">Close</button>
-                            <button type="submit" class="btn" name="samppass">Submit</button>
-                            <br><br>
-                        </form>
-                        
-                    </div>
-                    <?php
-                            if(isset($_POST['samppass']))
-                            {
-                                $pass1 = $_POST['pass'];
-                                $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
-                                echo "Entered Text:  ".$hash1.".\n";
-                            }
-                        ?>
+                <div class="form-popup" id="myForm3">
+                    <form action="" method="post">
+                        <h3><b>Random text</b></h3><br>
+                        <input type="text" placeholder="Enter a Random text" name="pass" required><br><br>
+                        <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')">Close</button>
+                        <button type="submit" class="btn" name="samppass">Submit</button>
+                        <br><br>
+                    </form>
                 </div>
+                <?php
+                    if(isset($_POST['samppass']))
+                    {
+                        $pass1 = $_POST['pass'];
+                        $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
+                        echo "Entered Text:  ".$hash1.".\n";
+                    }
+                ?>
+            </div>
 
-            </center>
-
+        </center>
     <br><br>
     </section>
     <script>
