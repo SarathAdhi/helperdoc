@@ -187,7 +187,9 @@
                             <button type="submit" class="btn" name="samppass">Submit</button>
                             <br><br>
                         </form>
-                        <?php
+                        
+                    </div>
+                    <?php
                             if(isset($_POST['samppass']))
                             {
                                 $pass1 = $_POST['pass'];
@@ -195,7 +197,6 @@
                                 echo "Entered Text:  ".$hash1.".\n";
                             }
                         ?>
-                    </div>
                 </div>
 
             </center>
