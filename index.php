@@ -155,11 +155,13 @@
                     <br>
                     <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
                 </form>
-                <br><br>
+                
             </div>
+            <br><br>
 
             <div class="form-popup" id="myForm2">
                 <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
+
                 <form action="" method="post" class="form-container">
                     <h1>Signup</h1>
 
@@ -179,8 +181,9 @@
                     <br>
                     <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
                 </form>
-                <br><br>
+                
             </div>
+            <br><br>
         </center>
     </section>
 
@@ -196,8 +199,8 @@
                     <form action="" method="post">
                         <h3><b>Random text</b></h3><br>
                         <input type="text" placeholder="Enter a Random text" name="pass" required><br><br>
-                        <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')">Close</button>
-                        <button type="submit" class="btn" name="samppass">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')" style="background-color: red;">Close</button>
+                        <button type="submit" class="btn" name="samppass" style="background-color: green;">Submit</button>
                         <br><br>
                     </form>
                 </div>
