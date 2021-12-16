@@ -114,9 +114,18 @@
 
 			<br><br>
 
-			<div class="border">
+			<div class="border2">
 
 				<h2>Quine-McCluskey Solver</h2><a href="http://quinemccluskey.com/" target="_blank">click here</a>
+				<br><br>
+
+			</div>
+
+			<br><br>
+
+			<div class="border">
+
+				<h2>Karnaugh Map Solver</h2><a href="https://www.charlie-coleman.com/experiments/kmap/" target="_blank">click here</a>
 				<br><br>
 
 			</div>
