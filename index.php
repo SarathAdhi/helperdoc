@@ -123,6 +123,12 @@
                 <h1>Login to Continue</h1>
                 <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
+                <h3>See how hashing works</h3>
+                <form action="" method="post" class="form-container">
+                    <label for="pass"><b>Random text</b></label>
+                    <input type="text" placeholder="Enter a Random text" name="pass" required>
+                    <button type="submit" class="btn" name="samppass">Submit</button>
+                </form>
 
                 <button class="open-button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
 
@@ -240,6 +246,13 @@
         $sql = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]');");
 
         $_SESSION['username'] = $_POST['username'];
+    }
+
+    if(isset($_POST['samppass']))
+    {
+        $pass1 = $_POST['pass'];
+        $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
+        echo "pass1:  ".$hash1.".\n";
     }
 ?>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
