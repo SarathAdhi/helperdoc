@@ -101,17 +101,34 @@
         {
             opacity: 1;
         }
-        .typing-demo{
-          width: 59ch;
-          background-color: white;
-          animation: typing 4s steps(40), blink .5s step-end infinite alternate;
-          white-space: nowrap;
-          overflow: hidden;
-          border-right: 3px solid;
-          font-family: monospace;
-          font-size: 2em;
-          color: black;
+        .typing-demo h1{
+          animation: type 3s steps(30);
+          color:lightgreen;
+          white-space:nowrap;
+          overflow:hidden;
+          width:30ch;
+          }
 
+        @keyframes type{
+          0%{
+            width:0ch;
+          }
+          
+          100%{
+            width:30ch;
+          }
+        }
+
+        @keyframes blink{
+          0%{opacity:1;}
+          50%{opacity:0;}
+          100%{opacity:1;}
+        }
+
+        .typing-demo blink{
+          animation: blink 1s linear infinite;
+          border-right: 10px solid lightgreen;
+          height:12px;
         }
     </style>
 </head>
@@ -121,7 +138,7 @@
         <?php
             if(isset($_SESSION['username']))
             {
-                echo '<p class="typing-demo">Hii '.$_SESSION['username'].', Welcome to HelperDOC.</p>';
+                echo '<h1 class="typing-demo">Hii '.$_SESSION['username'].', Welcome to HelperDOC.<blink></blink></h1>';
             }
             else
             {
@@ -139,5 +156,5 @@
 </body>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 </html>
