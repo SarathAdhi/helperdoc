@@ -18,7 +18,7 @@
 
         h1{
           animation: type 3s steps(30);
-          color:lightgreen;
+          color:black;
           white-space:nowrap;
           overflow:hidden;
           width:30ch;
