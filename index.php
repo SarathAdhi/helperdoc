@@ -209,6 +209,7 @@
                         $pass1 = $_POST['pass'];
                         $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
                         echo "Entered Text:  ".$pass1.".\n";
+                        echo '<br>';
                         echo "Hashed Text:  ".$hash1.".\n";
                     }
                 ?>
