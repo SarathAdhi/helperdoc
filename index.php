@@ -246,14 +246,13 @@
 <?php
     if(isset($_POST['loginsubmit']))
     {
-        $password = $_POST['password'];
-
         $sql = mysqli_query($db, "SELECT `password` FROM `user_hd` WHERE `username` = '$_POST[username]';");
         $row = mysqli_fetch_assoc($sql);
         $count = mysqli_num_rows($sql);
 
         if($count != 0)
         {
+            $password = $_POST['password'];
             if(password_verify($password, $row['password']))
             {
                 ?>
@@ -284,16 +283,34 @@
     }
     elseif(isset($_POST['register']))
     {
-        $password = $_POST['password'];
-        $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
+        $sql1 = mysqli_query($db, "SELECT `username` FROM `user_hd` WHERE `username` = '$_POST[username]';");
+        $count = mysqli_num_rows($sql1);
 
-        $sql = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]');");
-
-        $_SESSION['username'] = $_POST['username'];
+        if($count != 0)
+        {
+            $password = $_POST['password'];
+            $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
+            $sql2 = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]');");
+            ?>
+            <script type="text/javascript">
+                alert("Account successfully created.");
+                
+                document.getElementById('myForm1').style.display = "block";
+            </script>
+            <?php
+        }
+        else
+        {
+            ?>
+            <script type="text/javascript">
+                alert("Username already exist.");
+            </script>
+            <?php
+        }
     }
 
 
 ?>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 </html>
