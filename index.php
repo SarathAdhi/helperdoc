@@ -101,6 +101,18 @@
         {
             opacity: 1;
         }
+        .typing-demo{
+          width: 59ch;
+          background-color: white;
+          animation: typing 4s steps(40), blink .5s step-end infinite alternate;
+          white-space: nowrap;
+          overflow: hidden;
+          border-right: 3px solid;
+          font-family: monospace;
+          font-size: 2em;
+          color: black;
+
+        }
     </style>
 </head>
 
@@ -172,7 +184,7 @@
             {
         ?>
 
-            <h1><?php echo $_SESSION['username']; ?></h1>
+            <div class="typing-demo"><h1>Hello <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC.</h1></div>
 
         <?php
             }
