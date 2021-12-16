@@ -22,7 +22,7 @@
            font-family: monospace;
            font-size: 60px;
            margin: 40px;
-           /* overflow: hidden; */
+           overflow: hidden;
           }
 
           h1::after {
