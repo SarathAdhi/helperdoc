@@ -26,6 +26,18 @@
             box-sizing: border-box;
         }
 
+        .section1
+        {
+            background-color: #B0AEFE;
+            height: auto;
+        }
+
+        .section2
+        {
+            background-color: white;
+            height: auto;
+        }
+
         .open-button
         {
             background-color: #555;
@@ -115,13 +127,9 @@
 </head>
 
 <body>
-    <section>
+    <section class="section1">
 
             <center>
-                
-
-                    
-                
 
                 <h1>Login to Continue</h1><br>
                 <button class="open-button" id="button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
@@ -173,6 +181,9 @@
                         <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
                     </form>
                 </div>
+    </section>
+
+    <section class="section2">
                 <br>
                 <div>
                     <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
