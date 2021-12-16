@@ -13,7 +13,6 @@
         body
         {
             background-image: url('background/1.jpg');
-            background-size: cover;
             background-repeat: no-repeat;
             font-family: Consolas !important;
         }
