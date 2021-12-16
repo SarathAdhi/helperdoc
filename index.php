@@ -303,6 +303,7 @@
             ?>
             <script type="text/javascript">
                 alert("Username already exist.");
+                document.getElementById('myForm2').style.display = "block";
             </script>
             <?php
         }
