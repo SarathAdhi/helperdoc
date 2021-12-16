@@ -54,7 +54,7 @@
             if(isset($_SESSION['username']))
             {
                 ?>
-                <h1>Hii <?php $_SESSION['username'] ?>, Welcome to HelperDOC.<blink></blink></h1>
+                <h1>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC.<blink></blink></h1>
                 <?php
             }
             else
