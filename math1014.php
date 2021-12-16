@@ -40,7 +40,6 @@
         {
             display: none;
             position: relative;
-            border: 3px solid #0A0162;
             z-index: 9;
             max-width: 600px;
         }
@@ -138,7 +137,7 @@
 				<br><br>
 
 				<div class="form-popup" id="kmap">
-					<iframe src="https://www.charlie-coleman.com/experiments/kmap/" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="80%" allowfullscreen></iframe>
+					<iframe src="https://www.charlie-coleman.com/experiments/kmap/" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
 				</div>
 
 			</div>
