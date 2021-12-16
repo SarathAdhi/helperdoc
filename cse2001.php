@@ -183,6 +183,7 @@
 
 			<br><br>
 			
+			<a href="adminpage.php">click here for more</a>
 		</center>
 	</div>
 </section>
