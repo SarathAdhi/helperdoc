@@ -16,57 +16,6 @@
             font-family: Consolas !important;
         }
 
-        .typing h1 {
-           display: inline-block;
-           position: relative;
-           font-family: monospace;
-           font-size: 60px;
-           margin: 40px;
-           overflow: hidden;
-          }
-
-          h1::after {
-           box-sizing: border-box;
-           content: "";
-           position: absolute;
-           width: 100%;
-           height: 100%;
-           /* background-color: transparent; */
-           background-color: white;
-           top: 0;
-           right: 0;
-           border-left: 3px solid black;
-           animation: cursor 0.5s linear infinite, typing 3s steps(50) forwards 1;
-
-          }
-
-          @keyframes cursor {
-           0% {
-            border-color: black;
-           }
-           50% {
-            border-color: black;
-           }
-           65% {
-            border-color: transparent;
-           }
-           75% {
-            border-color: transparent;
-           }
-           90% {
-            border-color: black;
-           }
-           100% {
-            border-color: black;
-           }
-
-          }
-
-          @keyframes typing {
-           to {
-            width: 0;
-           }
-          }
     </style>
 </head>
 
@@ -76,8 +25,8 @@
             if(isset($_SESSION['username']))
             {
                 ?>
-                <div class="typing">
-                    <h1>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...<blink></blink></h1>
+                <div class="welcome">
+                    <h1>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h1>
                 </div>
                 <?php
             }
