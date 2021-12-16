@@ -26,6 +26,10 @@
             box-sizing: border-box;
         }
 
+        .hash
+        {
+            border: 3px solid #0A0162;
+        }
         .open-button
         {
             background-color: #555;
@@ -73,8 +77,6 @@
             background: #f1f1f1;
             border-radius: 10px;
         }
-
-
 
         .form-container .btn
         {
@@ -124,10 +126,10 @@
                 <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
                 <h3>See how hashing works</h3>
-                <form action="" method="post" >
-                    <label for="pass"><b>Random text</b></label><br>
-                    <input type="text" placeholder="Enter a Random text" name="pass" required><br>
-                    <button type="submit" class="btn" name="samppass">Submit</button>
+                <form action="" method="post" class="hash">
+                    <b>Random text</b><br>
+                    <input type="text" placeholder="Enter a Random text" name="pass" required style="width: 80px"><br><br>
+                    <button type="submit" class="btn" name="samppass" style="width: 50px">Submit</button><br><br>
 
                     <?php
                         if(isset($_POST['samppass']))
@@ -140,7 +142,7 @@
                 </form>
 
                 <br><br><br>
-                
+
                 <button class="open-button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
 
                 <button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
