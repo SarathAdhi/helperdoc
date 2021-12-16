@@ -123,15 +123,8 @@
 
 			<div class="border2">
 
-				<h2>Quine-McCluskey Solver</h2>
-
-				<button class="open-button" onclick="openForm('qmc')" style="border-radius: 10px;">Click here</button><br><br>
-
-				<div class="form-popup" id="qmc">
-					<iframe src="http://quinemccluskey.com" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="100%" allowfullscreen></iframe>
-					<br>
-					<button type="button" class="btn cancel" onclick="closeForm('qmc')">Close</button>
-				</div>
+				<h2>Quine-McCluskey Solver</h2><a href="http://quinemccluskey.com/" target="_blank">click here</a>
+				<br><br>
 
 			</div>
 
@@ -140,7 +133,7 @@
 			<div class="border">
 
 				<h2>Karnaugh Map Solver</h2>
-
+				
 				<button class="open-button" onclick="openForm('kmap')" style="border-radius: 10px;">Click here</button><br><br>
 
 				<div class="form-popup" id="kmap">
