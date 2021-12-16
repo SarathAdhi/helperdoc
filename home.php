@@ -12,7 +12,8 @@
     <style type="text/css">
         body
         {
-            background-color: #B0AEFE;
+            background-image: url('background/1.jpg');
+            background-size: cover;
             font-family: Consolas !important;
         }
         .section1
