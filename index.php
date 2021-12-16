@@ -182,7 +182,12 @@
             }
             else
             {
-                echo '<p class="typing-demo">Hii '.$_SESSION['username'].', Welcome to HelperDOC.</p>';
+                ?>
+                <script type="text/javascript">
+                    alert("Please login first");
+                    window.location.replace('index.php');
+                </script>
+                <?php
             }
         ?>
 
@@ -218,7 +223,7 @@
                 ?>
                 <script type="text/javascript">
                     alert("Password is correct");
-                    window.location.replace('index.php');
+                    window.location.replace('home.php');
                 </script>
                 <?php
                 $_SESSION['username'] = $_POST['username'];
