@@ -198,8 +198,8 @@
                     <form action="" method="post">
                         <h3><b>Random text</b></h3><br>
                         <input type="text" placeholder="Enter a Random text" name="pass" required><br><br>
-                        <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')" style="background-color: red; opacity: 0.8;">Close</button>
-                        <button type="submit" class="btn" name="samppass" style="background-color: green; opacity: 0.8;">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')" style="color: white; background-color: red; opacity: 0.8;">Close</button>
+                        <button type="submit" class="btn" name="samppass" style="color: white; background-color: green; opacity: 0.8;">Submit</button>
                         <br><br>
                     </form>
                 </div>
@@ -208,7 +208,8 @@
                     {
                         $pass1 = $_POST['pass'];
                         $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
-                        echo "Entered Text:  ".$hash1.".\n";
+                        echo "Entered Text:  ".$pass1.".\n";
+                        echo "Hashed Text:  ".$hash1.".\n";
                     }
                 ?>
             </div>
