@@ -16,11 +16,6 @@
             font-family: Consolas !important;
         }
 
-        h2,p
-        {
-            font-family: Consolas !important;
-        }
-
         *
         {
             box-sizing: border-box;
@@ -210,7 +205,7 @@
                         $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
                         echo "Entered Text:  ".$pass1."\n";
                         echo '<br>';
-                        echo '<p>Hashed Code:  '.$hash1.'\n</p>';
+                        echo '<p>Hashed Code:'.$hash1.'\n</p>';
                     }
                 ?>
             </div>
