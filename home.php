@@ -15,20 +15,22 @@
             background-color: #B0AEFE;
             font-family: Consolas !important;
         }
-
+        .section1
+        {
+            background-color: #EBEAFD;
+            height: auto;
+        }
     </style>
 </head>
 
 <body>
-    <section>
+    <section class="section1">
         <center>
         <?php
             if(isset($_SESSION['username']))
             {
                 ?>
-                <div class="welcome">
                     <h2>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h2>
-                </div>
                 <?php
             }
             else
