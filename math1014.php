@@ -125,8 +125,13 @@
 
 			<div class="border">
 
-				<h2>Karnaugh Map Solver</h2><a href="https://www.charlie-coleman.com/experiments/kmap/" target="_blank">click here</a>
+				<h2>Karnaugh Map Solver</h2>
+				<button class="open-button" onclick="openForm('myForm3', 'myForm2')" style="border-radius: 10px;">Click here</button><br><br>
 				<br><br>
+
+				<div class="form-popup" id="myForm3">
+					<iframe src="https://www.charlie-coleman.com/experiments/kmap/" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+				</div>
 
 			</div>
 
@@ -137,5 +142,16 @@
 </section>
 
 </body>
+<script>
+    function openForm(x) {
+        document.getElementById(x).style.display = "block";
+        var elem = document.getElementById(x);
+        elem.scrollIntoView();
+    }
 
+    function closeForm(x) {
+        document.getElementById(x).style.display = "none";
+        window.scrollBy(0,-20);
+    }
+</script>
 </html>
