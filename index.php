@@ -26,16 +26,6 @@
             box-sizing: border-box;
         }
 
-        .hash
-        {
-            width: 60%;
-            border: 3px solid #0A0162;
-        }
-        .hash input
-        {
-            background: #f1f1f1;
-            width: 60%;
-        }
         .open-button
         {
             background-color: #555;
