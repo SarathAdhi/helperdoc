@@ -128,27 +128,12 @@
     <section>
 
             <center>
-                <h1>Login to Continue</h1>
-                <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
+                
 
-                <h3>See how hashing works</h3>
-                <form action="" method="post" class="hash">
-                    <b>Random text</b><br>
-                    <input type="text" placeholder="Enter a Random text" name="pass" required style="width: 80px"><br><br>
-                    <button type="submit" class="btn" name="samppass" style="width: 50px">Submit</button><br><br>
+                    
+                
 
-                    <?php
-                        if(isset($_POST['samppass']))
-                        {
-                            $pass1 = $_POST['pass'];
-                            $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
-                            echo "Entered Text:  ".$hash1.".\n";
-                        }
-                    ?>
-                </form>
-
-                <br><br><br>
-
+                <h1>Login to Continue</h1><br>
                 <button class="open-button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
 
                 <button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
@@ -198,6 +183,30 @@
                         <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
                     </form>
                 </div>
+                <br>
+                <div>
+                    <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
+
+                    <h3>See and text how hashing works</h3><button class="open-button" onclick="openForm('myForm3', 'myForm2')" style="border-radius: 10px;">test here</button><br><br>
+
+                    <div class="form-popup" id="myForm3">
+                        <form action="" method="post">
+                            <h3><b>Random text</b></h3><br>
+                            <input type="text" placeholder="Enter a Random text" name="pass" required><br><br>
+                            <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')">Close</button>
+                            <button type="submit" class="btn" name="samppass">Submit</button>
+                            <br><br>
+                        </form>
+                        <?php
+                            if(isset($_POST['samppass']))
+                            {
+                                $pass1 = $_POST['pass'];
+                                $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
+                                echo "Entered Text:  ".$hash1.".\n";
+                            }
+                        ?>
+                    </div>
+                </div>
 
             </center>
 
@@ -208,12 +217,14 @@
             document.getElementById(x).style.display = "none";
             document.getElementById(y).style.display = "none";
             document.getElementById(x).style.display = "block";
-            window.scrollTo(0,document.body.scrollHeight);
+            var elem = document.getElementById("button");
+            elem.scrollIntoView();
         }
 
         function closeForm(x, y) {
             document.getElementById(x).style.display = "none";
             document.getElementById(y).style.display = "none";
+            window.scrollBy(0,-20);
         }
     </script>
 </body>
