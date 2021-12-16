@@ -136,7 +136,7 @@
                         {
                             $pass1 = $_POST['pass'];
                             $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
-                            echo "pass1:  ".$hash1.".\n";
+                            echo "Entered Text:  ".$hash1.".\n";
                         }
                     ?>
                 </form>
