@@ -48,84 +48,15 @@
 	<center>
 
 		<div class="content" id="content">
-			<h3>COMPUTER ARCHITECTURE AND ORGANISATION CSE2001  <a href="cao.php">click here..</a></h3>
+			<h3>COMPUTER ARCHITECTURE AND ORGANISATION CSE2001  <a href="cse2001.php">click here..</a></h3>
+		</div>
+		<div class="content" id="content">
+			<h3>DISCRETE MATHEMATICS AND GRAPH THEORY MATH1014 <a href="math1014.php">click here..</a></h3>
 		</div>
 
-		<h2>தூய தமிழன்</h2>
-		<h2>Thank me later...<span style="color: red;">&#9829;
-		</span></h2>
 		
 	</center>
 </section>
 
-<form action="" method="post">
-	<p style="font-size: 20px;">NOTE: Your information are stored securely using hashing. Dont worry :)</p>
-	<input type="text" name="name" placeholder="Enter your name" required width="300px" height="10px">
-	<h1>Like this page: <button type="submit" name="submit"><span style="color: yellow;">&#128077;</span></button></h1>
-	
-</form>
 </body>
-
-<?php
-	
-	if(isset($_POST['submit']))
-	{
-		$ip = $_SERVER['REMOTE_ADDR'];
-		
-		$count = 0;
-
-		$check = mysqli_query($db, "SELECT * FROM `user_cheatnow` WHERE `name` = '$_POST[name]' AND `ip` = '$ip';");
-
-		while($r = mysqli_fetch_assoc($check)) /*checking if the name already exist */
-        {
-            if($r['name'] == $_POST['name'])
-            {
-                $count=$count+1;
-            }
-            
-        }
-		if($count != 0)
-		{
-			?>
-				<script type="text/javascript">
-					alert("Username already exist or You have already liked our website. THANK YOU");
-				</script>
-			<?php
-		}
-		else
-		{
-				
-			$sql = mysqli_query($db, "INSERT INTO `user_cheatnow` VALUES ('$_POST[name]', '$ip');");
-
-			$sql1 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
-
-			$res = mysqli_fetch_assoc($sql1);
-			$c = $res['like'] + 1;
-
-			$sql2 = mysqli_query($db, "UPDATE `like_cheatnow` SET `like` = $c;");
-
-			?>
-				<script type="text/javascript">
-					alert("THANK YOU FOR LOVE :D");
-				</script>
-			<?php
-		}
-
-		$sql2 = mysqli_query($db, "SELECT `like` FROM `like_cheatnow`;");
-
-		$res2 = mysqli_fetch_assoc($sql2);
-
-		echo '<h1>Number of peoples who likes this page including you: '; echo $res2['like']; echo '</h1>';
-
-	}
-?>
-
-
-
-<!-- 
-mod 1 perfomance of processors
-mod 2 fully numericals thaan....
-mod 4 memory allocation(fifo,optimal page replacement ,etc....)
-mod 6 raid
--->
 </html>
