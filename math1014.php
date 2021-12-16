@@ -50,7 +50,7 @@
 
 			<div class="border">
 
-				<h2>MODULE 1</h2><a href="https://drive.google.com/drive/folders/1JIpTbvh4MD-WKp-CxZDvnYm5--sNsqIL?usp=sharing">click here</a>
+				<h2>MODULE 1</h2><a href="https://drive.google.com/drive/folders/1JIpTbvh4MD-WKp-CxZDvnYm5--sNsqIL?usp=sharing" target="_blank">click here</a>
 				<br><br>
 
 			</div>
