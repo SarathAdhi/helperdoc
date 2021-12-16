@@ -207,7 +207,7 @@
                         echo '<br>';
                         echo "Hashed Code:";
                         echo '<br>';
-                        echo $hash1;
+                        echo '<p>'.$hash1.'</p>';
                     }
                 ?>
             </div>
