@@ -130,7 +130,7 @@
 				<br><br>
 
 				<div class="form-popup" id="myForm3">
-					<iframe src="https://www.charlie-coleman.com/experiments/kmap/" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+					<iframe src="https://www.charlie-coleman.com/experiments/kmap/" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="80%" allowfullscreen></iframe>
 				</div>
 
 			</div>
