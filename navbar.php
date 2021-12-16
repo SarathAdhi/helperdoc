@@ -66,7 +66,7 @@
 	<header class="header">
 		<div class="navbar">
 			<a href="index.php">HOME</a>
-			<a href="home.php">COURSES</a>
+			<a href="courses.php">COURSES</a>
 			<?php
 				if(isset($_SESSION['username']))
 				{
