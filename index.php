@@ -277,6 +277,7 @@
             ?>
             <script type="text/javascript">
                 alert("Username does not exist.");
+                openForm('myForm1', 'myForm2');
             </script>
             <?php
         }
