@@ -17,11 +17,11 @@
         }
 
         h1{
-          animation: type 3s steps(30);
+          animation: type 3s steps(40);
           color:black;
           white-space:nowrap;
           overflow:hidden;
-          width:30ch;
+          width:40ch;
           }
 
         @keyframes type{
@@ -30,7 +30,7 @@
           }
           
           100%{
-            width:30ch;
+            width:40ch;
           }
         }
 
@@ -54,7 +54,7 @@
             if(isset($_SESSION['username']))
             {
                 ?>
-                <h1>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC.<blink></blink></h1>
+                <h1>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...<blink></blink></h1>
                 <?php
             }
             else
