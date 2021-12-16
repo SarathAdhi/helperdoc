@@ -20,6 +20,12 @@
             background-color: #EBEAFD;
             height: auto;
         }
+        .content1
+        {
+            position: absolute;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
     </style>
 </head>
 
@@ -30,7 +36,12 @@
             if(isset($_SESSION['username']))
             {
                 ?>
-                    <h2>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h2>
+                    <div class="content1">
+                        <h2>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h2>
+                        <br>
+                    
+                        <p>This is a platform where you can download notes for various courses and share your notes. This website is still under construction.</p>
+                    </div>
                 <?php
             }
             else
