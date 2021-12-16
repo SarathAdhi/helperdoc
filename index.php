@@ -12,7 +12,7 @@
     <style type="text/css">
         body
         {
-            background-color: #B0AEFE;
+            background-color: #D8D8F4;
             font-family: Consolas !important;
         }
 
@@ -128,7 +128,7 @@
 
 <body>
     <section class="section1">
-
+        <br><br>
         <center>
 
             <h1>Login to Continue</h1><br>
@@ -136,7 +136,7 @@
 
             <button class="open-button" onclick="openForm('myForm2', 'myForm1')" style="border-radius: 10px;">Signup Form</button>
 
-            <br><br>
+            <br><br><br>
             <div class="form-popup" id="myForm1">
 
                 <span class="glyphicon glyphicon-triangle-top" style="margin-left: -90px;"></span>
@@ -155,6 +155,7 @@
                     <br>
                     <button type="button" class="btn cancel" onclick="closeForm('myForm1', 'myForm2')">Close</button>
                 </form>
+                <br><br>
             </div>
 
             <div class="form-popup" id="myForm2">
@@ -178,6 +179,7 @@
                     <br>
                     <button type="button" class="btn cancel" onclick="closeForm('myForm2', 'myForm1')">Close</button>
                 </form>
+                <br><br>
             </div>
         </center>
     </section>
