@@ -283,10 +283,10 @@
     }
     elseif(isset($_POST['register']))
     {
-        $sql1 = mysqli_query($db, "SELECT `username` FROM `user_hd` WHERE `username` = '$_POST[username]';");
+        $sql1 = mysqli_query($db, "SELECT * FROM `user_hd` WHERE `username` = '$_POST[username]';");
         $count = mysqli_num_rows($sql1);
 
-        if($count != 0)
+        if($count == 0)
         {
             $password = $_POST['password'];
             $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
@@ -294,7 +294,6 @@
             ?>
             <script type="text/javascript">
                 alert("Account successfully created.");
-                
                 document.getElementById('myForm1').style.display = "block";
             </script>
             <?php
@@ -308,8 +307,6 @@
             <?php
         }
     }
-
-
 ?>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
