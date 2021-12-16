@@ -28,7 +28,13 @@
 
         .hash
         {
+            width: 60%;
             border: 3px solid #0A0162;
+        }
+        .hash input
+        {
+            background: #f1f1f1;
+            border-radius: 10px;
         }
         .open-button
         {
