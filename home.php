@@ -32,7 +32,7 @@
 
 <body>
     <section class="section1">
-        <center>
+
         <?php
             if(isset($_SESSION['username']))
             {
@@ -55,7 +55,6 @@
                 <?php
             }
         ?>
-        </center>
     </section>
 
 </body>
