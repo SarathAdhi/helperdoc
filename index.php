@@ -157,7 +157,6 @@
                 </form>
                 
             </div>
-            <br><br>
 
             <div class="form-popup" id="myForm2">
                 <span class="glyphicon glyphicon-triangle-top" style="margin-left: 60px;"></span>
