@@ -124,7 +124,7 @@
                 <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
                 <h3>See how hashing works</h3>
-                <form action="" method="post" class="form-container">
+                <form action="" method="post" >
                     <label for="pass"><b>Random text</b></label>
                     <input type="text" placeholder="Enter a Random text" name="pass" required>
                     <button type="submit" class="btn" name="samppass">Submit</button>
