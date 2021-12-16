@@ -182,11 +182,7 @@
             }
             else
             {
-        ?>
-
-            <div class="typing-demo"><h1>Hello <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC.</h1></div>
-
-        <?php
+                echo '<p class="typing-demo">Hii '.$_SESSION['username'].', Welcome to HelperDOC.</p>';
             }
         ?>
 
