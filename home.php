@@ -119,9 +119,18 @@
 <body>
     <section>
         <?php
-            if(!isset($_SESSION['username']))
+            if(isset($_SESSION['username']))
             {
                 echo '<p class="typing-demo">Hii '.$_SESSION['username'].', Welcome to HelperDOC.</p>';
+            }
+            else
+            {
+                ?>
+                <script type="text/javascript">
+                    alert("Please login first");
+                    window.location.replace('index.php');
+                </script>
+                <?php
             }
         ?>
 

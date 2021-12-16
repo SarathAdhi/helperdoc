@@ -118,10 +118,7 @@
 
 <body>
     <section>
-    <?php
-        if(!isset($_SESSION['username']))
-        {
-    ?>
+
             <center>
                 <h1>Login to Continue</h1>
                 <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
@@ -178,18 +175,7 @@
                 </div>
 
             </center>
-        <?php
-            }
-            else
-            {
-                ?>
-                <script type="text/javascript">
-                    alert("Please login first");
-                    window.location.replace('index.php');
-                </script>
-                <?php
-            }
-        ?>
+
 
     </section>
     <script>
