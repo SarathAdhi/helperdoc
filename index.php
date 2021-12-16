@@ -210,7 +210,7 @@
                         $hash1 = password_hash($pass1, PASSWORD_DEFAULT);
                         echo "Entered Text:  ".$pass1."\n";
                         echo '<br>';
-                        echo "Hashed Text:  ".$hash1."\n";
+                        echo "Hashed Code:  ".$hash1."\n";
                     }
                 ?>
             </div>
