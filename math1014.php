@@ -91,8 +91,6 @@
 
 				<h2>MODULE 5</h2><a href="https://drive.google.com/drive/folders/1P2FeR9Gjap5gqzl38WW1C3xi6GWA3VsF?usp=sharing" target="_blank">click here</a>
 				<br>
-				<a href="image/7.png" target="_blank">view flowchart</a>
-				<br><br>
 
 			</div>
 
