@@ -16,10 +16,11 @@
     	::-webkit-scrollbar {
 		  width: 1px;
 		}
-body
+.body
 {
-  position: fixed;
-  
+  display: grid;
+  place-items: center;
+
 }
 .header {
   background-color: #523BF3;
@@ -172,7 +173,7 @@ body
 
     </style>
   </head>
-  <body>
+  <div class="body">
     <header class="header">
       <nav class="main-nav">
         <input type="checkbox" id="isChecked" />
@@ -191,5 +192,5 @@ body
         </ul>
       </nav>
     </header>
-  </body>
+  </div>
 </html>
