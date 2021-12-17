@@ -18,8 +18,8 @@
 		}
 body
 {
-  display: grid;
-  place-items: center;
+  position: fixed;
+  
 }
 .header {
   background-color: #523BF3;
