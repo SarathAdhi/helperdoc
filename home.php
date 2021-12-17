@@ -23,15 +23,14 @@
         }
         .content1
         {
-            position: absolute;
-            margin-left: 40px;
-            margin-right: 40px;
+            position: relative;
         }
     </style>
 </head>
 
 <body>
     <section class="section1">
+        <center>
 
         <?php
             if(isset($_SESSION['username']))
@@ -55,6 +54,8 @@
                 <?php
             }
         ?>
+
+        </center>
     </section>
 
 </body>
