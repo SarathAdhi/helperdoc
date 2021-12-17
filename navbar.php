@@ -44,6 +44,9 @@
   margin-left: 30px;
   font-family: "AstroSpace", sans-serif;
 }
+.logo:hover {
+  text-decoration: none;
+}
 .text
 {
   color: white;
