@@ -54,6 +54,7 @@
 
 	<div class="content" id="content">
 		<center>
+			<br>
 
 			<div class="border">
 
