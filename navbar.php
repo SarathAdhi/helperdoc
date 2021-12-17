@@ -130,7 +130,7 @@
 		    position: fixed;
 		    width: 100%;
 		    height: auto;
-		    padding-bottom: 10px;
+		    padding-bottom: 5px;
 		    text-align: center;
 		    background: #222831;
 		    top: -100%;
