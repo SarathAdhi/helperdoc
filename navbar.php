@@ -113,7 +113,7 @@
 @media (max-width: 800px) {
   .navlinks {
     position: fixed;
-    width: 96%;
+    width: 100%;
     height: 40vh;
     text-align: center;
     background: #222831;
