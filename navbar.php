@@ -23,6 +23,7 @@
 			margin-top: 5px;
 		  	display: grid;
 		  	place-items: center;
+		  	position: fixed;
 		}
 
 		.header
