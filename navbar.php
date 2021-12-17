@@ -23,7 +23,6 @@
 			margin-top: 5px;
 		  	display: grid;
 		  	place-items: center;
-		  	position: fixed;
 		}
 
 		.header
@@ -32,6 +31,7 @@
 		  	font-family: Consolas !important;
 		  	width: 70%;
 		  	border-radius: 10px;
+		  	position: fixed;
 		}
 
 		.main-nav
