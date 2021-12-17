@@ -32,6 +32,7 @@
 		  	width: 70%;
 		  	border-radius: 10px;
 		  	position: fixed;
+		  	margin-top: 40px;
 		}
 
 		.main-nav
