@@ -44,6 +44,10 @@
 
 <section>
 
+	<?php
+	if(isset($_SESSION['username']))
+	{
+	?>
 	<a class="scroll" href="#content"><span>&#11165;</span></a>
 
 	<center>
@@ -57,6 +61,19 @@
 
 		
 	</center>
+
+	<?php
+	}
+	else
+	{
+		?>
+            <script type="text/javascript">
+                alert("Please login first");
+                window.location('index.php');
+            </script>
+        <?php
+	}
+	?>
 </section>
 
 </body>
