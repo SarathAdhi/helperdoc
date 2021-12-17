@@ -115,6 +115,7 @@ body
     top: -100%;
     transition: all 0.5s;
     border-radius: 10px;
+    z-index: 9;
   }
 
   .navlinks li {
