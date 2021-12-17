@@ -18,6 +18,7 @@
 		}
 .body
 {
+	margin-top: 20px;
   display: grid;
   place-items: center;
 
@@ -187,7 +188,14 @@
         	<li><a href="index.php">HOME</a></li>
 			<li><a href="courses.php">COURSES</a></li>
           	<li><a href="#">ABOUT</a></li>
-			<li><a href="logout.php" style="text-decoration: none;"><<?php echo $_SESSION['username']; ?>><i class="fa fa-sign-out"></i></a></li>
+          	<?php
+          	if(isset($_SESSION['username']))
+          	{
+          	?>
+				<li><a href="logout.php" style="text-decoration: none;"><<?php echo $_SESSION['username']; ?>><i class="fa fa-sign-out"></i></a></li>
+			<?php
+			}
+			?>
 
         </ul>
       </nav>
