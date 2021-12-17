@@ -12,7 +12,7 @@
     <style type="text/css">
         body
         {
-            background-color: #D8D8F4;
+            background-color: #EBEAFD;
             font-family: Consolas !important;
         }
 

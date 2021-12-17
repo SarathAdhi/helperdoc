@@ -24,7 +24,7 @@
 
 }
 .header {
-  background-color: #523BF3;
+  background-color: #EBEAFD;
   font-family: Consolas !important;
   width: 70%;
   border-radius: 10px;
