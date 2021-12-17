@@ -21,6 +21,7 @@
 	margin-top: 20px;
   display: grid;
   place-items: center;
+  background-color: #EBEAFD;
 
 }
 .header {
