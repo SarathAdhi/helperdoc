@@ -53,6 +53,7 @@
             z-index: 9;
             max-width: 600px;
             border-radius: 10px;
+            margin: 10px;
         }
 
         .form-container
