@@ -16,12 +16,7 @@
     	::-webkit-scrollbar {
 		  width: 1px;
 		}
-.body
-{
-  display: grid;
-  place-items: center;
-  background-color: #B0AEFE;
-}
+
 .header {
   background-color: #523BF3;
   font-family: Consolas !important;
@@ -172,7 +167,7 @@
 
     </style>
   </head>
-  <body class="body">
+  <body>
     <header class="header">
       <nav class="main-nav">
         <input type="checkbox" id="isChecked" />
