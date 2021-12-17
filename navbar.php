@@ -18,7 +18,7 @@
 		}
 .body
 {
-	margin-top: 20px;
+	margin-top: 5px;
   display: grid;
   place-items: center;
 }
