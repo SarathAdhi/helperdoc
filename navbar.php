@@ -32,9 +32,6 @@
 		  	font-family: Consolas !important;
 		  	width: 70%;
 		  	border-radius: 10px;
-		  	position: fixed;
-		  	margin-top: 60px;
-
 		}
 
 		.main-nav
