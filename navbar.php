@@ -16,7 +16,11 @@
     	::-webkit-scrollbar {
 		  width: 1px;
 		}
-
+body
+{
+  display: grid;
+  place-items: center;
+}
 .header {
   background-color: #523BF3;
   font-family: Consolas !important;
