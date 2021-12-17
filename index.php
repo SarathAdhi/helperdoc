@@ -41,7 +41,7 @@
             border: none;
             cursor: pointer;
             position: relative;
-            width: 150px;
+            max-width: 150px;
         }
 
 
@@ -57,7 +57,7 @@
 
         .form-container
         {
-            width: 99%;
+            width: 100%;
             padding: 30px;
             background-color: white;
             border-radius: 10px;
@@ -74,7 +74,7 @@
 
         .form-container input
         {
-            width: 100%;
+            width: 80%;
             padding: 15px;
             border: none;
             background: #f1f1f1;
