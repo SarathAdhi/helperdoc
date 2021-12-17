@@ -10,9 +10,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HOME</title>
 	<style type="text/css">
-		.content
+		body
 		{
-
+			background-color: #EBEAFD;
+			font-family: Consolas !important;
 		}
 		.content .border
 		{
