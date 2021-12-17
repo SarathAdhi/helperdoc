@@ -33,7 +33,7 @@
 		  	width: 70%;
 		  	border-radius: 10px;
 		  	position: fixed;
-		  	margin-top: 40px;
+		  	margin-top: 60px;
 
 		}
 
