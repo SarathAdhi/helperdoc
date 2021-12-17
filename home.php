@@ -18,7 +18,6 @@
         }
         .section1
         {
-            background-color: #EBEAFD;
             height: auto;
         }
         .content1
