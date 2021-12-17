@@ -69,7 +69,7 @@
 		?>
             <script type="text/javascript">
                 alert("Please login first");
-                window.replace('index.php');
+                location.replace('index.php');
             </script>
         <?php
 	}
