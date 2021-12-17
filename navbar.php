@@ -23,7 +23,7 @@
 			margin-top: 5px;
 		  	display: grid;
 		  	place-items: center;
-		  	padding-bottom: 40px;
+		  	position: relative;
 		}
 
 		.header
