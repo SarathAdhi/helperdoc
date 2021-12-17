@@ -23,6 +23,7 @@
 			margin-top: 5px;
 		  	display: grid;
 		  	place-items: center;
+		  	padding-bottom: 40px;
 		}
 
 		.header
@@ -33,6 +34,7 @@
 		  	border-radius: 10px;
 		  	position: fixed;
 		  	margin-top: 40px;
+
 		}
 
 		.main-nav
