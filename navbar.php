@@ -129,7 +129,8 @@
 		  {
 		    position: fixed;
 		    width: 100%;
-		    height: 40vh;
+		    height: auto;
+		    padding-bottom: 10px;
 		    text-align: center;
 		    background: #222831;
 		    top: -100%;
