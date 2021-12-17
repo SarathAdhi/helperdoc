@@ -176,7 +176,7 @@
         </label>
         <a href="index.html" class="logo">HelperDOC </a>
         <a href="index.html" class="text">H_DOC</a>
-        <a href="index.html"><img src="open-book.png" class="logoimg"></a>
+        <a href="index.html"><img src="background/open-book.png" class="logoimg"></a>
         <ul class="navlinks">
         	<li><a href="index.php">HOME</a></li>
 			<li><a href="courses.php">COURSES</a></li>
