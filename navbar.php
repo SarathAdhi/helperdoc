@@ -24,7 +24,7 @@
 
 }
 .header {
-  background-color: #EBEAFD;
+  background-color: #523BF3;
   font-family: Consolas !important;
   width: 70%;
   border-radius: 10px;
@@ -186,7 +186,7 @@
           <i class="fas fa-bars"></i>
         </label>
         <a href="index.php" class="logo">HelperDOC </a>
-        <a href="index.html" class="text">H_DOC</a>
+        <a href="index.php" class="text">H_DOC</a>
         <a href="index.php"><img src="background/open-book.png" class="logoimg"></a>
         <ul class="navlinks">
         	<li><a href="index.php">HOME</a></li>
