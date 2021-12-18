@@ -79,20 +79,15 @@
 	<a class="scroll" href="#content"><span>&#11165;</span></a>
 
 	<center>
-		
+		<br>
+
+		<form class="search" method="post" action="">
+            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
+        </form>
+
+		<br>
+
 		<?php
-			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd`;");
-
-			while($row = mysqli_fetch_assoc($sql))
-			{
-				echo '<div class="content" id="content">';
-				echo '----------------------------------------------------------------------------------------------------------------------------';
-				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
-				
-				echo '</div><br>';
-			}
-			echo '----------------------------------------------------------------------------------------------------------------------------';
-
 			if(isset($_POST['searchnow']))
 			{
 				$searchres = $_POST['search'];
@@ -117,13 +112,22 @@
 				}
 			}
 		?>
-		<br>
 
-		<form class="search" method="post" action="">
-            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
-        </form>
+		<?php
+			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd`;");
 
-		<br>
+			while($row = mysqli_fetch_assoc($sql))
+			{
+				echo '<div class="content" id="content">';
+				echo '----------------------------------------------------------------------------------------------------------------------------';
+				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
+				
+				echo '</div><br>';
+			}
+			echo '----------------------------------------------------------------------------------------------------------------------------';
+
+		?>
+		
 	</center>
 
 	<?php
