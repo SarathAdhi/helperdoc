@@ -160,6 +160,7 @@
                             <option value="6">6</option>
                             <option value="7">7</option>
                             <option value="8">8</option>
+                            <option value="Other">Other</option>
                         </select>
                         <br><br><br>
 
