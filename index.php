@@ -346,7 +346,7 @@
                 ?>
                 <script type="text/javascript">
                     window.location.replace('index.php');
-                    alert("Password is correct");
+                    setTimeout(alert("Password is correct"), 1000);
                 </script>
                 <?php
                 $_SESSION['username'] = $_POST['username'];
