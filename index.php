@@ -164,6 +164,12 @@
                         </select>
                         <br><br><br>
 
+                        <label for="cmts"><b>TOPIC (if You choose module as 'Other')</b></label><br>
+                        <input type="text" placeholder="Enter the topic " name="cmts">
+                        <br>
+                        <p>NOTE: In module, the Other means either a youtube playlist or a specific ppt. So enter the relevant topic above or else leave it blank.</p>
+                        <br><br><br>
+
                         <label for="link"><b>Google drive link</b></label><br>
                         <input type="text" placeholder="Ex: https://drive.google.com/drive/folders/147HZDgl6FCxTt" name="link" required>
                         <br><br><br>
@@ -181,8 +187,7 @@
 <?php
     if(isset($_POST['upload']))
     {
-        
-        $sql2 = mysqli_query($db, "INSERT INTO `notes_hd` VALUES ('$_POST[coursecode]', '$_POST[tl]', '$_POST[module]', '$_POST[link]');");
+        $sql2 = mysqli_query($db, "INSERT INTO `notes_hd` VALUES ('$_POST[coursecode]', '$_POST[tl]', '$_POST[module]', '$_POST[link]', '$cmts');");
         ?>
         <script type="text/javascript">
             alert("Successfully Uploaded.");
