@@ -19,6 +19,7 @@
 		}
 		.border
 		{
+			max-width: 600px;
 			background: rgba(0, 0, 0, 0.5);
 		}
 
