@@ -152,14 +152,14 @@
 
                         <label for="module"><b>Module number&emsp;</b></label>
                         <select name="module" size="1" style="color: black; font-size: 20px">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
+                            <option value="Module 1">Module 1</option>
+                            <option value="Module 2">Module 2</option>
+                            <option value="Module 3">Module 3</option>
+                            <option value="Module 4">Module 4</option>
+                            <option value="Module 5">Module 5</option>
+                            <option value="Module 6">Module 6</option>
+                            <option value="Module 7">Module 7</option>
+                            <option value="Module 8">Module 8</option>
                             <option value="Other">Other</option>
                         </select>
                         <br><br><br>
