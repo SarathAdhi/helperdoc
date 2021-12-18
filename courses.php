@@ -76,6 +76,12 @@
           	background: limegreen;
         }
 
+        form.search::after
+        {
+          	clear: none;
+          	display: table;
+        }
+
 	</style>
 </head>
 <body>
