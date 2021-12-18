@@ -71,8 +71,8 @@
 	{
 		?>
             <script type="text/javascript">
+            	location.replace('index.php');
                 alert("Please login first");
-                location.replace('index.php');
             </script>
         <?php
 	}

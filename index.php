@@ -345,8 +345,8 @@
             {
                 ?>
                 <script type="text/javascript">
-                    alert("Password is correct");
                     window.location.replace('index.php');
+                    alert("Password is correct");
                 </script>
                 <?php
                 $_SESSION['username'] = $_POST['username'];
