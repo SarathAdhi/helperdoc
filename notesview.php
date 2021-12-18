@@ -25,21 +25,21 @@
 	<section class="section1">
 		<center>
 			<div class="border">
+				<h1><?php echo $_GET['id']; ?></h1>
 			<?php
 
 				$sql = ($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}';");
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
-					
-					echo '<a href="'.$row['link'].'" target="_blank">click here</a>';
-
+					?>
+						<h2><?php $row['module']; ?></h2>
+						
+					<?php
+				}
 			?>
 			</div>
 			<br><br>
-			<?php
-				}
-			?>
 		</center>
 	</section>
 </body>
