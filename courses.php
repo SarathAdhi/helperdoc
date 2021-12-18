@@ -71,7 +71,7 @@
           background: limegreen;
         }
 
-        .search::after {
+        form.search::after {
           content: "";
           clear: both;
           display: table;
