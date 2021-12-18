@@ -136,14 +136,14 @@
 
                         <label for="coursecode"><b>Course Code(in CAPS)</b></label><br>
                         <input type="text" placeholder="Ex: CSE2004, HUM1042, MAT1014..." name="coursecode" required>
-                        <br><br>
+                        <br><br><br>
 
                         <label for="tl"><b>Theory or Lab</b></label><br>
                         <select name="tl" size="1" style="color: black; font-size: 20px">
                             <option value="Theroy">Theroy</option>
                             <option value="Lab">Lab</option>
                         </select>
-                        <br><br>
+                        <br><br><br>
 
                         <label for="module"><b>Module number</b></label><br>
                         <select name="module" size="1" style="color: black; font-size: 20px">
@@ -156,11 +156,11 @@
                             <option value="7">7</option>
                             <option value="8">8</option>
                         </select>
-                        <br><br>
+                        <br><br><br>
 
                         <label for="link"><b>Google drive link</b></label><br>
                         <input type="text" placeholder="Ex: https://drive.google.com/drive/folders/147HZDgl6FCxTt" name="link" required>
-                        <br><br>
+                        <br><br><br>
 
                         <button type="button" class="btn cancel" onclick="closeForm('myForm4', 'myForm4')" style="color: white; background-color: red; opacity: 0.8;">Close</button>
 
