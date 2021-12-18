@@ -17,6 +17,12 @@
 			background-color: #EBEAFD;
 			font-family: Consolas !important;
 		}
+
+		.content
+		{
+			display: inline-block;
+		}
+
 		.content2
 		{
 			border: 2px solid black;
@@ -124,11 +130,8 @@
 			echo '<div class="content" id="content">';
 			while($row = mysqli_fetch_assoc($sql))
 			{
-				echo '---------------------';
 				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
-				
 			}
-			echo '---------------------';
 			echo '</div><br>';
 
 		?>
