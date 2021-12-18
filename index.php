@@ -273,7 +273,7 @@
                 <h3>Check how hashing works (live)</h3><button class="open-button" onclick="openForm('myForm3', 'myForm2')" style="border-radius: 10px;">test here</button><br><br>
 
                 <div class="form-popup" id="myForm3">
-                    <form action="" method="post">
+                    <form action="" method="post" class="form-container">
                         <h3><b>Random text</b></h3><br>
                         <input type="text" placeholder="Enter a Random text" name="pass" required><br><br>
                         <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')" style="color: white; background-color: red; opacity: 0.8;">Close</button>
