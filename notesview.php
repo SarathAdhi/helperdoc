@@ -6,6 +6,8 @@
 	<title><?php echo $_GET['id'] ?></title>
 </head>
 <body>
-
+	<section class="section1">
+		
+	</section>
 </body>
 </html>
