@@ -42,7 +42,7 @@
 					{
 						if($count == 0)
 						{
-							echo "<h1>Others</h1><br>";
+							echo "<h1>Others</h1>";
 							$count = $count+1;
 						}
 						echo '<br><div class="border">';
