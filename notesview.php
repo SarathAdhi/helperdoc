@@ -29,9 +29,16 @@
 				
 			<?php
 
-				$sql = ($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}';");
+				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}';");
 
-				
+				while($row = mysqli_fetch_assoc($sql))
+				{
+					?>
+						<h2><?php echo $row['module']; ?></h2>
+						</div>
+						<br><br>
+					<?php
+				}
 			?>
 			
 		</center>
