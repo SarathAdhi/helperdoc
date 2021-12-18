@@ -20,6 +20,7 @@
 		.content2
 		{
 			border: 2px solid black;
+			max-width: 400px;
 		}
 		.scroll 
 		{
