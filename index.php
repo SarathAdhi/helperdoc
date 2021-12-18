@@ -184,12 +184,10 @@
             </div>
             <br><br>
         </center>
-
+    </section>
 <?php
     }
 ?>
-    </section>
-
     <section class="section2">
         <center>
             <br>
