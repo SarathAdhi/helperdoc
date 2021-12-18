@@ -17,14 +17,7 @@
 			background-color: #EBEAFD;
 			font-family: Consolas !important;
 		}
-		.content .border
-		{
-			border: 5px solid red;
-		}
-		.content .border2
-		{
-			border: 5px solid blue;
-		}
+
 		.scroll 
 		{
 			position: fixed;
@@ -56,25 +49,27 @@
             padding-left: 5px;
 
         }
-        form.search button {
-          width: 20%;
-          padding: 8.5px;
-          color: white;
-          font-size: 17px;
-          border: 1px solid grey;
-          border-radius: 0px 10px 10px 0px;
-          cursor: pointer;
+        form.search button
+        {
+          	width: 20%;
+          	padding: 8.5px;
+          	color: white;
+          	font-size: 17px;
+          	border: 1px solid grey;
+          	border-radius: 0px 10px 10px 0px;
+          	cursor: pointer;
 
         }
 
-        form.search button:hover {
-          background: limegreen;
+        form.search button:hover
+        {
+          	background: limegreen;
         }
 
-        form.search::after {
-          content: "";
-          clear: both;
-          display: table;
+        form.search::after
+        {
+          	clear: both;
+          	display: table;
         }
 
 	</style>
@@ -93,7 +88,7 @@
 		<br>
 
 		<form class="search" method="post" action="">
-            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
+            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow" onclick="openForm('content2', 'content')"><i class="fa fa-search"></i></button>
         </form>
 
 		<br>
@@ -113,11 +108,11 @@
 
 			if(isset($_POST['searchnow']))
 			{
-				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` LIKE %'$_POST[search]'%;");
+				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` LIKE '%'$_POST[search]'%';");
 
 				while($row1 = mysqli_fetch_assoc($sql2))
 				{
-					echo '<div class="content" id="content">';
+					echo '<div class="content2" id="content2">';
 					echo '----------------------------------------------------------------------------------------------------------------------------';
 					echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
 					
@@ -142,6 +137,12 @@
 	}
 	?>
 </section>
-
+    <script>
+        function openForm(x, y) {
+            document.getElementById(x).style.display = "none";
+            document.getElementById(y).style.display = "none";
+            document.getElementById(x).style.display = "block";
+        }
+    </script>
 </body>
 </html>
