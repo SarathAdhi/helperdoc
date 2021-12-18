@@ -31,6 +31,11 @@
 		{
 			border: 2px solid black;
 			max-width: 600px;
+			display: inline-block;
+			padding: 20px;
+			box-shadow: 2px 2px 20px black;
+			border-radius: 10px; 
+     		margin: 2%;
 			margin-right: 5px;
 			margin-left: 5px;
 		}
