@@ -30,9 +30,8 @@
 		.border
 		{
 			border: 2px solid black;
-			width: auto;
-			margin-right: 5px;
-			margin-left: 5px;
+			margin-right: 20px;
+			margin-left: 20px;
 		}
 		.scroll 
 		{
