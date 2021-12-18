@@ -32,7 +32,7 @@
 				while($row = mysqli_fetch_assoc($sql))
 				{
 					
-					echo '<h2>'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank">click here</a>';
+					echo '<a href="'.$row['link'].'" target="_blank">click here</a>';
 
 			?>
 			</div>
