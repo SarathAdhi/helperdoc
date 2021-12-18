@@ -76,11 +76,6 @@
           	background: limegreen;
         }
 
-        form.search::after
-        {
-          	clear: both;
-        }
-
 	</style>
 </head>
 <body>
