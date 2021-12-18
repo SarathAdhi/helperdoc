@@ -131,10 +131,26 @@
 
                 <div class="form-popup" id="myForm4">
                     <form action="" method="post">
-                        <h3><b>Random text</b></h3><br>
-                        <input type="text" placeholder="Enter a Random text" name="pass" required><br><br>
-                        <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')" style="color: white; background-color: red; opacity: 0.8;">Close</button>
-                        <button type="submit" class="btn" name="samppass" style="color: white; background-color: green; opacity: 0.8;">Submit</button>
+                        <h3><b>Share your notes here :)</b></h3><br>
+                        <input type="text" placeholder="Enter the course code in CAPS" name="coursecode" required>
+                        <br><br>
+                        <label for="module"><b>Module number </b></label>
+                        <select name="module" size="1" style="color: black; font-size: 20px">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                        <br><br>
+                        <input type="text" placeholder="Ex: https://drive.google.com/drive/folders/147HZDgl6FCxTt" name="link" required>
+                        <br><br>
+
+                        <button type="button" class="btn cancel" onclick="closeForm('myForm4', 'myForm4')" style="color: white; background-color: red; opacity: 0.8;">Close</button>
+                        <button type="submit" class="btn" name="upload" style="color: white; background-color: green; opacity: 0.8;">Upload</button>
                         <br><br>
                     </form>
                 </div>
@@ -193,14 +209,14 @@
                     <label for="password"><b>Password</b></label><br>
                     <input type="password" placeholder="Enter Password" name="password" required>
                     <br><br>
-                    <label for="degree"><b>Degree</b></label>
+                    <label for="degree"><b>Degree </b></label>
                     <select name="degree" size="1" style="color: black; font-size: 20px">
                         <option value="B.Tech">B.Tech</option>
                         <option value="M.Tech">M.Tech</option>
                         <option value="other">other</option>
                     </select>
                     <br><br>
-                    <label for="year"><b>Graduate Year</b></label>
+                    <label for="year"><b>Graduate Year </b></label>
                     <select name="year" size="1" style="color: black; font-size: 20px">
                         <option value="2022">2022</option>
                         <option value="2023">2023</option>
