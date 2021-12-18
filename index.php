@@ -180,7 +180,7 @@
         <script type="text/javascript">
             alert("Successfully Uploaded.");
         </script>
-<?php
+        <?php
     }
 ?>
 
