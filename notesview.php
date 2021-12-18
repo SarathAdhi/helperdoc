@@ -33,13 +33,13 @@
 				while($row = mysqli_fetch_assoc($sql))
 				{
 					?>
-						<h2><?php $row['module']; ?></h2>
-						
+						<h2><?php echo $row['module']; ?></h2>
+						</div>
+						<br><br>
 					<?php
 				}
 			?>
-			</div>
-			<br><br>
+			
 		</center>
 	</section>
 </body>
