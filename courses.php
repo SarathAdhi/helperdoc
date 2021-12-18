@@ -58,7 +58,9 @@
 		<div class="content" id="content">
 			<h3>DISCRETE MATHEMATICS AND GRAPH THEORY MATH1014 <?php echo '<a href="notesview.php?id=MAT1014" class="btn btn-success">click here</a>'; ?></h3>
 		</div>
-
+		<div class="content" id="content">
+			<h3>DATA STURCTURE AND ALGORITHM CSE2011 <?php echo '<a href="notesview.php?id=CSE2011" class="btn btn-success">click here</a>'; ?></h3>
+		</div>
 		
 	</center>
 
