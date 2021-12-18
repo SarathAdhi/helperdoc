@@ -158,6 +158,7 @@
                         </select>
                         <br><br>
 
+                        <label for="link"><b>Google drive link</b></label><br>
                         <input type="text" placeholder="Ex: https://drive.google.com/drive/folders/147HZDgl6FCxTt" name="link" required>
                         <br><br>
 
