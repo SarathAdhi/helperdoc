@@ -141,14 +141,14 @@
 
                         <label for="coursecode"><b>Course Code(in CAPS)</b></label><br>
                         <input type="text" placeholder="Ex: CSE2004, HUM1042, MAT1014..." name="coursecode" required>
-                        <br><br><br>
+                        <br><br>
 
                         <label for="tl"><b>Theory or Lab&emsp;</b></label>
                         <select name="tl" size="1" style="color: black; font-size: 20px">
                             <option value="Theroy">Theory</option>
                             <option value="Lab">Lab</option>
                         </select>
-                        <br><br><br>
+                        <br><br>
 
                         <label for="module"><b>Module number&emsp;</b></label>
                         <select name="module" size="1" style="color: black; font-size: 20px">
@@ -162,13 +162,13 @@
                             <option value="Module 8">Module 8</option>
                             <option value="Other">Other</option>
                         </select>
-                        <br><br><br>
+                        <br><br>
 
                         <label for="cmts"><b>TOPIC (if You choose module as 'Other')</b></label><br>
                         <input type="text" placeholder="Enter the topic " name="cmts">
-                        <br>
+                        <br><br>
                         <p>NOTE: In module, the Other means either a youtube playlist or a specific ppt. So enter the relevant topic above or else leave it blank.</p>
-                        <br><br><br>
+                        <br><br>
 
                         <label for="link"><b>Google drive link</b></label><br>
                         <input type="text" placeholder="Ex: https://drive.google.com/drive/folders/147HZDgl6FCxTt" name="link" required>
