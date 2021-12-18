@@ -21,6 +21,10 @@
 		{
 			background: rgba(0, 0, 0, 0.5);
 		}
+		.border h2, a
+		{
+			color: while;
+		}
 	</style>
 </head>
 <body>
