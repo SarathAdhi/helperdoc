@@ -96,15 +96,14 @@
 
 				if($count != 0)
 				{
+					echo '<-------------------------------------Searched result for '; echo $searchres; echo '------------------------------------->';
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
-						echo '<-------------------------------------Searched result for '; echo $searchres; echo '------------------------------------->';
 						echo '<div class="content2" id="content2">';
 						echo '<h3>'.$row1['coursecode'].' <br><a href="notesview.php?id='.$row1['coursecode'].'" class="btn btn-success">click here</a></h3>';
-						
 						echo '</div><br>';
 					}
-					echo '<-------------------------------------xxxxxxx------------------------------------->';
+					echo '<-------------------------------------------------xxxxxxxxxxxxxxxxxxxxx--------------------------------------------------->';
 				}
 				else
 				{
@@ -121,7 +120,6 @@
 				echo '<div class="content" id="content">';
 				echo '----------------------------------------------------------------------------------------------------------------------------';
 				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
-				
 				echo '</div><br>';
 			}
 			echo '----------------------------------------------------------------------------------------------------------------------------';
