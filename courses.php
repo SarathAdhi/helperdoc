@@ -56,7 +56,7 @@
 			<h3>COMPUTER ARCHITECTURE AND ORGANISATION CSE2001  <a href="cse2001.php">click here..</a></h3>
 		</div>
 		<div class="content" id="content">
-			<h3>DISCRETE MATHEMATICS AND GRAPH THEORY MATH1014 <?php echo '<a href="notesview.php?id=MATH1014" class="btn btn-success">click here</a>'; ?></h3>
+			<h3>DISCRETE MATHEMATICS AND GRAPH THEORY MATH1014 <?php echo '<a href="notesview.php?id=MAT1014" class="btn btn-success">click here</a>'; ?></h3>
 		</div>
 
 		
