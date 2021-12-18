@@ -168,7 +168,7 @@
                         <input type="text" placeholder="Enter the topic " name="cmts">
                         <br><br>
                         <p>NOTE: In module, the Other means either a youtube playlist or a specific ppt. So enter the relevant topic above or else leave it blank.</p>
-                        <br><br>
+                        <br>
 
                         <label for="link"><b>Google drive link</b></label><br>
                         <input type="text" placeholder="Ex: https://drive.google.com/drive/folders/147HZDgl6FCxTt" name="link" required>
