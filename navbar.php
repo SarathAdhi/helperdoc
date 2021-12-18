@@ -227,7 +227,7 @@
 				else
 				{
 					?>
-					<li><a onclick="openForm('myForm1', 'myForm2')" style="text-decoration: none;"><i class="fa fa-sign-in"> LOGIN</i></a></li>
+					<li><a onclick="openForm('myForm1', 'myForm2')" style="text-decoration: none;"><i class="fa fa-sign-in"></i> LOGIN</a></li>
 					<?php
 				}
 				?>
