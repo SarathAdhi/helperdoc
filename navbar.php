@@ -227,6 +227,12 @@
 					<li><a href="logout.php" style="text-decoration: none;">< <?php echo $_SESSION['username']; ?> ><i class="fa fa-sign-out"></i></a></li>
 				<?php
 				}
+				else
+				{
+					?>
+					<li><a onclick="openForm('myForm1', 'myForm2')" style="text-decoration: none;">< LOGIN ><i class="fa fa-sign-in"></i></a></li>
+					<?php
+				}
 				?>
 
 	        </ul>
