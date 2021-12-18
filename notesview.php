@@ -26,8 +26,8 @@
 		<center>
 			<div class="border">
 			<?php
-				$course = $_GET['id'];
-				$sql = ($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '$course';");
+
+				$sql = ($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}';");
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
