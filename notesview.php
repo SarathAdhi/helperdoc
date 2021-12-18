@@ -19,7 +19,7 @@
 		}
 		.border
 		{
-			border: 5px solid red;
+			background: rgba(0, 0, 0, 0.5);
 		}
 	</style>
 </head>
