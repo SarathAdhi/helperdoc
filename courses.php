@@ -90,20 +90,23 @@
 	<center>
 		<br>
 
-		<div class="search">
-            <input type="text" name="search"><button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
-           </div>
+		<form class="search" method="post" action="">
+            <input type="text" name="search"><button type="submit" class="btn btn-success" name="search"><i class="fa fa-search"></i></button>
+        </form>
 
 		<br>
 
 		<?php
 			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd`;");
+			
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<div class="content" id="content">';
 				echo '<h3>'.$row['coursecode'].' <a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
 				echo '</div><br>';
 			}
+
+
 		?>
 		
 	</center>
