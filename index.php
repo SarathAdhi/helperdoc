@@ -127,7 +127,7 @@
                     
                 <p>This is a platform where you can download notes for various courses and share your notes. This website is still under construction.</p>
                 <br><br>
-                <button class="open-button" id="button" onclick="openForm('myForm4', 'myForm2')" style="border-radius: 10px;">Upload notes</button>
+                <button class="open-button" id="button" onclick="openForm('myForm4', 'myForm4')" style="border-radius: 10px;">Upload notes</button>
 
                 <div class="form-popup" id="myForm4">
                     <form action="" method="post">
