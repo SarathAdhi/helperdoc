@@ -21,10 +21,7 @@
 		{
 			background: rgba(0, 0, 0, 0.5);
 		}
-		.border h2, a
-		{
-			color: while;
-		}
+
 	</style>
 </head>
 <body>
@@ -39,7 +36,7 @@
 				while($row = mysqli_fetch_assoc($sql))
 				{
 					echo '<br><div class="border">';
-					echo '<br><h2>Module '.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank">click here</a><br><br><br>';
+					echo '<br><h2 style="color: white;">Module '.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank">click here</a><br><br><br>';
 					echo '</div><br><br>';
 
 				}
