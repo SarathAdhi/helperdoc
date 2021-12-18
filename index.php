@@ -118,6 +118,7 @@
 ?>
 
     <section class="section1">
+        <br><br>
         <center>
 
             <div class="content1">
