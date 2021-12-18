@@ -33,12 +33,18 @@
 		<h1><?php echo $_GET['id']; ?></h1>
 			<?php
 
+				$count = 0;
 				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
 					if($row['module'] == 'Other')
 					{
+						if($count == 0)
+						{
+							echo "<h1>Others</h1><br>";
+							$count = $count+1;
+						}
 						echo '<br><div class="border">';
 						echo '<br><h2 style="color: white;">'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
