@@ -13,6 +13,8 @@
 		body
 		{
             background-image: url('background/1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
             font-family: Consolas !important;
 		}
 		.border
