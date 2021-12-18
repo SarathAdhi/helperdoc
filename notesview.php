@@ -24,6 +24,7 @@
 <body>
 	<section class="section1">
 		<center>
+			<div class="border">
 			<?php
 				$course = $_GET['id'];
 				$sql = ($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '$course';");
@@ -31,17 +32,13 @@
 				while($row = mysqli_fetch_assoc($sql))
 				{
 					
-					echo '<div class="border">';
+					echo '<h2>'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank">click here</a>';
 
-						echo '<h2>'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank">click here</a>';
-						echo '<br><br>';
-
-					echo '</div>';
-
-					echo '<br><br>';
-
+			?>
+			</div>
+			<br><br>
+			<?php
 				}
-
 			?>
 		</center>
 	</section>
