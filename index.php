@@ -111,15 +111,14 @@
 </head>
 
 <body>
+
+<?php
+    if(isset(!$_SESSION['username']))
+    {
+?>
     <section class="section1">
         <br><br>
         <center>
-
-            <?php
-            if(isset($_SESSION['username']))
-            {
-
-            ?>
 
             <h1>Login to Continue</h1><br>
             <button class="open-button" id="button" onclick="openForm('myForm1', 'myForm2')" style="border-radius: 10px;">Login Form</button>
@@ -186,9 +185,9 @@
             <br><br>
         </center>
 
-        <?php
-        }
-        ?>
+<?php
+    }
+?>
     </section>
 
     <section class="section2">
