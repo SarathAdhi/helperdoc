@@ -24,6 +24,11 @@
 			margin-right: 5px;
 			margin-left: 5px;
 		}
+
+		.content hr
+		{
+			width: 80%;
+		}
 		.scroll 
 		{
 			position: fixed;
@@ -124,12 +129,12 @@
 			echo '<div class="content" id="content">';
 			while($row = mysqli_fetch_assoc($sql))
 			{
-				echo '<hr size="2" width="90%" color="red">';
+				echo '<hr>';
 				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
 				
 			}
 			echo '</div><br>';
-			echo '<hr size="2" width="90%" color="red">';
+			echo '<hr>';
 
 		?>
 		
