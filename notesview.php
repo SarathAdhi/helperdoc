@@ -27,6 +27,7 @@
 	<section class="section1">
 		<center>
 		<br>
+		<h1><?php echo $_GET['id']; ?></h1>
 			<?php
 
 				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}';");
