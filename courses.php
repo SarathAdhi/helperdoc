@@ -56,7 +56,7 @@
             padding-left: 5px;
 
         }
-        .search button {
+        form.search button {
           width: 20%;
           padding: 8.5px;
           color: white;
@@ -67,7 +67,7 @@
 
         }
 
-        .search button:hover {
+        form.search button:hover {
           background: limegreen;
         }
 
@@ -106,10 +106,10 @@
 				echo '<div class="content" id="content">';
 				echo '----------------------------------------------------------------------------------------------------------------------------';
 				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
-				echo '----------------------------------------------------------------------------------------------------------------------------';
+				
 				echo '</div><br>';
 			}
-
+			echo '----------------------------------------------------------------------------------------------------------------------------';
 
 		?>
 		
