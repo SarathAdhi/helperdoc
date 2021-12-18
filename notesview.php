@@ -24,23 +24,19 @@
 <body>
 	<section class="section1">
 		<center>
-			<h1><?php echo $_GET['id']; ?></h1>
-			<div class="border">
-				
+			
 			<?php
 
 				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}';");
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
-					?>
-						<h2><?php echo $row['module']; ?></h2>
-						</div>
-						<br><br>
-					<?php
+					echo '<div class="border">';
+					echo '<h2>'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank">click here</a>';
+					echo '</div><br><br>';
+
 				}
 			?>
-			
 		</center>
 	</section>
 </body>
