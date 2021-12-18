@@ -138,14 +138,14 @@
                         <input type="text" placeholder="Ex: CSE2004, HUM1042, MAT1014..." name="coursecode" required>
                         <br><br>
 
-                        <label for="tl"><b>Theory or Lab </b></label><br>
+                        <label for="tl"><b>Theory or Lab</b></label><br>
                         <select name="tl" size="1" style="color: black; font-size: 20px">
                             <option value="Theroy">Theroy</option>
                             <option value="Lab">Lab</option>
                         </select>
                         <br><br>
 
-                        <label for="module"><b>Module number </b></label><br>
+                        <label for="module"><b>Module number</b></label><br>
                         <select name="module" size="1" style="color: black; font-size: 20px">
                             <option value="1">1</option>
                             <option value="2">2</option>
