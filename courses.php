@@ -18,16 +18,6 @@
 			font-family: Consolas !important;
 		}
 
-		.content
-		{
-			position: absolute;
-		}
-
-		.content1
-		{
-			position: absolute;
-		}
-
 		.scroll 
 		{
 			position: fixed;
@@ -76,12 +66,6 @@
           	background: limegreen;
         }
 
-        form.search::after
-        {
-          	clear: none;
-          	display: table;
-        }
-
 	</style>
 </head>
 <body>
@@ -95,14 +79,7 @@
 	<a class="scroll" href="#content"><span>&#11165;</span></a>
 
 	<center>
-		<br>
-
-		<form class="search" method="post" action="">
-            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
-        </form>
-
-		<br>
-
+		
 		<?php
 			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd`;");
 
@@ -140,7 +117,13 @@
 				}
 			}
 		?>
-		
+		<br>
+
+		<form class="search" method="post" action="">
+            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
+        </form>
+
+		<br>
 	</center>
 
 	<?php
