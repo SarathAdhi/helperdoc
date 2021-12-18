@@ -20,7 +20,7 @@
 
 		.content
 		{
-			position: relative;
+			position: absolute;
 		}
 
 		.content1
