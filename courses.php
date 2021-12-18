@@ -98,7 +98,7 @@
 				{
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
-						echo '<-------------------------------------Searched result for '$searchres'------------------------------------->';
+						echo '<-------------------------------------Searched result for '; echo $searchres; echo '------------------------------------->';
 						echo '<div class="content2" id="content2">';
 						echo '<h3>'.$row1['coursecode'].' <br><a href="notesview.php?id='.$row1['coursecode'].'" class="btn btn-success">click here</a></h3>';
 						
