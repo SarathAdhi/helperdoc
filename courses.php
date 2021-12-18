@@ -18,6 +18,16 @@
 			font-family: Consolas !important;
 		}
 
+		.content
+		{
+			display: block;
+		}
+
+		.content1
+		{
+			display: block;
+		}
+
 		.scroll 
 		{
 			position: fixed;
