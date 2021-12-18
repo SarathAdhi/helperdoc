@@ -121,7 +121,7 @@
 		<?php
 			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd`;");
 
-			
+			echo '<div class="content" id="content">';
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<hr size="2" width="90%" color="red">';
