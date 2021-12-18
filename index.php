@@ -377,9 +377,13 @@
 
         if($count == 0)
         {
+            date_default_timezone_set('Asia/Kolkata');  /* India Standard Time */
+            $date = date("d-m-Y");
+            $time = date("h:i a",time());
+
             $password = $_POST['password'];
             $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
-            $sql2 = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]');");
+            $sql2 = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]', '$date', '$time');");
             ?>
             <script type="text/javascript">
                 alert("Account successfully created.");
