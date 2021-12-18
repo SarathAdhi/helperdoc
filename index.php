@@ -275,7 +275,7 @@
             <div>
                 <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
-                <h3>Check how hashing works (live)</h3><button class="open-button" onclick="openForm('myForm3', 'myForm2')" style="border-radius: 10px;">test here</button><br><br>
+                <h3>Check how hashing works (live)</h3><button class="open-button" onclick="openForm('myForm3', 'myForm3')" style="border-radius: 10px;">test here</button><br><br>
 
                 <div class="form-popup" id="myForm3">
                     <form action="" method="post" class="form-container">
