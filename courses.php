@@ -101,14 +101,12 @@
 				if($count != 0)
 				{
 					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
-
+					echo '<div class="content2" id="content2">';
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
-						echo '<div class="content2" id="content2">';
 						echo '<h3>'.$row1['coursecode'].' <br><a href="notesview.php?id='.$row1['coursecode'].'" class="btn btn-success">click here</a></h3>';
-						echo '</div><br>';
 					}
-					
+					echo '</div><br>';
 					echo '<br><br>';
 				}
 				else
@@ -121,9 +119,9 @@
 		<?php
 			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd`;");
 
+			echo '<div class="content" id="content">';
 			while($row = mysqli_fetch_assoc($sql))
 			{
-				echo '<div class="content" id="content">';
 				echo '<hr size="2" width="90%" color="red">';
 				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
 				echo '</div><br>';
