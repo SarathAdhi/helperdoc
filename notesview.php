@@ -33,7 +33,7 @@
 					
 					echo '<div class="border">';
 
-						echo '<h2>'.$row['module'].'</h2><a href="'.$link.'" target="_blank">click here</a>';
+						echo '<h2>'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank">click here</a>';
 						echo '<br><br>';
 
 					echo '</div>';
