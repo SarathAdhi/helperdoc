@@ -126,9 +126,9 @@
 			{
 				echo '<hr size="2" width="90%" color="red">';
 				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
-				
+				echo '<hr size="2" width="90%" color="red">';
 			}
-			echo '<hr size="2" width="90%" color="red">';
+			
 			echo '</div><br>';
 			
 		?>
