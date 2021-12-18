@@ -84,7 +84,7 @@
 
         .form-container label
         {
-            font-size: 15px;
+            font-size: 20px;
         }
 
         .form-container .btn
