@@ -138,7 +138,7 @@
                         <input type="text" placeholder="Ex: CSE2004, HUM1042, MAT1014..." name="coursecode" required>
                         <br><br>
 
-                        <label for="theory-or-lab"><b>Theory or Lab </b></label>
+                        <label for="tl"><b>Theory or Lab </b></label>
                         <select name="module" size="1" style="color: black; font-size: 20px">
                             <option value="Theroy">Theroy</option>
                             <option value="Lab">Lab</option>
@@ -171,6 +171,20 @@
 
         </center>
         <br><br>
+<?php
+    if(isset($_POST['upload']))
+    {
+        
+        $sql2 = mysqli_query($db, "INSERT INTO `notes_hd` VALUES ('$_POST[coursecode]', '$_POST[tl]', '$_POST[module]', '$_POST[link]');");
+        ?>
+        <script type="text/javascript">
+            alert("Successfully Uploaded created.");
+        </script>
+<?php
+        }
+    }
+?>
+
     </section>
 
 <?php
