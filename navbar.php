@@ -230,7 +230,7 @@
 				else
 				{
 					?>
-					<li><a onclick="openForm('myForm1', 'myForm2')" style="text-decoration: none;">< LOGIN ><i class="fa fa-sign-in"></i></a></li>
+					<li><a href="index.php" onclick="openForm('myForm1', 'myForm2')" style="text-decoration: none;">< LOGIN ><i class="fa fa-sign-in"></i></a></li>
 					<?php
 				}
 				?>
