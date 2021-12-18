@@ -124,13 +124,13 @@
 			echo '<div class="content" id="content">';
 			while($row = mysqli_fetch_assoc($sql))
 			{
-				echo '<hr size="2" width="90%" color="red">';
+				echo '---------------------';
 				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
-				echo '<hr size="2" width="90%" color="red">';
+				
 			}
-			
+			echo '---------------------';
 			echo '</div><br>';
-			
+
 		?>
 		
 	</center>
