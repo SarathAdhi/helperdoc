@@ -17,7 +17,10 @@
 			background-color: #EBEAFD;
 			font-family: Consolas !important;
 		}
-
+		.content2
+		{
+			border: 2px solid black;
+		}
 		.scroll 
 		{
 			position: fixed;
@@ -97,13 +100,14 @@
 				if($count != 0)
 				{
 					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
+
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
 						echo '<div class="content2" id="content2">';
 						echo '<h3>'.$row1['coursecode'].' <br><a href="notesview.php?id='.$row1['coursecode'].'" class="btn btn-success">click here</a></h3>';
 						echo '</div><br>';
 					}
-					echo '<hr size="1" width="90%" color="red">';
+					
 					echo '<br><br>';
 				}
 				else
@@ -119,11 +123,11 @@
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<div class="content" id="content">';
-				echo '----------------------------------------------------------------------------------------------------------------------------';
+				echo '<hr size="2" width="90%" color="red">';
 				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
 				echo '</div><br>';
 			}
-			echo '----------------------------------------------------------------------------------------------------------------------------';
+			echo '<hr size="2" width="90%" color="red">';
 
 		?>
 		
