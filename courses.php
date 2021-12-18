@@ -120,16 +120,24 @@
 			{
 				$searchres = $_POST['search'];
 				$sql2 = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd` WHERE `coursecode` LIKE '%$searchres%';");
+				$count = mysqli_num_rows($sql2);
 
-				while($row1 = mysqli_fetch_assoc($sql2))
+				if($count != 0)
 				{
-					echo '<div class="content2" id="content2">';
+					while($row1 = mysqli_fetch_assoc($sql2))
+					{
+						echo '<div class="content2" id="content2">';
+						echo '----------------------------------------------------------------------------------------------------------------------------';
+						echo '<h3>'.$row1['coursecode'].' <br><a href="notesview.php?id='.$row1['coursecode'].'" class="btn btn-success">click here</a></h3>';
+						
+						echo '</div><br>';
+					}
 					echo '----------------------------------------------------------------------------------------------------------------------------';
-					echo '<h3>'.$row1['coursecode'].' <br><a href="notesview.php?id='.$row1['coursecode'].'" class="btn btn-success">click here</a></h3>';
-					
-					echo '</div><br>';
 				}
-				echo '----------------------------------------------------------------------------------------------------------------------------';
+				else
+				{
+					echo '<h3>No Result found.. :(</h3>';
+				}
 			}
 		?>
 		
