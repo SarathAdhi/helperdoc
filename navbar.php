@@ -7,10 +7,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
     <style type="text/css">
     	::-webkit-scrollbar
@@ -230,7 +227,7 @@
 				else
 				{
 					?>
-					<li><a href="index.php" onclick="openForm('myForm1', 'myForm2')" style="text-decoration: none;">< LOGIN ><i class="fa fa-sign-in"></i></a></li>
+					<li><a onclick="openForm('myForm1', 'myForm2')" style="text-decoration: none;">< LOGIN ><i class="fa fa-sign-in"></i></a></li>
 					<?php
 				}
 				?>
