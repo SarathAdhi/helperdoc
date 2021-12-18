@@ -37,7 +37,7 @@
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
-					if($row['module'] == 'other')
+					if($row['module'] == 'Other')
 					{
 						echo '<br><div class="border">';
 						echo '<br><h2 style="color: white;">'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
