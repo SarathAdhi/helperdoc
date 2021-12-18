@@ -109,7 +109,7 @@
 			if(isset($_POST['searchnow']))
 			{
 				$searchres = $_POST['search'];
-				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` LIKE '%$searchres%';");
+				$sql2 = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd` WHERE `coursecode` LIKE '%$searchres%';");
 
 				while($row1 = mysqli_fetch_assoc($sql2))
 				{
