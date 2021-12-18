@@ -24,9 +24,15 @@
 <body>
 	<section class="section1">
 		<center>
+			<h1><?php echo $_GET['id']; ?></h1>
 			<div class="border">
-				<h1><?php echo $_GET['id']; ?></h1>
-			
+				
+			<?php
+
+				$sql = ($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}';");
+
+				
+			?>
 			
 		</center>
 	</section>
