@@ -181,7 +181,6 @@
             alert("Successfully Uploaded created.");
         </script>
 <?php
-        }
     }
 ?>
 
