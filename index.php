@@ -294,7 +294,7 @@
                         echo "Entered Text:  ".$pass1."\n";
                         echo '<br>';
                         echo "Hashed Code: ";
-                        for ($x = 0; $x <= 20; $x++)
+                        for ($x = 0; $x <= 30; $x++)
                         {
                             echo $hash1[$x];
                         }
