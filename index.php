@@ -129,8 +129,8 @@
                 <br><br>
                 <button class="open-button" id="button" onclick="openForm('myForm4', 'myForm4')" style="border-radius: 10px;">Upload notes</button>
 
-                <div class="form-popup" id="myForm4" class="form-container">
-                    <form action="" method="post">
+                <div class="form-popup" id="myForm4">
+                    <form action="" method="post" class="form-container">
 
                         <h3><b>Share your notes here :)</b></h3><br>
 
@@ -162,7 +162,7 @@
                         <br><br>
 
                         <button type="button" class="btn cancel" onclick="closeForm('myForm4', 'myForm4')" style="color: white; background-color: red; opacity: 0.8;">Close</button>
-                        
+
                         <button type="submit" class="btn" name="upload" style="color: white; background-color: green; opacity: 0.8;">Upload</button>
                         <br><br>
                     </form>
