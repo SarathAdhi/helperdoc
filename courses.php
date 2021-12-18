@@ -21,6 +21,8 @@
 		.content
 		{
 			display: inline-block;
+			padding: 10px;
+			box-shadow: 2px 2px 20px black;
 		}
 
 		.content2
