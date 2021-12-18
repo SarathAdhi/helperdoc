@@ -34,9 +34,9 @@
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
-					echo '<br><div class="border"><br><br>';
-					echo '<h2>'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank">click here</a>';
-					echo '<br><br></div><br><br>';
+					echo '<br><div class="border">';
+					echo '<br><h2>Module '.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank">click here</a><br>';
+					echo '</div><br><br>';
 
 				}
 			?>
