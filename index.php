@@ -139,7 +139,7 @@
                         <br><br>
 
                         <label for="tl"><b>Theory or Lab </b></label>
-                        <select name="module" size="1" style="color: black; font-size: 20px">
+                        <select name="tl" size="1" style="color: black; font-size: 20px">
                             <option value="Theroy">Theroy</option>
                             <option value="Lab">Lab</option>
                         </select>
