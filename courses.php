@@ -104,7 +104,9 @@
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<div class="content" id="content">';
-				echo '<h3>'.$row['coursecode'].' <a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
+				echo '----------------------------------------------------------------------------------------------------------------------------';
+				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
+				echo '----------------------------------------------------------------------------------------------------------------------------';
 				echo '</div><br>';
 			}
 
