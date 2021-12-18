@@ -53,7 +53,7 @@
 	<center>
 
 		<?php
-			$sql = mysqli_query($db, "SELECT `coursecode` FROM `notes_hd`;");
+			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd`;");
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<div class="content" id="content">';
