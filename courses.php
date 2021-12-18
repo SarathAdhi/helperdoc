@@ -20,12 +20,12 @@
 
 		.content
 		{
-			display: block;
+			position: relative;
 		}
 
 		.content1
 		{
-			display: block;
+			position: absolute;
 		}
 
 		.scroll 
@@ -98,7 +98,7 @@
 		<br>
 
 		<form class="search" method="post" action="">
-            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow" onclick="openForm('content2', 'content')"><i class="fa fa-search"></i></button>
+            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
         </form>
 
 		<br>
@@ -156,12 +156,6 @@
 	}
 	?>
 </section>
-    <script>
-        function openForm(x, y) {
-            document.getElementById(x).style.display = "none";
-            document.getElementById(y).style.display = "none";
-            document.getElementById(x).style.display = "block";
-        }
-    </script>
+
 </body>
 </html>
