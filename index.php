@@ -82,6 +82,11 @@
             border-radius: 10px;
         }
 
+        .form-container label
+        {
+            font-size: 15px;
+        }
+
         .form-container .btn
         {
             background-color: #04AA6D;
