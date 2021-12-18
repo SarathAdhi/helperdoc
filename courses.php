@@ -20,7 +20,9 @@
 		.content2
 		{
 			border: 2px solid black;
-			max-width: 400px;
+			max-width: 600px;
+			margin-right: 5px;
+			margin-left: 5px;
 		}
 		.scroll 
 		{
@@ -124,8 +126,9 @@
 			{
 				echo '<hr size="2" width="90%" color="red">';
 				echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
-				echo '</div><br>';
+				
 			}
+			echo '</div><br>';
 			echo '<hr size="2" width="90%" color="red">';
 
 		?>
