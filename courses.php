@@ -51,6 +51,7 @@
 	<a class="scroll" href="#content"><span>&#11165;</span></a>
 
 	<center>
+		<br>
 
 		<?php
 			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd`;");
@@ -58,7 +59,7 @@
 			{
 				echo '<div class="content" id="content">';
 				echo '<h3>'.$row['coursecode'].' <a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
-				echo '</div>';
+				echo '</div><br>';
 			}
 		?>
 		
