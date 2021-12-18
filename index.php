@@ -129,10 +129,13 @@
                 <br><br>
                 <button class="open-button" id="button" onclick="openForm('myForm4', 'myForm4')" style="border-radius: 10px;">Upload notes</button>
 
-                <div class="form-popup" id="myForm4">
+                <div class="form-popup" id="myForm4" class="form-container">
                     <form action="" method="post">
+
                         <h3><b>Share your notes here :)</b></h3><br>
-                        <input type="text" placeholder="Enter the course code in CAPS" name="coursecode" required>
+
+                        <label for="coursecode"><b>Course Code(in CAPS)</b></label><br>
+                        <input type="text" placeholder="Ex: CSE2004, HUM1042, MAT1014..." name="coursecode" required>
                         <br><br>
                         <label for="module"><b>Module number </b></label>
                         <select name="module" size="1" style="color: black; font-size: 20px">
