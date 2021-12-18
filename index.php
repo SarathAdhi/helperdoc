@@ -115,7 +115,22 @@
 <?php
     if(isset($_SESSION['username']))
     {
+?>
 
+    <section class="section1">
+        <center>
+
+            <div class="content1">
+                <h2>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h2>
+                <br>
+                    
+                <p>This is a platform where you can download notes for various courses and share your notes. This website is still under construction.</p>
+            </div>
+
+        </center>
+    </section>
+
+<?php
     }
     else
     {
