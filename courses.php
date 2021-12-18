@@ -93,7 +93,7 @@
 		<br>
 
 		<form class="search" method="post" action="">
-            <input type="text" name="search"><button type="submit" class="btn btn-success" name="search"><i class="fa fa-search"></i></button>
+            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
         </form>
 
 		<br>
@@ -111,6 +111,20 @@
 			}
 			echo '----------------------------------------------------------------------------------------------------------------------------';
 
+			if(isset($_POST['searchnow']))
+			{
+				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` LIKE %$_POST['search']%;");
+
+				while($row = mysqli_fetch_assoc($sql2))
+				{
+					echo '<div class="content" id="content">';
+					echo '----------------------------------------------------------------------------------------------------------------------------';
+					echo '<h3>'.$row['coursecode'].' <br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
+					
+					echo '</div><br>';
+				}
+				echo '----------------------------------------------------------------------------------------------------------------------------';
+			}
 		?>
 		
 	</center>
