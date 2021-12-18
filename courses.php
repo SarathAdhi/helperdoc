@@ -113,9 +113,9 @@
 
 			if(isset($_POST['searchnow']))
 			{
-				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` LIKE %$_POST['search']%;");
+				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` LIKE %'$_POST[search]'%;");
 
-				while($row = mysqli_fetch_assoc($sql2))
+				while($row1 = mysqli_fetch_assoc($sql2))
 				{
 					echo '<div class="content" id="content">';
 					echo '----------------------------------------------------------------------------------------------------------------------------';
