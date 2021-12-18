@@ -33,7 +33,7 @@
 		<h1><?php echo $_GET['id']; ?></h1>
 			<?php
 
-				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}';");
+				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
