@@ -79,7 +79,6 @@
         form.search::after
         {
           	clear: both;
-          	display: table;
         }
 
 	</style>
