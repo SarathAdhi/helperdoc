@@ -37,6 +37,43 @@
 			font-size: 30px;
 			color: black;
 		}
+		.search
+        {
+            max-width: 600px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .search input
+        {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            background: #f1f1f1;
+            border-radius: 10px 0px 0px 10px;
+            border: 1px solid;
+            padding-left: 5px;
+
+        }
+        .search button {
+          width: 20%;
+          padding: 8.5px;
+          color: white;
+          font-size: 17px;
+          border: 1px solid grey;
+          border-radius: 0px 10px 10px 0px;
+          cursor: pointer;
+
+        }
+
+        .search button:hover {
+          background: limegreen;
+        }
+
+        .search::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
 
 	</style>
 </head>
@@ -51,6 +88,12 @@
 	<a class="scroll" href="#content"><span>&#11165;</span></a>
 
 	<center>
+		<br>
+
+		<div class="search">
+            <input type="text" name="search"><button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
+           </div>
+
 		<br>
 
 		<?php
