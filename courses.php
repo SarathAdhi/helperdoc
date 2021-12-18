@@ -27,15 +27,10 @@
      		margin: 2%;
 		}
 
-		.content2
+		.border
 		{
 			border: 2px solid black;
 			width: auto;
-			display: inline-block;
-			padding: 20px;
-			box-shadow: 2px 2px 20px black;
-			border-radius: 10px; 
-     		margin: 2%;
 			margin-right: 5px;
 			margin-left: 5px;
 		}
@@ -118,12 +113,14 @@
 				if($count != 0)
 				{
 					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
-					echo '<div class="content2" id="content2">';
+					echo '<div class="border">';
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
+						echo '<div class="content" id="content">';
 						echo '<h3>'.$row1['coursecode'].' <br><a href="notesview.php?id='.$row1['coursecode'].'" class="btn btn-success">click here</a></h3>';
+						echo '</div>';
 					}
-					echo '</div><br>';
+					echo '</div>';
 					echo '<br><br>';
 				}
 				else
