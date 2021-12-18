@@ -37,10 +37,18 @@
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
-					echo '<br><div class="border">';
-					echo '<br><h2 style="color: white;">'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
-					echo '</div><br>';
-
+					if($row['module'] == 'other')
+					{
+						echo '<br><div class="border">';
+						echo '<br><h2 style="color: white;">'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+						echo '</div><br>';
+					}
+					else
+					{
+						echo '<br><div class="border">';
+						echo '<br><h2 style="color: white;">'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+						echo '</div><br>';
+					}
 				}
 			?>
 		</center>
