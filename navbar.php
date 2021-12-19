@@ -127,7 +127,7 @@
 		  {
 		  	display: grid;
 		  	 place-items: center;
-		    position: absolute;
+		    position: fixed;
 		    width: 90%;
 		    height: auto;
 		    padding-bottom: 5px;
