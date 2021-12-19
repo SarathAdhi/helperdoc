@@ -84,7 +84,7 @@
 		.navlinks li
 		{
 		  	display: inline-block;
-		  	margin: 0 20px;
+		  	margin: 0 10px;
 		}
 
 		.navlinks li a
