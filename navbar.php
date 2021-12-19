@@ -121,7 +121,7 @@
 		  	display: none;
 		}
 
-		@media (max-width: 900px)
+		@media (max-width: 800px)
 		{
 		  .navlinks
 		  {
@@ -173,7 +173,7 @@
 		  }
 		}
 
-		@media (max-width: 900px)
+		@media (max-width: 800px)
 		{
 		  .header
 		  {
