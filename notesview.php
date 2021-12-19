@@ -34,6 +34,7 @@
 			<?php
 
 				$count = 0;
+				$count = 0;
 				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
 				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` = 'Syllabus';");
 
@@ -55,10 +56,10 @@
 				{
 					if($row2['module'] == 'Other')
 					{
-						if($count == 0)
+						if($count2 == 0)
 						{
 							echo "<h1>Others</h1>";
-							$count = $count+1;
+							$count2 = $count2 +1;
 						}
 						echo '<br><div class="border">';
 						echo '<br><h2 style="color: white;">'.$row2['topic'].'</h2><a href="'.$row2['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
