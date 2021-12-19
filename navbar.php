@@ -27,7 +27,7 @@
 		{
 		  	background-color: #523BF3;
 		  	font-family: Consolas !important;
-		  	max-width: 1000px;
+		  	min-width: 1000px;
 		  	border-radius: 10px;
 		}
 
