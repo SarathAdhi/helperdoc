@@ -34,39 +34,25 @@
 			<?php
 
 				$count = 0;
-				$count2 = 0;
-				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
-				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` = 'Syllabus';");
+				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
-					if($count == 0)
+					if($row['module'] == 'Other')
 					{
-						echo "<h1>Others</h1>";
-						$count = $count+1;
-					}
+						if($count == 0)
+						{
+							echo "<h1>Others</h1>";
+							$count = $count+1;
+						}
 						echo '<br><div class="border">';
 						echo '<br><h2 style="color: white;">'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
 					}
-				}
-				while($row2 = mysqli_fetch_assoc($sql2))
-				{
-					if($row2['module'] != 'Other')
-					{
-						if($count2 == 0)
-						{
-							echo "<h1>Others</h1>";
-							$count2 = $count2 +1;
-						}
-						echo '<br><div class="border">';
-						echo '<br><h2 style="color: white;">'.$row2['topic'].'</h2><a href="'.$row2['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
-						echo '</div><br>';
-					}
-					elseif($row2['module'] == 'Other' && $row2['module'] != 'Syllabus')
+					else
 					{
 						echo '<br><div class="border">';
-						echo '<br><h2 style="color: white;">'.$row2['module'].'</h2><a href="'.$row2['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+						echo '<br><h2 style="color: white;">'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
 					}
 				}
