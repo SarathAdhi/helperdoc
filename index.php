@@ -344,6 +344,7 @@
         $sql = mysqli_query($db, "SELECT `password` FROM `user_hd` WHERE `username` = '$_POST[username]';");
         $row = mysqli_fetch_assoc($sql);
         $count = mysqli_num_rows($sql);
+        $c = 0;
 
         if($count != 0)
         {
