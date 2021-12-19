@@ -351,7 +351,7 @@
             $password = $_POST['password'];
             if(password_verify($password, $row['password']))
             {
-                $c = $row['count'];
+                $c = $row[count];
                 $cres = $c + 1;
                 $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = $cres WHERE `username` = '$_POST[username]';");
                 ?>
