@@ -350,7 +350,7 @@
             $password = $_POST['password'];
             if(password_verify($password, $row['password']))
             {
-                $$row['count'] = $row['count'] + 1;
+                $row['count'] = $row['count'] + 1;
                 
                 ?>
                 <script type="text/javascript">
