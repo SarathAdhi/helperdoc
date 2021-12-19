@@ -296,8 +296,8 @@
                     <form action="" method="post" class="form-container">
                         <h3><b>Random text</b></h3><br>
                         <input type="text" placeholder="Enter a Random text" name="pass" required><br><br>
-                        <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')" style="color: white; background-color: red; opacity: 0.8;">Close</button>
                         <button type="submit" class="btn" name="samppass" style="color: white; background-color: green; opacity: 0.8;">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm('myForm3', 'myForm2')" style="color: white; background-color: red; opacity: 0.8;">Close</button>
                         <br><br>
                     </form>
                 </div>
