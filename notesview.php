@@ -50,19 +50,8 @@
 						echo '<br><h2 style="color: white;">'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
 					}
-				}
-				while($row2 = mysqli_fetch_assoc($sql))
-				{
-					if($row2['module'] != 'Other')
-					{
-						echo '<br><div class="border">';
-						echo '<br><h2 style="color: white;">'.$row2['module'].'</h2><a href="'.$row2['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
-						echo '</div><br>';
-					}
-				}
-				while($row3 = mysqli_fetch_assoc($sql))
-				{
-					if($row3['module'] == 'Other')
+
+					if($row['module'] == 'Other')
 					{
 						if($count == 0)
 						{
@@ -70,12 +59,17 @@
 							$count = $count+1;
 						}
 						echo '<br><div class="border">';
-						echo '<br><h2 style="color: white;">'.$row3['topic'].'</h2><a href="'.$row3['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+						echo '<br><h2 style="color: white;">'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+						echo '</div><br>';
+					}
+					else
+					{
+						echo '<br><div class="border">';
+						echo '<br><h2 style="color: white;">'.$row['module'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
 					}
 				}
 				
-
 			?>
 		</center>
 	</section>
