@@ -40,13 +40,11 @@
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
-					if($row['module'] == 'Syllabus' || $row['topic'] == 'Syllabus')
+					if($count == 0)
 					{
-						if($count == 0)
-						{
-							echo "<h1>Syllabus</h1>";
-							$count = $count+1;
-						}
+						echo "<h1>Others</h1>";
+						$count = $count+1;
+					}
 						echo '<br><div class="border">';
 						echo '<br><h2 style="color: white;">'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
@@ -54,7 +52,7 @@
 				}
 				while($row2 = mysqli_fetch_assoc($sql2))
 				{
-					if($row2['module'] == 'Other')
+					if($row2['module'] != 'Other')
 					{
 						if($count2 == 0)
 						{
@@ -65,7 +63,7 @@
 						echo '<br><h2 style="color: white;">'.$row2['topic'].'</h2><a href="'.$row2['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
 					}
-					else
+					elseif($row2['module'] == 'Other' && $row2['module'] != 'Syllabus')
 					{
 						echo '<br><div class="border">';
 						echo '<br><h2 style="color: white;">'.$row2['module'].'</h2><a href="'.$row2['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
