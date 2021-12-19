@@ -135,7 +135,8 @@
 		    transition: all 0.5s;
 		    border-radius: 10px;
 		    z-index: 9;
-		    
+		    left: 50%;
+		    transform: translate(-50%, 0);
 		  }
 
 		  .navlinks li
