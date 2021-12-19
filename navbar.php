@@ -177,7 +177,7 @@
 		{
 		  .header
 		  {
-		    width: 100%;
+		    width: 95%;
 		  }
 
 		  .checkbox
