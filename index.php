@@ -162,7 +162,7 @@
                             <option value="Module 6">Module 6</option>
                             <option value="Module 7">Module 7</option>
                             <option value="Module 8">Module 8</option>
-                            <option value="Other">Syllabus</option>
+                            <option value="Syllabus">Syllabus</option>
                             <option value="Other">Other</option>
                         </select>
                         <br><br>
