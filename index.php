@@ -396,7 +396,7 @@
 
             $password = $_POST['password'];
             $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
-            $sql2 = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]', $date, $time);");
+            $sql2 = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]', '$date', '$time', 0);");
             ?>
             <script type="text/javascript">
                 alert("Account successfully created.");
