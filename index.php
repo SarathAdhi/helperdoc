@@ -344,15 +344,14 @@
         $sql = mysqli_query($db, "SELECT `password` FROM `user_hd` WHERE `username` = '$_POST[username]';");
         $row = mysqli_fetch_assoc($sql);
         $count = mysqli_num_rows($sql);
-        $c = 0;
 
         if($count != 0)
         {
             $password = $_POST['password'];
             if(password_verify($password, $row['password']))
             {
-                $c = $row[count] + 1;
-                $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = $c WHERE `username` = '$_POST[username]';");
+                $$row['count'] = $row['count'] + 1;
+                
                 ?>
                 <script type="text/javascript">
                     alert("Password is correct");
