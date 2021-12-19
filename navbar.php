@@ -125,8 +125,9 @@
 		{
 		  .navlinks
 		  {
-		  	display: grid;
-		  	 place-items: center;
+		  	display: flex;
+		  	 align-content: center;
+		  	 justify-content: center;
 		    position: fixed;
 		    width: 90%;
 		    height: auto;
