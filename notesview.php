@@ -39,7 +39,7 @@
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
-					if($row['module'] == 'Syllabus' || $row['topic'] == 'Syllabus')
+					if($row['module'] == 'Syllabus')
 					{
 						if($count2 == 0)
 						{
@@ -51,7 +51,7 @@
 						echo '</div><br>';
 					}
 
-					if($row['module'] == 'Other')
+					if($row['module'] == 'Other' && $row['module'] != 'Syllabus')
 					{
 						if($count == 0)
 						{
