@@ -135,6 +135,8 @@
 		    transition: all 0.5s;
 		    border-radius: 10px;
 		    z-index: 9;
+		    display: grid;
+		  	 place-items: center;
 		  }
 
 		  .navlinks li
