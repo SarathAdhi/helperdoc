@@ -39,7 +39,7 @@
 
 				while($row = mysqli_fetch_assoc($sql))
 				{
-					if($row['module'] == 'Syllabus')
+					if($row['module'] == 'Syllabus' || $row['topic'] == 'Syllabus')
 					{
 						if($count == 0)
 						{
