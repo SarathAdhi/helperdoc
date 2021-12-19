@@ -352,7 +352,7 @@
             if(password_verify($password, $row['password']))
             {
                 
-                $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = ($row['count'] + 1) WHERE `username` = '$_POST[username]';");
+                $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = '$row['count'] + 1' WHERE `username` = '$_POST[username]';");
                 ?>
                 <script type="text/javascript">
                     alert("Password is correct");
