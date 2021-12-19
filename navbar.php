@@ -126,7 +126,7 @@
 		  .navlinks
 		  {
 		    position: fixed;
-		    width: 90%;
+		    width: 95%;
 		    height: auto;
 		    padding-bottom: 5px;
 		    text-align: center;
