@@ -34,9 +34,16 @@
 			<?php
 
 				$count = 0;
-				$sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
+				$sql1 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` = 'Syllabus';");
+				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
 
-				while($row = mysqli_fetch_assoc($sql))
+				$row_syl = mysqli_fetch_assoc($sql1);
+				echo "<h1>Syllabus</h1>";												/*Syllabus Only*/
+				echo '<br><div class="border">';
+				echo '<br><h2 style="color: white;">'.$row_syl['module'].'</h2><a href="'.$row_syl['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+				echo '</div><br>';
+
+				while($row = mysqli_fetch_assoc($sql2))
 				{
 					if($row['module'] == 'Other')
 					{
