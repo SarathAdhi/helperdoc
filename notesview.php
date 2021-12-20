@@ -33,7 +33,9 @@
 		<h1><?php echo $_GET['id']; ?></h1>
 			<?php
 
-				$count = 0;
+				$count1 = 0;
+				$count2 = 0;
+
 				$sql1 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` = 'Syllabus';");
 				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
 
@@ -43,14 +45,15 @@
 				echo '<br><h2 style="color: white;">'.$row_syl['module'].'</h2><a href="'.$row_syl['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 				echo '</div><br>';
 
+
 				while($row = mysqli_fetch_assoc($sql2))
 				{
 					if($row['module'] == 'Other')
 					{
-						if($count == 0)
+						if($count1 == 0)
 						{
 							echo "<h1>Others</h1>";
-							$count = $count+1;
+							$count1 = $count1 + 1;
 						}
 						echo '<br><div class="border">';
 						echo '<br><h2 style="color: white;">'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
@@ -58,6 +61,11 @@
 					}
 					else
 					{
+						if($count2 == 0)
+						{
+							echo "<h1>Module Notes</h1>";
+							$count2 = $count2 + 1;
+						}
 						echo '<br><div class="border">';
 						echo '<br><h2 style="color: white;">'.$row['module'].'<br><br>'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
