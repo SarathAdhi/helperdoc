@@ -170,7 +170,7 @@
                         <label for="cmts"><b>TOPIC</b></label><br>
                         <input type="text" placeholder="Enter the topic " name="cmts" required>
                         <br><br>
-                        <p>NOTE: What ever modules you are uploading kindly give the topic of the material you upload. If youtube videos or any topic ppt is uplaoded then select 'other' in module section and give appropriate topic for it</p>
+                        <p>NOTE: What ever modules you are uploading kindly give appropriate topic of the material. If youtube videos or any specific topic's ppt is uploaded then select 'other' in module section and give appropriate topic for it</p>
                         <br>
 
                         <label for="link"><b>Google drive link</b></label><br>
