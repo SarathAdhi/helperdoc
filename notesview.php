@@ -26,8 +26,9 @@
 		.border h2
 		{
 			max-width: 90%;
-			background: rgba(0, 0, 0, 0.8);
+			background: rgba(255, 255, 255, 0.8);
 			border-radius: 10px;
+			color: black;
 		}
 		.topic
 		{
