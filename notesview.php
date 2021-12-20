@@ -56,7 +56,7 @@
 				$row_syl = mysqli_fetch_assoc($sql1);
 				echo '<h1 class="topic">Syllabus</h1>';												/*Syllabus Only*/
 				echo '<br><div class="border">';
-				echo '<br><h2 style="color: white;">'.$row_syl['module'].'</h2><a href="'.$row_syl['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+				echo '<br><h2>'.$row_syl['module'].'</h2><a href="'.$row_syl['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 				echo '</div><br>';
 
 
@@ -70,7 +70,7 @@
 							$count1 = $count1 + 1;
 						}
 						echo '<br><div class="border">';
-						echo '<br><h2 style="color: white;">'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+						echo '<br><h2>'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
 					}
 					else
@@ -81,7 +81,7 @@
 							$count2 = $count2 + 1;
 						}
 						echo '<br><div class="border">';
-						echo '<br><h2 style="color: white;">'.$row['module'].'<br><br>'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+						echo '<br><h2>'.$row['module'].'<br><br>'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
 					}
 				}
