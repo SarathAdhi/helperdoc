@@ -34,6 +34,7 @@
 			max-width: 90%;
 			background: rgba(0, 0, 0, 0.8);
 			border-radius: 10px;
+			color: white;
 		}
 
 	</style>
