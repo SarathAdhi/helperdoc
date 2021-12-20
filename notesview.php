@@ -54,10 +54,15 @@
 				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
 
 				$row_syl = mysqli_fetch_assoc($sql1);
-				echo '<h1 class="topic">Syllabus</h1>';												/*Syllabus Only*/
-				echo '<br><div class="border">';
-				echo '<br><h2>'.$row_syl['module'].'</h2><a href="'.$row_syl['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
-				echo '</div><br>';
+				$c_syl = mysqli_num_rows($sql1);
+
+				if($c_syl != 0)
+				{
+					echo '<h1 class="topic">Syllabus</h1>';												/*Syllabus Only*/
+					echo '<br><div class="border">';
+					echo '<br><h2>'.$row_syl['module'].'</h2><a href="'.$row_syl['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+					echo '</div><br>';
+				}
 
 
 				while($row = mysqli_fetch_assoc($sql2))
