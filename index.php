@@ -167,14 +167,14 @@
                         </select>
                         <br><br>
 
-                        <label for="cmts"><b>TOPIC (if You choose module as 'Other')</b></label><br>
-                        <input type="text" placeholder="Enter the topic " name="cmts">
+                        <label for="cmts"><b>TOPIC</b></label><br>
+                        <input type="text" placeholder="Enter the topic " name="cmts" required>
                         <br><br>
-                        <p>NOTE: In module, the Other means either a youtube playlist or a specific ppt. So enter the relevant topic above or else leave it blank.</p>
+                        <p>NOTE: What ever modules you are uploading kindly give the topic of the subject. If youtube videos or any topic ppt is uplaoded then select other in module section and give appropriate topic for it</p>
                         <br>
 
                         <label for="link"><b>Google drive link</b></label><br>
-                        <input type="text" placeholder="Ex: https://drive.google.com/drive/folders/147HZDgl6FCxTt" name="link" required>
+                        <input type="text" placeholder="Ex: https://drive.google.com/drive/folders/147H" name="link" required>
                         <br><br><br>
 
                         <button type="submit" class="btn" name="upload" style="color: white; background-color: green; opacity: 0.8;">Upload</button>
