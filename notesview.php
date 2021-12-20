@@ -23,7 +23,13 @@
 			background: rgba(0, 0, 0, 0.5);
 			border-radius: 10px;
 		}
-		.border h1, h2
+		.border h2
+		{
+			max-width: 90%;
+			background: rgba(0, 0, 0, 0.8);
+			border-radius: 10px;
+		}
+		.topic
 		{
 			max-width: 90%;
 			background: rgba(0, 0, 0, 0.8);
@@ -46,7 +52,7 @@
 				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' ORDER BY `module` ASC;");
 
 				$row_syl = mysqli_fetch_assoc($sql1);
-				echo "<h1>Syllabus</h1>";												/*Syllabus Only*/
+				echo '<h1 class="topic">Syllabus</h1>';												/*Syllabus Only*/
 				echo '<br><div class="border">';
 				echo '<br><h2 style="color: white;">'.$row_syl['module'].'</h2><a href="'.$row_syl['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 				echo '</div><br>';
@@ -58,7 +64,7 @@
 					{
 						if($count1 == 0)
 						{
-							echo "<h1>Others</h1>";
+							echo '<h1 class="topic">Others</h1>';
 							$count1 = $count1 + 1;
 						}
 						echo '<br><div class="border">';
@@ -69,7 +75,7 @@
 					{
 						if($count2 == 0)
 						{
-							echo "<h1>Module Notes</h1>";
+							echo '<h1 class="topic">Module Notes</h1>';
 							$count2 = $count2 + 1;
 						}
 						echo '<br><div class="border">';
