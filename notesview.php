@@ -73,7 +73,7 @@
 						echo '<br><h2>'.$row['topic'].'</h2><a href="'.$row['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 						echo '</div><br>';
 					}
-					else
+					elseif($row['module'] != 'Other' && $row['module'] != 'Syllabus')
 					{
 						if($count2 == 0)
 						{
