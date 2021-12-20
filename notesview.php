@@ -23,6 +23,12 @@
 			background: rgba(0, 0, 0, 0.5);
 			border-radius: 10px;
 		}
+		.border h2
+		{
+			max-width: 90%;
+			background: rgba(0, 0, 0, 0.8);
+			border-radius: 10px;
+		}
 
 	</style>
 </head>
