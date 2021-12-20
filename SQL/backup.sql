@@ -19,3 +19,6 @@ CREATE TABLE `notes_hd` (
   `module` int NOT NULL,
   `link` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+update notes_hd set topic = 'File System' where coursecode = 'CSE2005' and module = 'Module 7';
+
