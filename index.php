@@ -33,7 +33,7 @@
         {
             background-color: white;
             height: auto;
-            border: 2px solid black;
+            border: 2px solid #FFBF00;
         }
 
         .open-button
