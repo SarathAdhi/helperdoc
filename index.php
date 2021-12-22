@@ -291,7 +291,19 @@
         <center>
             <br>
             <div>
-                <h2>Latest update..</h2>
+                <h2>Latest updates..</h2>
+                <?php
+                    $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `modules` = 'Other';");
+                    $i = 0;
+                    while($row = mysqli_fetch_assoc($sql) && $i<4)
+                    {
+                        echo '<h2>'.$row['coursecode'].'</h2><br><br>';
+                        echo '<h2>'.$row['topic'].'</h2>';
+                        echo '<a href="notesview.php?id='.$row['coursecode'].'">Check here</a>';
+                        $i = $i+1;
+                    }
+                    
+                ?>
 
             </div>
 
