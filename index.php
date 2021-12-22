@@ -295,7 +295,7 @@
                 <?php
                     $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `module` = 'Other';");
                     $i = 0;
-                    while($row = mysqli_fetch_assoc($sql) && $i<4)
+                    while($row = mysqli_fetch_assoc($sql) AND $i<4)
                     {
                         echo '<h2>'.$row['coursecode'].'</h2><br><br>';
                         echo '<h2>'.$row['topic'].'</h2>';
