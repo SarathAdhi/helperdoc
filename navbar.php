@@ -216,8 +216,8 @@
 
 	        <ul class="navlinks">
 
-	        	<li><a href="index.php">HOME</a></li>
-				<li><a href="courses.php">COURSES</a></li>
+	        	<li><a href="home">HOME</a></li>
+				<li><a href="courses">COURSES</a></li>
 	          	<li><a href="#">ABOUT</a></li>
 	          	<?php
 	          	if(isset($_SESSION['username']))
