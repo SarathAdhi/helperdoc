@@ -394,7 +394,7 @@
                 ?>
                 <script type="text/javascript">
                     alert("Login Successful");
-                    window.location.replace('index.php');
+                    window.location.replace('home');
                 </script>
                 <?php
                 $_SESSION['username'] = $_POST['username'];
