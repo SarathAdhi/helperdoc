@@ -210,9 +210,9 @@
 	        	<i class="fa fa-bars"></i>
 	        </label>
 
-	        <a href="index.php" class="logo">HelperDOC </a>
-	        <a href="index.php" class="text">H_DOC</a>
-	        <a href="index.php"><img src="background/open-book.png" class="logoimg"></a>
+	        <a href="home" class="logo">HelperDOC </a>
+	        <a href="home" class="text">H_DOC</a>
+	        <a href="home"><img src="background/open-book.png" class="logoimg"></a>
 
 	        <ul class="navlinks">
 
