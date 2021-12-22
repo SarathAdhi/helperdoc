@@ -291,15 +291,15 @@
         <center>
             <br>
             <div>
-                <h2>Latest updates..</h2>
+                <h1>Latest updates..</h1>
                 <?php
-                    $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `module` = 'Other' ORDER BY `module` ASC;");
+                    $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `module` = 'Other' ORDER BY `module` DESC;");
                     $i = 0;
                     while($row = mysqli_fetch_assoc($sql) AND $i<4)
                     {
-                        echo '<h2>'.$row['coursecode'].'</h2><br>';
+                        echo '<h2>'.$row['coursecode'].'</h2>';
                         echo '<h2>'.$row['topic'].'</h2>';
-                        echo '<a href="notesview.php?id='.$row['coursecode'].'">Check here</a><br>';
+                        echo '<a href="notesview.php?id='.$row['coursecode'].'">Check here</a><br><br>';
                         $i = $i+1;
                     }
                     
