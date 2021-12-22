@@ -33,6 +33,7 @@
         {
             background-color: white;
             height: auto;
+            border: 2px solid black;
         }
 
         .open-button
