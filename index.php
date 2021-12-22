@@ -291,6 +291,18 @@
         <center>
             <br>
             <div>
+                <h2>Latest update..</h2>
+
+            </div>
+
+        </center>
+    <br><br>
+    </section>
+
+    <section class="section1">
+        <center>
+            <br>
+            <div>
                 <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
 
                 <h3>Check how hashing works (live)</h3><button class="open-button" onclick="openForm('myForm3', 'myForm3')" style="border-radius: 10px;">test here</button><br><br>
@@ -323,6 +335,7 @@
         </center>
     <br><br>
     </section>
+
     <script>
         function openForm(x, y) {
             document.getElementById(x).style.display = "none";
