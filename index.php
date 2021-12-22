@@ -293,7 +293,7 @@
             <div>
                 <h2>Latest updates..</h2>
                 <?php
-                    $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `module` = 'Other';");
+                    $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `module` = 'Other' ORDER BY `module` ASC;");
                     $i = 0;
                     while($row = mysqli_fetch_assoc($sql) AND $i<4)
                     {
