@@ -393,7 +393,7 @@
                 $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = '$cres' WHERE `username` = '$_POST[username]';");
                 ?>
                 <script type="text/javascript">
-                    alert("Password is correct");
+                    alert("Login Successful");
                     window.location.replace('index.php');
                 </script>
                 <?php
