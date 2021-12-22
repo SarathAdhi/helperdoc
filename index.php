@@ -292,7 +292,7 @@
         <center>
             <br>
             <div>
-                <h1>Latest updates..</h1>
+                <h1 style="text-decoration: underline;">Latest updates..</h1>
                 <?php
                     $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = 'CSE2005' AND `module` = 'Other' ORDER BY `module` DESC;");
                     $i = 0;
