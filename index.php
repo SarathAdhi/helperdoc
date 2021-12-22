@@ -297,9 +297,9 @@
                     $i = 0;
                     while($row = mysqli_fetch_assoc($sql) AND $i<4)
                     {
-                        echo '<h2>'.$row['coursecode'].'</h2><br><br>';
+                        echo '<h2>'.$row['coursecode'].'</h2><br>';
                         echo '<h2>'.$row['topic'].'</h2>';
-                        echo '<a href="notesview.php?id='.$row['coursecode'].'">Check here</a>';
+                        echo '<a href="notesview.php?id='.$row['coursecode'].'">Check here</a><br>';
                         $i = $i+1;
                     }
                     
