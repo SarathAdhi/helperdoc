@@ -1,0 +1,4 @@
+RewriteEngine on  
+  
+RewriteRule ^HOME  index.php [NC,L]
+RewriteRule ^CONTACT  nondivi.php [NC,L]
