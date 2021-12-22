@@ -1,4 +1,4 @@
 RewriteEngine on  
   
-RewriteRule ^HOME  index.php [NC,L]
-RewriteRule ^CONTACT  nondivi.php [NC,L]
+RewriteRule ^home  index.php [NC,L]
+RewriteRule ^courses  courses.php [NC,L]
