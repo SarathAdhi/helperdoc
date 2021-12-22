@@ -44,6 +44,10 @@
 	<section class="section1">
 		<center>
 		<br>
+		<?php
+		if(isset($_SESSION['username']))
+		{
+		?>
 		<h1><?php echo $_GET['id']; ?></h1>
 			<?php
 
@@ -92,6 +96,19 @@
 				}
 			?>
 		</center>
+
+		<?php
+	}
+	else
+	{
+		?>
+            <script type="text/javascript">
+            	location.replace('index.php');
+                alert("Please login first");
+            </script>
+        <?php
+	}
+	?>
 	</section>
 </body>
 </html>
