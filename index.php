@@ -293,9 +293,9 @@
             <div>
                 <h1>Latest updates..</h1>
                 <?php
-                    $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `module` = 'Other' ORDER BY `module` DESC;");
+                    $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = 'CSE2005' AND `module` = 'Other' ORDER BY `module` DESC;");
                     $i = 0;
-                    while($row = mysqli_fetch_assoc($sql) AND $i<4)
+                    while($row = mysqli_fetch_assoc($sql) AND $i<2)
                     {
                         echo '<h2>'.$row['coursecode'].'</h2>';
                         echo '<h2>'.$row['topic'].'</h2>';
