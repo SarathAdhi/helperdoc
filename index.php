@@ -336,29 +336,7 @@ else
     <br><br>
     </section>
 
-    <script>
-        function openForm(x, y) {
-            document.getElementById(x).style.display = "none";
-            document.getElementById(y).style.display = "none";
-            document.getElementById(x).style.display = "block";
-            if (x === "myForm3")
-            {
-                var elem = document.getElementById("myForm3");
-                elem.scrollIntoView();
-            }
-            else
-            {
-                var elem = document.getElementById("button");
-                elem.scrollIntoView();
-            }
-        }
-
-        function closeForm(x, y) {
-            document.getElementById(x).style.display = "none";
-            document.getElementById(y).style.display = "none";
-            window.scrollBy(0,-20);
-        }
-    </script>
+    
 </body>
 
 <?php
@@ -439,4 +417,27 @@ else
 ?>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script>
+    function openForm(x, y) {
+        document.getElementById(x).style.display = "none";
+        document.getElementById(y).style.display = "none";
+        document.getElementById(x).style.display = "block";
+        if (x === "myForm3")
+        {
+            var elem = document.getElementById("myForm3");
+            elem.scrollIntoView();
+        }
+        else
+        {
+            var elem = document.getElementById("button");
+            elem.scrollIntoView();
+        }
+    }
+
+    function closeForm(x, y) {
+        document.getElementById(x).style.display = "none";
+        document.getElementById(y).style.display = "none";
+        window.scrollBy(0,-20);
+    }
+</script>
 </html>
