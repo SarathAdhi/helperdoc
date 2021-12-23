@@ -283,7 +283,7 @@ else
                 <?php
                     $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = 'CSE2005' AND `module` = 'Other' ORDER BY `module` DESC;");
                     $i = 0;
-                    while($row = mysqli_fetch_assoc($sql) AND $i<2)
+                    while($row = mysqli_fetch_assoc($sql) AND $i<4)
                     {
                         echo '<h2>'.$row['coursecode'].'</h2>';
                         echo '<h2>'.$row['topic'].'</h2>';
