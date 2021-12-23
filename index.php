@@ -121,8 +121,8 @@
 <body>
 
 <?php
-    if(isset($_SESSION['username']))
-    {
+if(isset($_SESSION['username']))
+{
 ?>
 
     <section class="section1">
@@ -197,7 +197,6 @@
             alert("Successfully Uploaded :)");
         </script>
         <?php
-        }
     }
 
 }
