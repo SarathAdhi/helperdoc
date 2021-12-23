@@ -187,6 +187,7 @@
 
         </center>
         <br><br>
+        </section>
 <?php
     if(isset($_POST['upload']))
     {
@@ -207,14 +208,10 @@
         <?php
         }
     }
-?>
 
-    </section>
-
-<?php
-    }
-    else
-    {
+}
+else
+{
 ?>
     <section class="section1">
         <br><br>
