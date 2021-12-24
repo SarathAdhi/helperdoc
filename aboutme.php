@@ -66,6 +66,8 @@
 
                 <h2>Summa help pannanumnu thonuchuu So panna. Helpful ahh irudhuthunaa Like ahh thatti vidugaa. It motivates mee laa &#128521;. Future la inu naraiya varuim, for every subjects. Athu varaikuim maati vidathigaa &#128541;. Vera ena nanbaa??</h2>
 
+                <h2>NOTE: This website is for educational Purpose only..</h2>
+
                 <h1 style="font-weight: bold; text-decoration: underline;">Oiii Maarakama LIKE ahh thatti vidugaa</h1>
                 <form action="" method="post">
                     <button type="submit" name="like" class="like"><i class="fa fa-thumbs-up"></i></button>
