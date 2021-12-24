@@ -56,6 +56,7 @@
         .form-container input
         {
             width: 80%;
+            height: 30px;
             border: none;
             background: #f1f1f1;
             border-radius: 10px 0px 0px 10px;
@@ -87,7 +88,9 @@
                     <button type="submit" name="like" class="like"><i class="fa fa-thumbs-up"></i></button>
 
                     <br><br>
-                    <input type="text" name="cmts" placeholder="Any queries ? Just post it.." ><button type="submit" name="submit" class="btn btn-success">Submit</button>
+                    <input type="text" name="cmts" placeholder="Any queries ? Just post it.." >
+                    <br>
+                    <button type="submit" name="submit" class="btn btn-success">Submit</button>
                 </form>
                 
             </div>
