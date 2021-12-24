@@ -66,7 +66,7 @@
 
                 <h2>Summa help pannanumnu thonuchuu So panna. Helpful ahh irudhuthunaa Like ahh thatti vidugaa. It motivates mee laa &#128521;. Future la inu naraiya varuim, for every subjects. Athu varaikuim maati vidathigaa &#128541;. Vera ena nanbaa??</h2>
 
-                <h2>NOTE: This website is for educational Purpose only..</h2>
+                <h2>NOTE: This website is for educational Purpose only. </h2>
 
                 <h1 style="font-weight: bold; text-decoration: underline;">Oiii Maarakama LIKE ahh thatti vidugaa</h1>
                 <form action="" method="post">
@@ -95,12 +95,12 @@
 <?php
     if(isset($_POST['like']))
     {
-        $sql1 = mysqli_query($db, "SELECT * FROM `user_hd` WHERE `username` = 'demo';");
+        $sql1 = mysqli_query($db, "SELECT * FROM `review_hd` WHERE `username` = 'demo';");
         $row = mysqli_fetch_assoc($sql1);
         $count = $row['count'];
         $add = $count + 1;
 
-        $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = $add WHERE `username` = 'demo';");
+        $sql2 = mysqli_query($db, "UPDATE `review_hd` SET `count` = $add WHERE `username` = 'demo';");
         echo '<center><h2>'.$add.' peoples likes this page including you :)</center>';
     }
 ?>
