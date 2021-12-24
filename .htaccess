@@ -2,3 +2,4 @@ RewriteEngine on
   
 RewriteRule ^home  index.php [NC,L]
 RewriteRule ^courses  courses.php [NC,L]
+RewriteRule ^aboutme  aboutme.php [NC,L]
