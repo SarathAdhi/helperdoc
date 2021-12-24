@@ -70,7 +70,9 @@
                 <h2>4. Vara onu illa.</h2>
 
                 <h1 style="font-weight: bold; text-decoration: underline;">Oiii Maarakama LIKE ahh thatti vidugaa</h1>
-                <button type="submit" name="like" class="like"><i class="fa fa-thumbs-up"></i></button>
+                <form action="" method="post">
+                    <button type="submit" name="like" class="like"><i class="fa fa-thumbs-up"></i></button>
+                </form>
                 
             </div>
 
