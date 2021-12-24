@@ -47,6 +47,21 @@
             font-size: 50px;
 
         }
+        .form-container
+        {
+            max-width: 600px;
+            background-color: white;
+            border-radius: 10px;
+
+        }
+        .form-container input
+        {
+            width: 80%;
+            padding: 15px;
+            border: none;
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
 
     </style>
 </head>
@@ -69,8 +84,11 @@
                 <h2>NOTE: This website is for educational Purpose only. </h2>
 
                 <h1 style="font-weight: bold; text-decoration: underline;">Oiii Maarakama LIKE ahh thatti vidugaa</h1>
-                <form action="" method="post">
+                <form action="" method="post" class="form-container">
                     <button type="submit" name="like" class="like"><i class="fa fa-thumbs-up"></i></button>
+
+                    <br><br>
+                    <input type="text" name="cmts">
                 </form>
                 
             </div>
