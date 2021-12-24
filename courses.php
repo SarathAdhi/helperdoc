@@ -152,7 +152,7 @@
 	{
 		?>
             <script type="text/javascript">
-            	location.replace('index.php');
+            	location.replace('home');
                 alert("Please login first");
             </script>
         <?php

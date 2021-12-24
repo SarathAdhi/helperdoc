@@ -52,7 +52,10 @@
 </head>
 
 <body>
-
+<?php
+    if(isset($_SESSION['username']))
+    {
+?>
     <section class="section1">
         <center>
             <br><br>
@@ -79,6 +82,18 @@
         </center>
         <br><br>
     </section>
+<?php
+    }
+    else
+    {
+        ?>
+            <script type="text/javascript">
+                location.replace('home');
+                alert("Please login first");
+            </script>
+        <?php
+    }
+?>
 </body>
 
 <?php
