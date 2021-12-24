@@ -57,7 +57,7 @@
         <center>
             <br><br>
             <div>
-                <h1 style="font-weight: bold; text-decoration: underline;">ABOUT ME</h1><span>&#128514;</span>
+                <h1 style="font-weight: bold; text-decoration: underline;">ABOUT ME</h1><span style="font-size: 50px">&#128514;</span>
 
                 <h2>Ena paa, Yenna pathi theriji ena panna poorigaa ?? Maati vida poorigalaa <span>&#128514;</span> Athu nadakathuuu</h2>
 
