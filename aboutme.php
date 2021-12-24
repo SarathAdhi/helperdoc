@@ -56,10 +56,9 @@
         .form-container input
         {
             width: 80%;
-            padding: 15px;
             border: none;
             background: #f1f1f1;
-            border-radius: 10px;
+            border-radius: 10px 0px 0px 10px;
             border: 1px solid black;
         }
 
