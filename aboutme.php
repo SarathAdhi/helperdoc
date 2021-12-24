@@ -88,7 +88,7 @@
         $add = $count + 1;
 
         $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = $add WHERE `username` = 'demo';");
-        echo $add;
+        echo '<h2>'.$add.' many people likes this page including you :)';
     }
 ?>
 
