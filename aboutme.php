@@ -115,17 +115,17 @@
 <?php
     if(isset($_POST['like']))
     {
-        $sql1 = mysqli_query($db, "SELECT * FROM `review_hd` WHERE `username` = 'demo';");
+        $sql1 = mysqli_query($db, "SELECT * FROM `review_hd` WHERE `username` = 'reviewtest';");
         $row = mysqli_fetch_assoc($sql1);
         $count = $row['count'];
         $add = $count + 1;
 
-        $sql2 = mysqli_query($db, "UPDATE `review_hd` SET `count` = $add WHERE `username` = 'demo';");
+        $sql2 = mysqli_query($db, "UPDATE `review_hd` SET `count` = $add WHERE `username` = 'reviewtest';");
         echo '<center><h2>'.$add.' peoples likes this page including you :)</center>';
     }
     if(isset($_POST['submit']))
     {
-        $sql1 = mysqli_query($db, "SELECT * FROM `review_hd` WHERE `username` != 'demo' ORDER BY `count` DESC;");
+        $sql1 = mysqli_query($db, "SELECT * FROM `review_hd` WHERE `username` != 'reviewtest' ORDER BY `count` DESC;");
         $row = mysqli_fetch_assoc($sql1);
         $count = $row['count'];
         $sno = $count + 1;
