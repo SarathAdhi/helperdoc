@@ -105,7 +105,7 @@
         $add = $count + 1;
 
         $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = $add WHERE `username` = 'demo';");
-        echo '<h2>'.$add.' many people likes this page including you :)';
+        echo '<center><h2>'.$add.' peoples likes this page including you :)</center>';
     }
 ?>
 
