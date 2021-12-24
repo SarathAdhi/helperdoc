@@ -50,7 +50,6 @@
         .form-container
         {
             max-width: 600px;
-            background-color: white;
             border-radius: 10px;
 
         }
@@ -61,6 +60,7 @@
             border: none;
             background: #f1f1f1;
             border-radius: 10px;
+            border: 1px solid black;
         }
 
     </style>
@@ -88,7 +88,7 @@
                     <button type="submit" name="like" class="like"><i class="fa fa-thumbs-up"></i></button>
 
                     <br><br>
-                    <input type="text" name="cmts">
+                    <input type="text" name="cmts" placeholder="Any queries ? Just post it.." required><button type="submit" name="submit" class="submit">Submit</button>
                 </form>
                 
             </div>
@@ -120,6 +120,15 @@
 
         $sql2 = mysqli_query($db, "UPDATE `review_hd` SET `count` = $add WHERE `username` = 'demo';");
         echo '<center><h2>'.$add.' peoples likes this page including you :)</center>';
+    }
+    if(isset($_POST['submit']))
+    {
+        $sql1 = mysqli_query($db, "SELECT * FROM `review_hd` ORDER BY `count` DESC;");
+        $row = mysqli_fetch_assoc($sql1);
+        $count = $row['count'];
+        $sno = $count + 1;
+
+        $sql2 = mysqli_query($db, "INSERT INTO `review_hd` VALUES ($sno, '$_SESSION[username]', '$_POST[cmts]');");
     }
 ?>
 
