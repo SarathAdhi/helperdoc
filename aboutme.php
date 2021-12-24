@@ -63,11 +63,14 @@
 
                 <h2>Summa help pannanumnu thonuchuu So panna. Helpful ahh irudhuthunaa Like ahh thatti vidugaa. It motivates mee laa &#128521;. Future a many more tools varuim, for every subjects. Athu varaikuim maati vidadhigaa &#128541;. Vera ena nanbaa??</h2>
 
-
-
+                <h1>CLUE:</h1>
+                <h2>1. Purely tamizhan.</h2>
+                <h2>2. 2020 batch thaa.</h2>
+                <h2>3. Reg no: 20BXXXXXX.</h2>
+                <h2>4. Vara onu illa.</h2>
 
                 <h1 style="font-weight: bold; text-decoration: underline;">Oiii Maarakama LIKE ahh thatti vidugaa</h1>
-                <button type="submit" class="like"><i class="fa fa-thumbs-up"></i></button>
+                <button type="submit" name="like" class="like"><i class="fa fa-thumbs-up"></i></button>
                 
             </div>
 
@@ -77,7 +80,16 @@
 </body>
 
 <?php
-    
+    if(isset($_POST['like']))
+    {
+        $sql1 = mysqli_query($db, "SELECT * FROM `user_hd` WHERE `username` = 'demo';");
+        $row = mysqli_fetch_assoc($sql1);
+        $count = $row['count'];
+        $add = $count + 1;
+
+        $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = $add WHERE `username` = 'demo';");
+        echo $add;
+    }
 ?>
 
 </html>
