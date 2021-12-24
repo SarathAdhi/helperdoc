@@ -64,7 +64,7 @@
 
                 <h2>Ena paa, Yenna pathi theriji ena panna poorigaa ?? Maati vida poorigalaa <span>&#128514;</span> Athu nadakathuuu</h2>
 
-                <h2>Summa help pannanumnu thonuchuu So panna. Helpful ahh irudhuthunaa Like ahh thatti vidugaa. It motivates mee laa &#128521;. Future a many more tools varuim, for every subjects. Athu varaikuim maati vidadhigaa &#128541;. Vera ena nanbaa??</h2>
+                <h2>Summa help pannanumnu thonuchuu So panna. Helpful ahh irudhuthunaa Like ahh thatti vidugaa. It motivates mee laa &#128521;. Future la inu naraiya varuim, for every subjects. Athu varaikuim maati vidathigaa &#128541;. Vera ena nanbaa??</h2>
 
                 <h1 style="font-weight: bold; text-decoration: underline;">Oiii Maarakama LIKE ahh thatti vidugaa</h1>
                 <form action="" method="post">
