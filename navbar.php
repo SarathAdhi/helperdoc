@@ -218,7 +218,7 @@
 
 	        	<li><a href="home">HOME</a></li>
 				<li><a href="courses">COURSES</a></li>
-	          	<li><a href="aboutme">ABOUT ME</a></li>
+	          	<li><a href="aboutme">ABOUT_ME</a></li>
 	          	<?php
 	          	if(isset($_SESSION['username']))
 	          	{
