@@ -123,7 +123,7 @@
     }
     if(isset($_POST['submit']))
     {
-        $sql1 = mysqli_query($db, "SELECT * FROM `review_hd` ORDER BY `count` DESC;");
+        $sql1 = mysqli_query($db, "SELECT * FROM `review_hd` WHERE `username` != 'demo' ORDER BY `count` DESC;");
         $row = mysqli_fetch_assoc($sql1);
         $count = $row['count'];
         $sno = $count + 1;
