@@ -23,7 +23,9 @@
 <body>
 
 <section>
-	<iframe src="https://www.jdoodle.com/iembed/v0/ls5" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="600px" allowfullscreen></iframe>
+	<center>
+	<iframe src="https://www.jdoodle.com/iembed/v0/ls5" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="400px" allowfullscreen></iframe>
+	</center>
 </section>
 
 </body>
