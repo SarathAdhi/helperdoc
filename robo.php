@@ -30,10 +30,8 @@
 		<h3>NOTE: Turn ON the Interactive Mode to enable user input below. Get the formulas from the code.</h3>
 		<iframe src="https://www.jdoodle.com/iembed/v0/ls5" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" height="800px" width="80%" allowfullscreen></iframe>
 		</div>
+		<br>
 
-		<div>
-			
-		</div>
 	</center>
 </section>
 
