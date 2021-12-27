@@ -24,7 +24,9 @@
 
 <section>
 	<center>
-	<iframe src="https://www.jdoodle.com/iembed/v0/ls5" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="400px" allowfullscreen></iframe>
+		<h3>Question: Robotic manipulators with the following details are given. No. of links = 3 (Link Lengths : L1 = 25 units, L2 = -45 units and L3 = 50 units) No. of Rotations = 3 (Degree values : Theta1 = -75, Theta2 = 60, Theta3 = -90)  </h3><br>
+		<h3>NOTE: Turn ON the Interactive Mode to enable user input below. Get the formulas from the code.</h3>
+		<iframe src="https://www.jdoodle.com/iembed/v0/ls5" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="400px" allowfullscreen></iframe>
 	</center>
 </section>
 
