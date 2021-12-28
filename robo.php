@@ -25,12 +25,26 @@
 <section>
 	<center>
 		<br>
+
 		<div>
-		<h3>Q1). Robotic manipulators with the following details are given. No. of links = 3 (Link Lengths : L1 = 25 units, L2 = -45 units and L3 = 50 units) No. of Rotations = 3 (Degree values : Theta1 = -75, Theta2 = 60, Theta3 = -90)  </h3><br>
-		<h3>NOTE: Turn ON the Interactive Mode to enable user input below. Get the formulas from the code.</h3>
-		<iframe src="https://www.jdoodle.com/iembed/v0/ls5" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" height="800px" width="80%" allowfullscreen></iframe>
+			<h3>Q1). Robotic manipulators with the following details are given. No. of links = 3 (Link Lengths : L1 = 25 units, L2 = -45 units and L3 = 50 units) No. of Rotations = 3 (Degree values : Theta1 = -75, Theta2 = 60, Theta3 = -90)  </h3><br>
+			<h3>NOTE: Turn ON the Interactive Mode to enable user input below. Get the formulas from the code.</h3>
+			<iframe src="https://www.jdoodle.com/iembed/v0/ls5" style="border:0px #ffffff none;" name="myiFrame" frameborder="1" height="800px" width="80%" allowfullscreen></iframe>
 		</div>
 		<br>
+
+		<div>
+			<h3>Q2). Calculate position of end effector for a 3 link planar manipulator. </h3>
+			<h3>NOTE: Turn ON the Interactive Mode to enable user input below. Get the formulas from the code.</h3>
+			<iframe src="https://www.jdoodle.com/iembed/v0/lsF" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="80%" allowfullscreen></iframe>
+		</div>
+		<br>
+
+		<div>
+			<h3>Q2). Calculate position of end effector for a 5 link planar manipulator. </h3>
+			<h3>NOTE: Turn ON the Interactive Mode to enable user input below. Get the formulas from the code.</h3>
+			<iframe src="https://www.jdoodle.com/iembed/v0/lsG" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="80%" allowfullscreen></iframe>
+		</div>
 
 	</center>
 </section>
