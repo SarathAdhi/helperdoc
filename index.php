@@ -281,7 +281,7 @@ else
             <div>
                 <h1 style="text-decoration: underline;">Latest updates</h1>
                 <?php
-                    $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `module` = 'Other' ORDER BY `topic` ASC;");
+                    $sql = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `module` = 'Other' ORDER BY `topic` DESC;");
                     $i = 0;
                     while($row = mysqli_fetch_assoc($sql) AND $i<4)
                     {
