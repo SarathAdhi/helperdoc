@@ -77,8 +77,6 @@
             <div>
                 <h1 style="font-weight: bold; text-decoration: underline;">ABOUT ME</h1><span style="font-size: 50px">&#128514;</span>
 
-                <h1>saravanan is my father and sarada is my mother</h1>
-
                 <h2>Ena paa, Yenna pathi theriji ena panna poorigaa ?? Maati vida poorigalaa <span>&#128514;</span> Athu nadakathuuu</h2>
 
                 <h2>Summa help pannanumnu thonuchuu So panna. Helpful ahh irudhuthunaa Like ahh thatti vidugaa. It motivates mee laa &#128521;. Future la inu naraiya varuim, for every subjects. Athu varaikuim maati vidathigaa &#128541;. Vera ena nanbaa??</h2>
