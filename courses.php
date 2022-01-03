@@ -28,11 +28,12 @@
      		margin: 2%;
 		}
 
-		.border
+		.searchresult
 		{
 			border: 2px solid black;
 			margin-right: 20px;
 			margin-left: 20px;
+			display: none;
 		}
 		.scroll 
 		{
@@ -77,7 +78,7 @@
 
         }
 		.view_course{
-			display: none;
+			display: block;
 		}
 
         form.search button:hover
@@ -116,7 +117,7 @@
 				if($count != 0)
 				{
 					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
-					echo '<div class="border">';
+					echo '<div class="searchresult">';
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
 						echo '<div class="content" id="content">';
@@ -166,6 +167,7 @@
 </body>
 <script>
 	function search_action() {
+		document.getElementById("searchresult").style.display = "block";
 		document.getElementById("view_course").style.display = "none";
 	}
 </script>
