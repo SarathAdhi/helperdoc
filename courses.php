@@ -168,7 +168,7 @@
 <script>
 	function search_action() {
 		document.getElementById("searchresult").style.display = "block";
-		document.getElementById("content").style.display = "none";
+		document.getElementById("view_course").style.display = "none";
 	}
 </script>
 </html>
