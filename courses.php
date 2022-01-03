@@ -28,12 +28,11 @@
      		margin: 2%;
 		}
 
-		.searchresult
+		.border
 		{
 			border: 2px solid black;
 			margin-right: 20px;
 			margin-left: 20px;
-			display: none;
 		}
 		.scroll 
 		{
@@ -77,9 +76,6 @@
           	cursor: pointer;
 
         }
-		#view_course{
-			display: block;
-		}
 
         form.search button:hover
         {
@@ -102,7 +98,7 @@
 		<br>
 
 		<form class="search" method="post" action="">
-            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow" onclick="search_action()"><i class="fa fa-search"></i></button>
+            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
         </form>
 
 		<br>
@@ -116,8 +112,8 @@
 
 				if($count != 0)
 				{
-					echo '<div class="searchresult" id="searchresult">';
 					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
+					echo '<div class="border">';
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
 						echo '<div class="content" id="content">';
@@ -137,14 +133,14 @@
 		<?php
 			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd` ORDER BY `coursecode`;");
 
-			echo '<div class="view_course" id="view_course">';
+			
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<div class="content" id="content">';
 				echo '<h3>'.$row['coursecode'].' <br><br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
 				echo '</div>';
 			}
-			echo '</div>';
+			
 
 		?>
 		
@@ -165,12 +161,4 @@
 </section>
 
 </body>
-<script>
-	document.getElementById("searchresult").style.display = "none";
-	document.getElementById("view_course").style.display = "block";
-	function search_action() {
-		document.getElementById("searchresult").style.display = "block";
-		document.getElementById("view_course").style.display = "none";
-	}
-</script>
 </html>
