@@ -49,7 +49,7 @@
 		if(isset($_SESSION['username']))
 		{
 		?>
-		<h1 style="font-size: 30px;"><?php echo $_GET['id']; ?></h1>
+		<h1 style="font-size: 40px;"><?php echo $_GET['id']; ?></h1>
 			<?php
 				if($_GET['id'] == 'CSE1022')
 				{
