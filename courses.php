@@ -116,8 +116,8 @@
 
 				if($count != 0)
 				{
-					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
 					echo '<div class="searchresult" id="searchresult">';
+					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
 						echo '<div class="content" id="content">';
@@ -168,7 +168,7 @@
 <script>
 	function search_action() {
 		document.getElementById("searchresult").style.display = "block";
-		document.getElementById("view_course").style.display = "none";
+		document.getElementById("content").style.display = "none";
 	}
 </script>
 </html>
