@@ -131,7 +131,7 @@
 		?>
 
 		<?php
-			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd`;");
+			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd` ORDER BY `coursecode`;");
 
 			
 			while($row = mysqli_fetch_assoc($sql))
