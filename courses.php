@@ -33,6 +33,7 @@
 			border: 2px solid black;
 			margin-right: 20px;
 			margin-left: 20px;
+			display: block;
 		}
 		.scroll 
 		{
@@ -98,7 +99,7 @@
 		<br>
 
 		<form class="search" method="post" action="">
-            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
+            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow" onclick="search_action();"><i class="fa fa-search"></i></button>
         </form>
 
 		<br>
@@ -113,7 +114,7 @@
 				if($count != 0)
 				{
 					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
-					echo '<div class="border">';
+					echo '<div class="border" id="border">';
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
 						echo '<div class="content" id="content">';
@@ -161,4 +162,9 @@
 </section>
 
 </body>
+<script>
+	function search_action() {
+		document.getElementById("border").style.display = "none";
+	}
+</script>
 </html>
