@@ -229,85 +229,8 @@ else
     <br><br>
     </section>
 
-    
 </body>
 
-<?php
-    if(isset($_POST['loginsubmit']))
-    {
-        $sql = mysqli_query($db, "SELECT * FROM `user_hd` WHERE `username` = '$_POST[username]';");
-        $row = mysqli_fetch_assoc($sql);
-        $count = mysqli_num_rows($sql);
-        
-
-        if($count != 0)
-        {
-            $password = $_POST['password'];
-            if(password_verify($password, $row['password']))
-            {
-                $count1 = $row['count'];
-                $cres = $count1 + 1;
-
-                $sql2 = mysqli_query($db, "UPDATE `user_hd` SET `count` = '$cres' WHERE `username` = '$_POST[username]';");
-                ?>
-                <script type="text/javascript">
-                    alert("Login Successful");
-                    window.location.replace('home');
-                </script>
-                <?php
-                $_SESSION['username'] = $_POST['username'];
-            }
-            else
-            {
-                ?>
-                <script type="text/javascript">
-                    alert("Password is incorrect");
-                </script>
-                <?php
-            }
-        }
-        else
-        {
-            ?>
-            <script type="text/javascript">
-                alert("Username does not exist.");
-                openForm('myForm1', 'myForm2');
-            </script>
-            <?php
-        }
-    }
-    elseif(isset($_POST['register']))
-    {
-        $sql1 = mysqli_query($db, "SELECT * FROM `user_hd` WHERE `username` = '$_POST[username]';");
-        $count = mysqli_num_rows($sql1);
-
-        if($count == 0)
-        {
-            date_default_timezone_set('Asia/Kolkata');  /* India Standard Time */
-            $date = date("d-m-Y");
-            $time = date("h:i a",time());
-
-            $password = $_POST['password'];
-            $hash = password_hash($password, PASSWORD_DEFAULT);     /* Secure password hash. */
-            $sql2 = mysqli_query($db, "INSERT INTO `user_hd` VALUES ('$_POST[username]', '$hash', '$_POST[degree]', '$_POST[year]', '$date', '$time', 1);");
-            ?>
-            <script type="text/javascript">
-                alert("Account successfully created.");
-                openForm('myForm1', 'myForm2');
-            </script>
-            <?php
-        }
-        else
-        {
-            ?>
-            <script type="text/javascript">
-                alert("Username already exist.");
-                openForm('myForm2', 'myForm1');
-            </script>
-            <?php
-        }
-    }
-?>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <script>
