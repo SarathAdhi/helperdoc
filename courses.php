@@ -33,7 +33,6 @@
 			border: 2px solid black;
 			margin-right: 20px;
 			margin-left: 20px;
-			display: block;
 		}
 		.scroll 
 		{
@@ -77,6 +76,9 @@
           	cursor: pointer;
 
         }
+		.view_course{
+			display: block;
+		}
 
         form.search button:hover
         {
@@ -114,7 +116,7 @@
 				if($count != 0)
 				{
 					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
-					echo '<div class="border" id="border">';
+					echo '<div class="border">';
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
 						echo '<div class="content" id="content">';
@@ -134,14 +136,14 @@
 		<?php
 			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd` ORDER BY `coursecode`;");
 
-			
+			echo '<div class="view_course" id="view_course">';
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<div class="content" id="content">';
 				echo '<h3>'.$row['coursecode'].' <br><br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
 				echo '</div>';
 			}
-			
+			echo '</div>';
 
 		?>
 		
@@ -164,7 +166,7 @@
 </body>
 <script>
 	function search_action() {
-		document.getElementById("border").style.display = "none";
+		document.getElementById("view_course").style.display = "none";
 	}
 </script>
 </html>
