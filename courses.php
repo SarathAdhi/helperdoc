@@ -117,7 +117,7 @@
 				if($count != 0)
 				{
 					echo '<h2>Searched result for '; echo $searchres; echo '</h2>';
-					echo '<div class="searchresult">';
+					echo '<div class="searchresult" id="searchresult">';
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
 						echo '<div class="content" id="content">';
