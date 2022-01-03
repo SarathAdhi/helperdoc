@@ -138,23 +138,13 @@ if(isset($_SESSION['username']))
                 <button class="open-button" id="button" onclick="openForm('myForm4', 'myForm4')" style="border-radius: 10px;">Upload notes</button>
 
                 <?php include 'upload_notes.php'; ?>
-                
+
             </div>
 
         </center>
         <br><br>
         </section>
 <?php
-    if(isset($_POST['upload']))
-    {
-        $sql2 = mysqli_query($db, "INSERT INTO `notes_hd` VALUES ('$_POST[coursecode]', '$_POST[tl]', '$_POST[module]', '$_POST[link]', '$_POST[cmts]');");
-        ?>
-        <script type="text/javascript">
-            alert("Successfully Uploaded :)");
-        </script>
-        <?php
-    }
-
 }
 else
 {

@@ -44,3 +44,15 @@
         <br><br>
     </form>
 </div>
+
+<?php
+    if(isset($_POST['upload']))
+    {
+        $sql2 = mysqli_query($db, "INSERT INTO `notes_hd` VALUES ('$_POST[coursecode]', '$_POST[tl]', '$_POST[module]', '$_POST[link]', '$_POST[cmts]');");
+        ?>
+        <script type="text/javascript">
+            alert("Successfully Uploaded :)");
+        </script>
+        <?php
+    }
+?>
