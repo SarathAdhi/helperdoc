@@ -138,6 +138,7 @@ if(isset($_SESSION['username']))
                 <button class="open-button" id="button" onclick="openForm('myForm4', 'myForm4')" style="border-radius: 10px;">Upload notes</button>
 
                 <?php include 'upload_notes.php'; ?>
+                
             </div>
 
         </center>
