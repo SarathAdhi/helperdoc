@@ -98,7 +98,7 @@
 		<br>
 
 		<form class="search" method="post" action="">
-            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
+            <input type="text" name="search" placeholder="Search with coursecode."><button type="submit" class="btn btn-success" name="searchnow"><i class="fa fa-search"></i></button>
         </form>
 
 		<br>
