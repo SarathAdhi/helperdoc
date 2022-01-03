@@ -77,7 +77,7 @@
           	cursor: pointer;
 
         }
-		.view_course{
+		#view_course{
 			display: block;
 		}
 
