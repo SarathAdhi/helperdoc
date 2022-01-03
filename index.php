@@ -22,7 +22,9 @@
         {
             box-sizing: border-box;
         }
-
+        .content1 p{
+            font-size: 20px;
+        }
         .section1
         {
             background-color: #EBEAFD;
@@ -133,7 +135,7 @@ if(isset($_SESSION['username']))
                 <h2>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h2>
                 <br>
                     
-                <p>This is a platform where you can download notes for various courses and share your notes. This website is still under construction.</p>
+                <p>This is a platform where you can download notes for various courses and share your notes. Feel free to share your notes and make sure you upload the correct information of your notes.<br>Sharing is caring</p>
                 <br><br>
                 <button class="open-button" id="button" onclick="openForm('myForm4', 'myForm4')" style="border-radius: 10px;">Upload notes</button>
 
