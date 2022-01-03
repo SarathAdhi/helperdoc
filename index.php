@@ -22,7 +22,8 @@
         {
             box-sizing: border-box;
         }
-        .content1 p{
+        .intro{
+            width: 80%;
             font-size: 20px;
         }
         .section1
@@ -135,7 +136,7 @@ if(isset($_SESSION['username']))
                 <h2>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h2>
                 <br>
                     
-                <p>This is a platform where you can download notes for various courses and share your notes. Feel free to share your notes and make sure you upload the correct information.<br>Becoz Sharing is caring</p>
+                <div class="intro">This is a platform where you can download notes for various courses and share your notes. Feel free to share your notes and make sure you upload the correct information.<br>Becoz Sharing is caring</div>
                 <br><br>
                 <button class="open-button" id="button" onclick="openForm('myForm4', 'myForm4')" style="border-radius: 10px;">Upload notes</button>
 
