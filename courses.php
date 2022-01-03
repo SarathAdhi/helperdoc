@@ -77,7 +77,7 @@
 
         }
 		.view_course{
-			display: block;
+			display: none;
 		}
 
         form.search button:hover
@@ -101,7 +101,7 @@
 		<br>
 
 		<form class="search" method="post" action="">
-            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow" onclick="search_action();"><i class="fa fa-search"></i></button>
+            <input type="text" name="search"><button type="submit" class="btn btn-success" name="searchnow" onclick="search_action()"><i class="fa fa-search"></i></button>
         </form>
 
 		<br>
