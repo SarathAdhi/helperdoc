@@ -175,7 +175,7 @@
 		  }
 		}
 
-		@media (max-width: 700px)
+		@media (max-width: 770px)
 		{
 		  .header
 		  {
