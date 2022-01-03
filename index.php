@@ -24,7 +24,7 @@
         }
         .intro{
             width: 80%;
-            font-size: 20px;
+            font-size: 30px;
         }
         .section1
         {
@@ -133,7 +133,7 @@ if(isset($_SESSION['username']))
         <center>
 
             <div class="content1">
-                <h2>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h2>
+                <h1>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h1>
                 <br>
                     
                 <div class="intro">This is a platform where you can download notes for various courses and share your notes. Feel free to share your notes and make sure you upload the correct information.<br>Becoz Sharing is caring</div>
