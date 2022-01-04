@@ -19,7 +19,6 @@
 			font-family: Consolas !important;
 		}
 		.courses{
-			position: relative;
 			display:flex;  
    			justify-content:center;
 			flex-wrap:wrap;  
@@ -46,8 +45,8 @@
 		}
 
 		div.content a{
-			position: absolute;
-			bottom: 0px;
+			justify-content:flex-end;
+  			display: flex;
 		}
 
 		.scroll 
