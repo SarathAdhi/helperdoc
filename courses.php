@@ -91,7 +91,7 @@
           	background: limegreen;
         }
 
-		@media only screen and (max-width: 434px) {
+		@media only screen and (max-width: 436px) {
 			.content{
 				width: 95%;
 				margin-bottom: 20px;
