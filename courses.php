@@ -44,8 +44,8 @@
 			margin-left: 20px;
 		}
 
-		div.content a{
-			justify-content:flex-end;
+		.content a{
+			justify-content:baseline;
   			display: flex;
 		}
 
