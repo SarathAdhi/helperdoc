@@ -139,7 +139,7 @@
 			{
 				echo '<div class="content" id="content">';
 				echo '<h2>'.$row['coursecode'].'</h2>';
-				echo '<h3>'.$row['coursename'].'</h3>';
+				echo '<p>'.$row['coursename'].'</p>';
 				echo '<a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a>';
 				echo '</div>';
 			}
