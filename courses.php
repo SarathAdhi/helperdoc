@@ -22,12 +22,10 @@
 			margin-top: 50px;
 			display: flex;
 			justify-content: center;
-			width: 90%;
+			
 		}
 		.content
 		{
-			display: flex;
-			flex-direction: row;
 			width: 200px;
 			height: 250px;
 			padding: 20px;
