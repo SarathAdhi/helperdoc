@@ -20,6 +20,7 @@
 		}
 		.courses{
 			display:flex;
+			flex-direction: column;
 			width: 100%;
 			text-align: center;
 		}
