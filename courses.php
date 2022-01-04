@@ -44,10 +44,6 @@
 			margin-left: 20px;
 		}
 
-		.content a{
-
-		}
-
 		.scroll 
 		{
 			position: fixed;
