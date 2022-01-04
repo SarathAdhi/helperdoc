@@ -45,7 +45,7 @@
 		}
 
 		.content a{
-			bottom: 5px;
+			float: inline-end;
 		}
 
 		.scroll 
