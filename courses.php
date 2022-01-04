@@ -45,7 +45,7 @@
 		}
 
 		.content a{
-			background-color: black;
+			bottom: 0px;
 		}
 
 		.scroll 
