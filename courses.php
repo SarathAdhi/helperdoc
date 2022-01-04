@@ -160,7 +160,7 @@
 				echo '<h2>'.$row['coursecode'].'</h2>';
 				echo '<h4>'.$row['coursename'].'</h4>';
 				echo '<br>';
-				echo '<div class="position-absolute bottom-center"><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></div>';
+				echo '<a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a>';
 				echo '</div>';
 			}
 			echo '</div>';
