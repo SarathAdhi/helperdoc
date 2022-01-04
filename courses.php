@@ -45,8 +45,7 @@
 		}
 
 		.content a{
-			justify-content:baseline;
-  			display: flex;
+
 		}
 
 		.scroll 
