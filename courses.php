@@ -19,8 +19,8 @@
 			font-family: Consolas !important;
 		}
 		.courses{
-			display: table;
-			margin-top: 100px;
+			display: grid;
+			margin-top: 30px;
 		}
 		.content
 		{
