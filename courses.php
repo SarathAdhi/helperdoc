@@ -24,7 +24,7 @@
 		}
 		.content
 		{
-			display: block;
+			display: inline-block;
 			width: 200px;
 			height: 250px;
 			padding: 20px;
