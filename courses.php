@@ -18,12 +18,14 @@
 			background-color: #EBEAFD;
 			font-family: Consolas !important;
 		}
-
+		.courses{
+			display: flex;
+			flex-direction: row;
+		}
 		.content
 		{
 			display: flex;
-			flex-direction: row;
-			flex: 1;
+			flex-direction: column;
 			width: 200px;
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
@@ -139,7 +141,7 @@
 		<?php
 			$sql = mysqli_query($db, "SELECT * FROM `courses_hd` ORDER BY `coursecode`;");
 
-			
+			echo '<div class="courses" id="courses">';
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<div class="content" id="content">';
@@ -148,7 +150,7 @@
 				echo '<a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a>';
 				echo '</div>';
 			}
-			
+			echo '</div>';
 
 		?>
 		
