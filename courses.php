@@ -45,6 +45,7 @@
 		}
 
 		div.content a{
+			position: absolute;
 			bottom: 0px;
 		}
 
