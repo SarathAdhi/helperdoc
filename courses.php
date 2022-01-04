@@ -44,8 +44,8 @@
 			margin-left: 20px;
 		}
 
-		.content a{
-			justify-content: end;
+		div.content a{
+			bottom: 0px;
 		}
 
 		.scroll 
