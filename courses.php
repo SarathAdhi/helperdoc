@@ -45,7 +45,7 @@
 		}
 
 		.content a{
-			margin-top: auto;
+			justify-content: end;
 		}
 
 		.scroll 
