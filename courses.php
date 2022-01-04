@@ -29,6 +29,7 @@
 		{
 			display: inline-block;
 			width: 200px;
+			height: 250px;
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
 			border-radius: 10px; 
