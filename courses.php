@@ -23,11 +23,11 @@
 		{
 			display: flex;
 			flex-direction: column;
+			flex: 1;
 			width: 50%;
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
 			border-radius: 10px; 
-     		margin: 2%;
 		}
 
 		.border
