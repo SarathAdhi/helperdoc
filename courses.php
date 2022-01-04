@@ -19,8 +19,9 @@
 			font-family: Consolas !important;
 		}
 		.courses{
-			display: flex;
-			flex-direction: row;
+			display: table;
+			width: 100%;
+			text-align: center;
 		}
 		.content
 		{
