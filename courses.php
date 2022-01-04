@@ -20,17 +20,17 @@
 		}
 		.courses{
 			display: grid;
+			grid-gap: 1rem;
 			margin-top: 30px;
 		}
 		.content
 		{
-			position: relative;
 			width: 200px;
 			height: 250px;
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
 			border-radius: 10px; 
-			margin: 2%;
+			
 		}
 
 		.border
