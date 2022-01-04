@@ -20,15 +20,12 @@
 		}
 		.courses{
 			margin-top: 50px;
-			width:  100%;
-			height: 100%;
-			position: relative;
+			display: flex;
 			justify-content: center;
 		}
 		.content
 		{
 			display: flex;
-    max-width: 60%;
     flex-wrap: wrap;
 			width: 200px;
 			height: 250px;
