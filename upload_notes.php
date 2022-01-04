@@ -50,11 +50,15 @@
     {
         $coursecode = strtoupper($_POST['coursecode']);
         $sql2 = mysqli_query($db, "INSERT INTO `notes_hd` VALUES ('$coursecode', '$_POST[tl]', '$_POST[module]', '$_POST[link]', '$_POST[cmts]');");
+        $sql3 = mysqli_query($db, "SELECT * FROM `courses_hd` WHERE `coursecode` = '$coursecode';");
+        $any = mysqli_num_rows($sql3);
+        if($any == 0){
+            $sql4 = mysqli_query($db, "INSERT INTO `courses_hd` VALUES ('$coursecode', ' ');");
+        }
         ?>
         <script type="text/javascript">
             alert("Successfully Uploaded :)");
         </script>
         <?php
-        $sql3 = mysqli_query($db, "INSERT INTO `courses_hd` VALUES ('$coursecode', ' ');");
     }
 ?>
