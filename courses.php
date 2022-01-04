@@ -137,7 +137,7 @@
 						echo '<h2>'.$row1['coursecode'].'</h2>';
 						echo '<h4>'.$row1['coursename'].'</h4>';
 						echo '<br>';
-						echo '<a href="notesview.php?id='.$row1['coursecode'].'" class="align-self-end btn btn-success">click here</a>';
+						echo '<a href="notesview.php?id='.$row1['coursecode'].'" class="align-self-end btn btn-success" style="margin-top: auto;">click here</a>';
 						echo '</div>';
 					}
 					echo '</div>';
