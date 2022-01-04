@@ -44,7 +44,7 @@
 			margin-left: 20px;
 		}
 
-		.btn{
+		.content a{
 			bottom: 5px;
 		}
 
