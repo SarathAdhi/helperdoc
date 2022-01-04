@@ -94,6 +94,7 @@
 		@media only screen and (max-width: 434px) {
 			.content{
 				width: 95%;
+				margin-bottom: 20px;
 			}
 		}
 
