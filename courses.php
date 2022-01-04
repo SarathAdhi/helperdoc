@@ -138,8 +138,8 @@
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<div class="content" id="content">';
-				echo '<h2>'.$row['coursename'].'</h2>';
-				echo '<h3>'.$row['coursecode'].'</h3>';
+				echo '<h2>'.$row['coursecode'].'</h2>';
+				echo '<h3>'.$row['coursename'].'</h3>';
 				echo '<a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a>';
 				echo '</div>';
 			}
