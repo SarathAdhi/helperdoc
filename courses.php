@@ -45,6 +45,7 @@
 		}
 
 		.content a{
+			position: relative;
 			bottom: 100%;
 		}
 
