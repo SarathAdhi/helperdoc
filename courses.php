@@ -27,7 +27,7 @@
 		.content
 		{
 			display: flex;
-    		flex-wrap: wrap;
+			flex-direction: row;
 			width: 200px;
 			height: 250px;
 			padding: 20px;
