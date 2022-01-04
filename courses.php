@@ -83,6 +83,10 @@
           	background: limegreen;
         }
 
+		@media only screen and (max-width: ) {
+			
+		}
+
 	</style>
 </head>
 <body>
@@ -139,7 +143,7 @@
 			{
 				echo '<div class="content" id="content">';
 				echo '<h2>'.$row['coursecode'].'</h2>';
-				echo '<p>'.$row['coursename'].'</p>';
+				echo '<h4>'.$row['coursename'].'</h4>';
 				echo '<a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a>';
 				echo '</div>';
 			}
