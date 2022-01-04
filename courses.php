@@ -145,6 +145,7 @@
 				echo '<div class="content" id="content">';
 				echo '<h2>'.$row['coursecode'].'</h2>';
 				echo '<h4>'.$row['coursename'].'</h4>';
+				echo '<br>';
 				echo '<a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a>';
 				echo '</div>';
 			}
