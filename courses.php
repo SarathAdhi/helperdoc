@@ -126,10 +126,10 @@
 					while($row1 = mysqli_fetch_assoc($sql2))
 					{
 						echo '<div class="content" id="content">';
-						echo '<h2>'.$row['coursecode'].'</h2>';
-						echo '<h4>'.$row['coursename'].'</h4>';
+						echo '<h2>'.$row1['coursecode'].'</h2>';
+						echo '<h4>'.$row1['coursename'].'</h4>';
 						echo '<br>';
-						echo '<a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a>';
+						echo '<a href="notesview.php?id='.$row1['coursecode'].'" class="btn btn-success">click here</a>';
 						echo '</div>';
 					}
 					echo '</div>';
