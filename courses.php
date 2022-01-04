@@ -19,11 +19,12 @@
 			font-family: Consolas !important;
 		}
 		.courses{
+			display: table;
 			margin-top: 50px;
 		}
 		.content
 		{
-			display: grid;
+			display: block;
 			width: 200px;
 			height: 250px;
 			padding: 20px;
