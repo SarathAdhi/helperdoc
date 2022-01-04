@@ -20,12 +20,10 @@
 		}
 		.courses{
 			margin-top: 50px;
-			display: flex;
-			justify-content: center;
-			
 		}
 		.content
 		{
+			display: grid;
 			width: 200px;
 			height: 250px;
 			padding: 20px;
