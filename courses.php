@@ -27,7 +27,9 @@
 		}
 		.content
 		{
-			display: inline-block;
+			display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
 			width: 200px;
 			height: 250px;
 			padding: 20px;
