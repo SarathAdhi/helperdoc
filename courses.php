@@ -25,11 +25,12 @@
 		}
 		.content
 		{
-			display: table-cell;
-			max-width: 720px;
+			width: 200px;
+			height: 200px;
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
 			border-radius: 10px; 
+			margin: 2%;
 		}
 
 		.border
