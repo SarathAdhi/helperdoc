@@ -107,7 +107,7 @@
 			if(isset($_POST['searchnow']))
 			{
 				$searchres = $_POST['search'];
-				$sql2 = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd` WHERE `coursecode` LIKE '%$searchres%';");
+				$sql2 = mysqli_query($db, "SELECT * FROM `courses_hd` WHERE `coursecode` LIKE '%$searchres%' OR `coursename` LIKE '%$searchres%';");
 				$count = mysqli_num_rows($sql2);
 
 				if($count != 0)
@@ -131,13 +131,15 @@
 		?>
 
 		<?php
-			$sql = mysqli_query($db, "SELECT DISTINCT `coursecode` FROM `notes_hd` ORDER BY `coursecode`;");
+			$sql = mysqli_query($db, "SELECT * FROM `courses_hd` ORDER BY `coursecode`;");
 
 			
 			while($row = mysqli_fetch_assoc($sql))
 			{
 				echo '<div class="content" id="content">';
-				echo '<h3>'.$row['coursecode'].' <br><br><a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a></h3>';
+				echo '<h1>'.$row['coursename'].'</h1>';
+				echo '<h3>'.$row['coursecode'].'</h3>';
+				echo '<a href="notesview.php?id='.$row['coursecode'].'" class="btn btn-success">click here</a>';
 				echo '</div>';
 			}
 			
