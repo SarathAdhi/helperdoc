@@ -22,6 +22,7 @@
 			margin-top: 50px;
 			display: flex;
 			justify-content: center;
+			max-width: 90%;
 		}
 		.content
 		{
