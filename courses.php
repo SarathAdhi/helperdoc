@@ -19,14 +19,15 @@
 			font-family: Consolas !important;
 		}
 		.courses{
-			display:flex;
+			display: flex;
 			flex-direction: column;
-			width: 100%;
-			text-align: center;
+			flex: 1;
 		}
 		.content
 		{
-			display: inline-block;
+			display: flex;
+			flex: 1;
+			justify-content: space-between;
 			width: 200px;
 			height: 200px;
 			padding: 20px;
