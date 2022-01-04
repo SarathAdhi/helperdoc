@@ -22,6 +22,7 @@
 		.content
 		{
 			display: inline-block;
+			width: 400px;
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
 			border-radius: 10px; 
