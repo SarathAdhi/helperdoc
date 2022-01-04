@@ -50,6 +50,7 @@
     {
         $coursecode = strtoupper($_POST['coursecode']);
         $sql2 = mysqli_query($db, "INSERT INTO `notes_hd` VALUES ('$coursecode', '$_POST[tl]', '$_POST[module]', '$_POST[link]', '$_POST[cmts]');");
+        $sql3 = mysqli_query($db, "INSERT INTO `courses_hd` VALUES ('$coursecode', ' ');");
         ?>
         <script type="text/javascript">
             alert("Successfully Uploaded :)");
