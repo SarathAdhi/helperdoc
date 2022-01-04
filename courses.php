@@ -21,7 +21,8 @@
 
 		.content
 		{
-			display: inline-block;
+			display: flex;
+			flex-direction: column;
 			width: 50%;
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
