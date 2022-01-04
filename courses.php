@@ -22,7 +22,7 @@
 		.content
 		{
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 			flex: 1;
 			width: 200px;
 			padding: 20px;
