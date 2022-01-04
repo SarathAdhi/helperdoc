@@ -31,7 +31,7 @@
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
 			border-radius: 10px; 
-			
+			margin: 2%;
 		}
 
 		.border
