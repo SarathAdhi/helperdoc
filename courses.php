@@ -45,7 +45,7 @@
 		}
 
 		.content a{
-			bottom: 0px;
+			bottom: 100%;
 		}
 
 		.scroll 
