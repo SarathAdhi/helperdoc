@@ -45,8 +45,7 @@
 		}
 
 		.content a{
-			position: relative;
-			bottom: 0;
+			margin-top: auto;
 		}
 
 		.scroll 
