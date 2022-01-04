@@ -22,12 +22,12 @@
 			margin-top: 50px;
 			display: flex;
 			justify-content: center;
-			max-width: 90%;
+			width: 90%;
 		}
 		.content
 		{
 			display: flex;
-    flex-wrap: wrap;
+    		flex-wrap: wrap;
 			width: 200px;
 			height: 250px;
 			padding: 20px;
