@@ -25,6 +25,7 @@
 		}
 		.content
 		{
+			display: table-row;
 			width: 200px;
 			height: 200px;
 			padding: 20px;
