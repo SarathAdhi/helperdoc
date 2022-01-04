@@ -43,6 +43,11 @@
 			margin-right: 20px;
 			margin-left: 20px;
 		}
+
+		.btn{
+			bottom: 5px;
+		}
+
 		.scroll 
 		{
 			position: fixed;
