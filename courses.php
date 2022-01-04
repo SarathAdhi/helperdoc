@@ -24,8 +24,7 @@
 		}
 		.content
 		{
-			display: flex;
-			flex-direction: column;
+			display: inline-block;
 			width: 200px;
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
