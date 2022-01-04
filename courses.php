@@ -19,11 +19,11 @@
 			font-family: Consolas !important;
 		}
 		.courses{
+			margin-top: 50px;
 			width:  100%;
 			height: 100%;
 			position: relative;
 			justify-content: center;
-			text-align: center;
 		}
 		.content
 		{
@@ -33,7 +33,7 @@
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
 			border-radius: 10px; 
-
+			margin: 2%;
 		}
 
 		.border
