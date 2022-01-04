@@ -26,7 +26,8 @@
 		.content
 		{
 			display: inline-block;
-			width: 200px;
+			width: 300px;
+			height: 300px;
 			padding: 20px;
 			box-shadow: 2px 2px 20px black;
 			border-radius: 10px; 
@@ -86,7 +87,7 @@
         {
           	background: limegreen;
         }
-		
+
 	</style>
 </head>
 <body>
