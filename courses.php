@@ -86,11 +86,7 @@
         {
           	background: limegreen;
         }
-
-		@media only screen and (max-width: ) {
-			
-		}
-
+		
 	</style>
 </head>
 <body>
