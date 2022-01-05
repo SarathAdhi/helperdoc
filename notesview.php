@@ -57,13 +57,17 @@
 
 				$sql1 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` = 'Syllabus';");
 				$sql2 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` LIKE '%module%' ORDER BY `module` ASC;");
-				$sql3 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` = 'Other' ORDER BY `topic` ASC;");
+				$sql3 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` = 'Recording';");
+				$sql4 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` = 'Other' ORDER BY `topic` ASC;");
 				
 
 				$row_syllabus = mysqli_fetch_assoc($sql1);
-				$c_syllabus = mysqli_num_rows($sql1);
+				$count_syllabus = mysqli_num_rows($sql1);
 
-				if($c_syllabus != 0)
+				$row_recording = mysqli_num_rows($sql3);
+				$count_recording = mysqli_num_rows($sql3);
+
+				if($count_syllabus != 0)
 				{
 					echo '<h1 class="topic">Syllabus</h1>';												/*Syllabus Only*/
 					echo '<br><div class="border">';
@@ -83,7 +87,15 @@
 						echo '</div><br>';
 				}
 
-				while($row = mysqli_fetch_assoc($sql3))
+				if($count_recording != 0)
+				{
+					echo '<h1 class="topic">Syllabus</h1>';												/*Recordings Only*/
+					echo '<br><div class="border">';
+					echo '<br><h2>'.$row_syllabus['module'].'</h2><a href="'.$row_syllabus['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+					echo '</div><br>';
+				}
+
+				while($row = mysqli_fetch_assoc($sql4))
 				{
 					if($count2 == 0)
 					{
