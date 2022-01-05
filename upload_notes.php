@@ -9,7 +9,7 @@
 
         <label for="tl"><b>Theory or Lab&emsp;</b></label>
         <select name="tl" size="1" style="color: black; font-size: 20px">
-            <option value="Theroy">Theory</option>
+            <option value="Theory">Theory</option>
             <option value="Lab">Lab</option>
         </select>
         <br><br>
