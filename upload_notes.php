@@ -25,6 +25,7 @@
             <option value="Module 7">Module 7</option>
             <option value="Module 8">Module 8</option>
             <option value="Syllabus">Syllabus</option>
+            <option value="Recording">Recording</option>
             <option value="Other">Other</option>
         </select>
         <br><br>
