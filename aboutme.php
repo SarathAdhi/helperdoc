@@ -77,11 +77,12 @@
             <div>
                 <h1 style="font-weight: bold; text-decoration: underline;">ABOUT ME</h1>
 
-               <h2>நான் தமிழன் நண்பா</h2>
-
+                <h2>நான் தமிழன் நண்பா</h2>
+                <br/>
+                <br/>
                 <h2>NOTE: This website is for educational Purpose only. </h2>
 
-                <h1 style="font-weight: bold; text-decoration: underline;">If you like this website, Don't forget to Hit the like button. It motivates mee :)</h1>
+                <div style="width: 80%; font-weight: bold;">If you like this website, Don't forget to Hit the like button. It motivates mee :)</div>
                 <form action="" method="post" class="form-container">
                     <button type="submit" name="like" class="like"><i class="fa fa-thumbs-up"></i></button>
 
