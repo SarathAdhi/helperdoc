@@ -60,14 +60,14 @@
 				$sql3 = mysqli_query($db, "SELECT * FROM `notes_hd` WHERE `coursecode` = '{$_GET["id"]}' AND `module` = 'Other' ORDER BY `topic` ASC;");
 				
 
-				$row_syl = mysqli_fetch_assoc($sql1);
-				$c_syl = mysqli_num_rows($sql1);
+				$row_syllabus = mysqli_fetch_assoc($sql1);
+				$c_syllabus = mysqli_num_rows($sql1);
 
-				if($c_syl != 0)
+				if($c_syllabus != 0)
 				{
 					echo '<h1 class="topic">Syllabus</h1>';												/*Syllabus Only*/
 					echo '<br><div class="border">';
-					echo '<br><h2>'.$row_syl['module'].'</h2><a href="'.$row_syl['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+					echo '<br><h2>'.$row_syllabus['module'].'</h2><a href="'.$row_syllabus['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 					echo '</div><br>';
 				}
 
