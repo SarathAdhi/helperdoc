@@ -64,7 +64,7 @@
 				$row_syllabus = mysqli_fetch_assoc($sql1);
 				$count_syllabus = mysqli_num_rows($sql1);
 
-				$row_recording = mysqli_num_rows($sql3);
+				$row_recording = mysqli_fetch_assoc($sql3);
 				$count_recording = mysqli_num_rows($sql3);
 
 				if($count_syllabus != 0)
