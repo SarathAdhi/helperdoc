@@ -75,15 +75,13 @@
         <center>
             <br><br>
             <div>
-                <h1 style="font-weight: bold; text-decoration: underline;">ABOUT ME</h1><span style="font-size: 50px">&#128514;</span>
+                <h1 style="font-weight: bold; text-decoration: underline;">ABOUT ME</h1>
 
-                <h2>Ena paa, Yenna pathi theriji ena panna poorigaa ?? Maati vida poorigalaa <span>&#128514;</span> Athu nadakathuuu</h2>
-
-                <h2>Summa help pannanumnu thonuchuu So panna. Helpful ahh irudhuthunaa Like ahh thatti vidugaa. It motivates mee laa &#128521;. Future la inu naraiya varuim, for every subjects. Athu varaikuim maati vidathigaa &#128541;. Vera ena nanbaa??</h2>
+               <h2>நான் தமிழன் நண்பா</h2>
 
                 <h2>NOTE: This website is for educational Purpose only. </h2>
 
-                <h1 style="font-weight: bold; text-decoration: underline;">Oiii Maarakama LIKE ahh thatti vidugaa</h1>
+                <h1 style="font-weight: bold; text-decoration: underline;">If you like this website, Don't forget to Hit the like button. It motivates mee :)</h1>
                 <form action="" method="post" class="form-container">
                     <button type="submit" name="like" class="like"><i class="fa fa-thumbs-up"></i></button>
 
