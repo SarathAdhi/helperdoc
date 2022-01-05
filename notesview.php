@@ -91,7 +91,7 @@
 				{
 					echo '<h1 class="topic">Recordings</h1>';												/*Recordings Only*/
 					echo '<br><div class="border">';
-					echo '<br><h2>'.$row_recording['module'].'</h2><p style="color: white;">NOTE: '.$row_recording['topic'].'</p><a href="'.$row_recording['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
+					echo '<br><h2>'.$row_recording['module'].'</h2><p style="color: white;">'.$row_recording['topic'].'</p><a href="'.$row_recording['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 					echo '</div><br>';
 				}
 
