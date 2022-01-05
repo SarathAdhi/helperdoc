@@ -89,7 +89,7 @@
 
 				if($count_recording != 0)
 				{
-					echo '<h1 class="topic">Syllabus</h1>';												/*Recordings Only*/
+					echo '<h1 class="topic">Recordings</h1>';												/*Recordings Only*/
 					echo '<br><div class="border">';
 					echo '<br><h2>'.$row_syllabus['module'].'</h2><a href="'.$row_syllabus['link'].'" target="_blank" style="color: white;">click here</a><br><br><br>';
 					echo '</div><br>';
