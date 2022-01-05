@@ -51,10 +51,7 @@
 		?>
 		<h1 style="font-size: 40px;"><?php echo $_GET['id']; ?></h1>
 			<?php
-				if($_GET['id'] == 'CSE1022')
-				{
-					echo '<a href="robo.php">click here</a>';
-				}
+
 				$count1 = 0;
 				$count2 = 0;
 
