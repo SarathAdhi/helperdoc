@@ -26,15 +26,21 @@
         .intro{
             width: 80%;
             font-size: 30px;
+            color: #0A0162;
         }
         .section1
         {
-            background-color: #EBEAFD;
             height: auto;
+        }
+        
+        .welcome{
+            color: black;
         }
 
         .section2
         {
+            width: 95%;
+            border-radius: 10px;
             background-color: white;
             height: auto;
             border: 2px solid #FFBF00;
@@ -134,10 +140,10 @@ if(isset($_SESSION['username']))
         <center>
 
             <div class="content1">
-                <h1>Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h1>
+                <h1 class="welcome">Hii <?php echo $_SESSION['username']; ?>, Welcome to HelperDOC...</h1>
                 <br>
                     
-                <div class="intro">This is a platform where you can download notes for various courses and share your notes. Feel free to share your notes and make sure you upload the correct information.<br>Becoz Sharing is caring</div>
+                <div class="intro">This is a platform where you can download notes for various courses and share your notes. Feel free to share your notes and make sure you upload the correct information.</div>
                 <br><br>
                 <button class="open-button" id="button" onclick="openForm('myForm4', 'myForm4')" style="border-radius: 10px;">Upload notes</button>
 
@@ -196,9 +202,9 @@ else
         </center>
     <br><br>
     </section> -->
-
+    <center>                    
     <section class="section2">
-        <center>
+        
             <br>
             <div>
                 <h2>NOTE: Your information are stored securely with hashing. Dont worry :)</h2>
@@ -230,10 +236,10 @@ else
                 ?>
             </div>
 
-        </center>
+        
     <br><br>
     </section>
-
+    </center>
 </body>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

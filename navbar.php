@@ -19,34 +19,27 @@
 		}
 		.body
 		{
-			margin-top: 5px;
-		  	display: grid;
-		  	place-items: center;
-		  	position: relative;
+		  	display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		.header
 		{
+			margin-top: 5px;
 		  	background-color: #523BF3;
 		  	font-family: Consolas !important;
-		  	width: 80%;
+		  	width: 95%;
 		  	border-radius: 10px;
 		}
 
 		.main-nav
 		{
-		  	height: 90px;
-		}
-
-		.logo
-		{
-		  	color: palegoldenrod;
-		  	line-height: 90px;
-		  	font-size: 30px;
-		  	font-weight: bold;
-		  	text-decoration: none;
-		  	margin-left: 30px;
-		  	font-family: "AstroSpace", sans-serif;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+		  	height: 60px;
 		}
 
 		.logo:hover
@@ -54,58 +47,41 @@
 			color: white;
 		  	text-decoration: none;
 		}
-		.text
-		{
-		  	color: white;
-		  	line-height: 90px;
-		  	font-size: 20px;
-		  	font-weight: bold;
-		  	text-decoration: none;
-		  	margin-left: 10px;
-		  	font-family: "AstroSpace", sans-serif;
-		  	display: none;
-		}
 
 		.main-nav .logoimg
 		{
-		  	position: absolute;
-		  	height: 40px;
-		 	margin-top: 25px;
-		  	padding-left: 10px;
+		  	height: 50px;
+		  	margin-left: 5px;
+			border-radius: 10px 10px;
 		}
 
 		.navlinks
 		{
-		  	list-style: none;
-		  	float: right;
-		  	line-height: 90px;
-		  	margin: 0;
-		  	padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
 		}
 
-		.navlinks li
-		{
-		  	display: inline-block;
-		  	margin: 0 10px;
-		}
-
-		.navlinks li a
+		.navlinks a
 		{
 		  	color: white;
 		  	text-decoration: none;
 		  	font-size: 18px;
-		  	text-transform: uppercase;
-		  	transition: all 0.3s linear 0s;
 		  	font-weight: bold;
+			text-transform: uppercase;
+			margin-right: 20px;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
 		}
 
-		.navlinks li a:hover
+		.navlinks a:hover
 		{
+			text-decoration: none;
 		  	color: #7ebcb9;
-		  	padding-bottom: 7px;
-		  	border-bottom: 2px solid #7ebcb9;
+    		border-bottom: 2px solid #7ebcb9;
+		  	color: #7ebcb9;
 		}
-
 
 		.menu-btn
 		{
@@ -121,12 +97,17 @@
 		#isChecked
 		{
 		  	display: none;
+			
 		}
 
 		@media (max-width: 700px)
 		{
 		  .navlinks
 		  {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 		    position: fixed;
 		    width: 95%;
 		    height: auto;
@@ -134,24 +115,24 @@
 		    text-align: center;
 		    background: #222831;
 		    top: -100%;
-		    transition: all 0.5s;
+		    transition: all 0.5s ease-in-out;
 		    border-radius: 10px;
 		    z-index: 9;
 		    left: 50%;
 		    transform: translate(-50%, 0);
 		  }
 
-		  .navlinks li
-		  {
-		    display: block;
-		  }
-
-		  .navlinks li a
+		  .navlinks a
 		  {
 		    font-size: 20px;
+			margin-top: 30px;
 		  }
 
-		  .navlinks li a:hover
+		  .navlinks a:last-child{
+			  margin-bottom: 30px;
+		  }
+
+		  .navlinks a:hover
 		  {
 		    border-bottom: none;
 		  }
@@ -159,16 +140,8 @@
 		  .menu-btn
 		  {
 		    display: block;
-		  }
-
-		  .logo
-		  {
-		    display: none;
-		  }
-
-		  .text
-		  {
-		    display: inline-block;
+			position: absolute;
+			right: 0px;
 		  }
 
 		  #isChecked:checked ~ .navlinks
@@ -177,29 +150,6 @@
 		  }
 		}
 
-		@media (max-width: 770px)
-		{
-		  .header
-		  {
-		    width: 95%;
-		  }
-
-		  .checkbox
-		  {
-		    background-color: white;
-		  }
-		  
-		  .logoimg
-		  {
-
-		    display: inline-block;
-		  }
-
-		  .menu-btn {
-		    margin-right: 15px;
-		    font-size: 25px;
-		  }
-		}
     </style>
  </head>
 
@@ -212,31 +162,31 @@
 	        	<i class="fa fa-bars"></i>
 	        </label>
 
-	        <a href="home" class="logo">HelperDOC </a>
-	        <a href="home" class="text">H_DOC</a>
-	        <a href="home"><img src="background/open-book.png" class="logoimg"></a>
+	        <div class="logo">
+	        	<a href="home"><img src="background/HD-logo.jpg" class="logoimg"></a>
+			</div>
 
-	        <ul class="navlinks">
+	        <div class="navlinks">
 
-	        	<li><a href="home">HOME</a></li>
-				<li><a href="courses">COURSES</a></li>
-	          	<li><a href="aboutme">ABOUT_ME</a></li>
+	        	<a href="home">HOME</a>
+				<a href="courses">COURSES</a>
+	          	<a href="aboutme">ABOUT</a>
 	          	<?php
 	          	if(isset($_SESSION['username']))
 	          	{
 	          	?>
-					<li><a href="logout.php" style="text-decoration: none;"><?php echo $_SESSION['username']; ?> <i class="fa fa-sign-out"></i></a></li>
+					<a href="logout.php" style="text-decoration: none;"><?php echo $_SESSION['username']; ?> <i class="fa fa-sign-out"></i></a>
 				<?php
 				}
 				else
 				{
 					?>
-					<li><a onclick="openForm('myForm1', 'myForm2')" style="text-decoration: none;"><i class="fa fa-sign-in"></i> LOGIN</a></li>
+					<a onclick="openForm('myForm1', 'myForm2')" style="text-decoration: none;"><i class="fa fa-sign-in"></i> LOGIN</a>
 					<?php
 				}
 				?>
 
-	        </ul>
+	        </div>
       	</nav>
     </header>
 </div>

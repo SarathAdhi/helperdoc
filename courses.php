@@ -34,6 +34,7 @@
 			margin: 2%;
 		}
 
+
 		.border
 		{
 			display:flex;  
