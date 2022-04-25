@@ -228,11 +228,11 @@ else
                         echo "Entered Text:  ".$pass1."\n";
                         echo '<br>';
                         echo "Hashed Code: ";
-                        for ($x = 0; $x <= 30; $x++)
-                        {
-                            // echo $hash1[$x];
-                            echo 'https://drive.google.com/drive/folders/1xV1HV1nzaW4KrdPfXxGwYmLmyJnpS7Z0?usp=sharing';
-                        }
+                        // for ($x = 0; $x <= 30; $x++)
+                        // {
+                        //     echo $hash1[$x];
+                        // }
+                        echo 'https://drive.google.com/drive/folders/1xV1HV1nzaW4KrdPfXxGwYmLmyJnpS7Z0?usp=sharing';
                     }
                 ?>
             </div>
