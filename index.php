@@ -232,7 +232,7 @@ else
                         // {
                         //     echo $hash1[$x];
                         // }
-                        echo 'https://drive.google.com/drive/folders/1xV1HV1nzaW4KrdPfXxGwYmLmyJnpS7Z0?usp=sharing';
+                        echo '<a href="https://drive.google.com/drive/folders/1xV1HV1nzaW4KrdPfXxGwYmLmyJnpS7Z0?usp=sharing" target="_blank">click</a>';
                     }
                 ?>
             </div>
